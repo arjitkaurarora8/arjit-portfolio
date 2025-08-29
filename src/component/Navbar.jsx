@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 function Navbar() {
   return (
@@ -54,7 +55,7 @@ function Navbar() {
             Services
           </a>
         </div>
-
+        {/* 
         <button
           className="h-8 px-5 rounded-lg bg-gradient-to-b from-gray-700 to-gray-900 
          text-stone-200 text-base font-normal tracking-tight
@@ -62,7 +63,8 @@ function Navbar() {
          transition-all duration-150 flex items-center justify-center cursor-pointer"
         >
           Book
-        </button>
+        </button> */}
+        <Button text="Book" size="sm" />
       </div>
     </nav>
   );
