@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import SocialProofBar from "./SocialProof";
 
 function Hero() {
   return (
@@ -23,7 +24,14 @@ function Hero() {
         </div>
       </div>
 
-      <Button text="Book a call here" size="lg" className="my-10" />
+      <Button
+        text="Book a call here"
+        size="md"
+        className="my-10"
+        // textClassName="px-20" //extra padding on text only
+      />
+
+      <SocialProofBar />
     </section>
   );
 }
