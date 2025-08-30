@@ -2,19 +2,24 @@ import Navbar from "@/component/Navbar";
 import Hero from "@/component/Hero";
 import RecentWork from "@/component/RecentWork";
 import OtherWork from "@/component/OtherWork";
+import About from "@/component/About";
+import Pitch from "@/component/Pitch";
+import GettingStarted from "@/component/GettingStarted";
+import Services from "@/component/Services";
+import Footer from "@/component/Footer";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar showLinks={true} />
       <Hero />
       <RecentWork />
       <OtherWork />
-      <div className="flex items-center justify-center min-h-screen">
-        <p className="text-green-600 text-4xl text-center">
-          Helloooo!!, welcome to my Portfolio.
-        </p>
-      </div>
+      <About />
+      <Pitch />
+      <GettingStarted />
+      <Services />
+      {/* <Footer /> */}
     </>
   );
 }

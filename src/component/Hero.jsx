@@ -4,7 +4,7 @@ import SocialProofBar from "./SocialProof";
 
 function Hero() {
   return (
-    <section className="pt-25 px-6">
+    <section className="pt-25 px-6 bg-white">
       <div className="flex flex-col">
         <h1 className="text-2xl md:text-4xl font-semibold md:leading-14">
           <span className="text-gray-500">

@@ -41,3 +41,7 @@ body {
   animation: scroll 22s linear infinite;
   width: max-content;
 }
+
+html {
+  scroll-behavior: smooth;
+}
