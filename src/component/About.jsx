@@ -4,9 +4,9 @@ function About() {
   return (
     <section
       id="about"
-      className="px-4 sm:px-6 pt-28 min-h-screen scroll-mt-24"
+      className="px-4 sm:px-6 py-8 md:py-16 lg:py-28 scroll-mt-24"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-center bg-white rounded-2xl px-6 md:px-10 pt-12 overflow-hidden max-w-[1440px] mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center bg-white rounded-2xl px-6 md:px-10 pt-10 lg:pt-12 overflow-hidden max-w-[1440px] mx-auto">
         {/* Left Content */}
         <div className="flex flex-col justify-start items-start">
           {/* Heading */}
@@ -40,7 +40,7 @@ function About() {
           </p>
 
           {/* Contact */}
-          <div className="flex flex-col gap-2 pt-12 pb-10">
+          <div className="flex flex-col gap-2 pt-12 lg:pb-10">
             <p className="text-neutral-500 text-base">
               arjitkaurarora8@gmail.com
             </p>

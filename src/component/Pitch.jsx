@@ -2,7 +2,7 @@ import React from "react";
 
 function Pitch() {
   return (
-    <div className="px-4 sm:px-6 bg-zinc-100 py-24 flex justify-center items-center min-h-screen">
+    <div className="px-4 sm:px-6 bg-zinc-100 py-16 md:py-20 xl:py-24 flex justify-center items-center">
       <div className="max-w-[640px] w-full p-10 relative bg-white rounded-lg shadow-[0px_12px_24px_-8px_rgba(0,0,0,0.10)] overflow-hidden">
         {/* Red Wax Seal */}
         <div className="absolute -top-2 right-10 w-20 h-20">
