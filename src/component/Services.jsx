@@ -119,7 +119,7 @@ function Services() {
       <h2 className="text-2xl sm:text-3xl text-gray-900 mb-6 sm:mb-8 text-center sm:text-left">
         Services
       </h2>
-      <div className="bg-gray-100 rounded-2xl py-8 sm:py-14 flex flex-col lg:flex-row gap-8 sm:gap-12 justify-center items-center sm:px-8 lg:px-32">
+      <div className="bg-gray-100 rounded-2xl py-8 sm:py-14 flex flex-col lg:flex-row gap-8 sm:gap-12 justify-center items-center lg:items-start sm:px-8 lg:px-32">
         <Card
           title="Mentoring"
           description="Stuck on your design journey and in need of clarity? Contact me whenever you're ready."
