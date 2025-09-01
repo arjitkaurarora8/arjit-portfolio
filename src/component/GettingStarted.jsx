@@ -45,12 +45,23 @@ function GettingStarted() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {steps.map((step) => (
             <div key={step.number} className="flex flex-col">
-              {/* Numbered Circle */}
-              <div className="w-16 h-16 relative bg-gradient-to-b from-black/20 to-black/80 rounded-full mb-6 flex items-center justify-center">
-                <div className="w-16 h-16 absolute opacity-60 rounded-full bg-gray-400"></div>
-                <span className="text-white text-5xl font-normal leading-none relative z-10 [text-shadow:_2px_2px_0px_rgba(255,255,255,0.3)]">
-                  {step.number}
-                </span>
+              {/* Step Circle with Image */}
+              <div
+                className="w-16 h-16 relative rounded-full mb-6 flex items-center justify-end pr-2 bg-cover bg-center bg-no-repeat overflow-hidden"
+                style={{
+                  backgroundImage: 'url("/numbersbg.svg")',
+                  filter: "blur(0.1px)",
+                }}
+              >
+                {/* Gradient blur overlay - more blur on top */}
+                <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent backdrop-blur-[0.5px] rounded-full"></div>
+
+                {/* Step Image instead of number */}
+                <img
+                  src={`/step${step.number}.svg`}
+                  alt={`Step ${step.number}`}
+                  className="w-16 h-16 relative top-0.5 -right-3.5 z-10"
+                />
               </div>
 
               {/* Title */}
