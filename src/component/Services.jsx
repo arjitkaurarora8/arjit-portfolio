@@ -24,7 +24,7 @@ const GreenDot = () => (
 
 const Card = ({ title, description, price, features, dark, hasSprintInfo }) => (
   <div
-    className={`flex-1 max-w-md p-8 sm:p-12 rounded-[40px] sm:rounded- shadow-xl shadow-gray-300/30
+    className={`flex-1 max-w-md p-8 sm:p-12 rounded-2xl sm:rounded-4xl shadow-xl shadow-gray-300/30
     flex flex-col gap-2 sm:gap-4 items-center text-center ${
       dark ? "bg-black text-gray-100" : "bg-white text-gray-900"
     }`}
@@ -69,7 +69,7 @@ const Card = ({ title, description, price, features, dark, hasSprintInfo }) => (
     )}
 
     <button
-      className={`px-6 sm:px-8 py-2 sm:py-3 rounded-lg border-2 transition text-sm sm:text-base font-medium min-w-[00px] sm:min-w-[340px] ${
+      className={`px-6 sm:px-8 py-2 sm:py-3 rounded-lg border-2 transition text-sm sm:text-base font-medium min-w-0 sm:min-w-80 ${
         dark
           ? "border-white text-white hover:bg-white/10"
           : "border-gray-900 text-gray-900 hover:bg-gray-50"
@@ -119,7 +119,7 @@ function Services() {
       <h2 className="text-2xl sm:text-3xl text-gray-900 mb-6 sm:mb-8 text-center sm:text-left">
         Services
       </h2>
-      <div className="bg-gray-100 rounded-2xl py-8 sm:py-14 flex flex-col lg:flex-row gap-8 sm:gap-12 justify-center items-center lg:items-start sm:px-8 lg:px-32">
+      <div className="bg-gray-100 rounded-2xl py-5 sm:py-14 flex flex-col lg:flex-row gap-4 sm:gap-12 justify-center items-center lg:items-start px-4 sm:px-8 lg:px-32">
         <Card
           title="Mentoring"
           description="Stuck on your design journey and in need of clarity? Contact me whenever you're ready."
