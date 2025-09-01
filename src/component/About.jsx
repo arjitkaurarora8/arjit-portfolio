@@ -21,17 +21,13 @@ function About() {
             <span className="font-medium">
               Fintech, E-commerce, EdTech, Healthcare, and Web3.
             </span>
-            {/* <br /> */}
-            {/* <br /> */}
             Currently serving as{" "}
             <span className="font-medium">CPO at TradeProbe</span>, I drive
             product vision, design execution, and strategy — turning complex
-            challenges into intuitive, scalable solutions.
-            {/* <br /> */}
-            With a track record of building design systems, leading teams, and
-            contributing to successful fundraising, I specialize in creating
-            products that not only delight users but also deliver measurable
-            business impact.
+            challenges into intuitive, scalable solutions. With a track record
+            of building design systems, leading teams, and contributing to
+            successful fundraising, I specialize in creating products that not
+            only delight users but also deliver measurable business impact.
             <br />
             <br />
             If you’re a founder or team looking for a partner who can take your
