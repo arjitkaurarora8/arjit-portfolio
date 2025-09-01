@@ -1,11 +1,10 @@
-//
 import React from "react";
 
 export default function Button({
   text,
   size = "md",
   className = "",
-  textClassName = "", // 👈 new prop to style inner text
+  textClassName = "", // new prop to style inner text
   ...props
 }) {
   const sizeClasses = {
