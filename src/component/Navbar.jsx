@@ -13,7 +13,7 @@ function Navbar({ showLinks = true }) {
             className="absolute w-full h-full object-contain inset-0 hover:opacity-0 transition-opacity duration-300 opacity-100"
           />
           <img
-            src="/avatar-logo-2.svg"
+            src="/avatar-logo-2.png"
             alt="Avatar-Logo"
             className="absolute w-full h-full object-contain inset-0 hover:opacity-100 transition-opacity duration-300 opacity-0"
           />

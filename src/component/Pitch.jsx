@@ -6,7 +6,7 @@ function Pitch() {
       <div className="max-w-[640px] w-full p-10 relative bg-white rounded-lg shadow-[0px_12px_24px_-8px_rgba(0,0,0,0.10)] overflow-hidden">
         {/* Red Wax Seal */}
         <div className="absolute -top-2 right-10 w-20 h-20">
-          <img src="/seal.svg" alt="" />
+          <img src="/seal.png" alt="" />
           {/* <div className="w-full h-full bg-red-600 rounded-full flex items-center justify-center shadow-lg">
             <span className="text-white text-2xl">🏷️</span>
           </div> */}

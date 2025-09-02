@@ -84,7 +84,7 @@ function About() {
         {/* Right Image */}
         <div className="flex justify-start items-center">
           <img
-            src="/arjit.svg"
+            src="/arjit.png"
             alt="Arjit"
             className="w-[300px] sm:w-[400px] lg:w-[530px] h-auto rounded-full object-cover"
           />

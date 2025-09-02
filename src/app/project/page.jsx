@@ -157,7 +157,7 @@ function ProjectShowcase() {
             >
               <img
                 className="w-full h-auto rounded-xl sm:rounded-2xl"
-                src={`/tradeprobe-${imageNum}.svg`}
+                src={`/tradeprobe-${imageNum}.png`}
                 alt={`TradeProbe project showcase ${imageNum}`}
               />
             </div>

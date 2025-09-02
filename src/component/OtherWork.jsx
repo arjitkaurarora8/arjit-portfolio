@@ -44,7 +44,7 @@ export default function OtherWork() {
           {/* Row 2 - Left */}
           <Link href="/project">
             <Image
-              src="/otherwork2.svg"
+              src="/otherwork2.png"
               alt="Work 2"
               width={500}
               height={400}
