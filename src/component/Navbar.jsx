@@ -8,7 +8,7 @@ function Navbar({ showLinks = true }) {
       <div className="flex items-center gap-2">
         <div className="h-8 w-8 sm:h-11 sm:w-11 relative">
           <img
-            src="/avatar-logo.svg"
+            src="/avatar-logo.png"
             alt="Avatar-Logo"
             className="absolute w-full h-full object-contain inset-0 hover:opacity-0 transition-opacity duration-300 opacity-100"
           />
