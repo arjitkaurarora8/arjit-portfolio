@@ -44,37 +44,37 @@ function About() {
             <div className="flex gap-6 flex-wrap">
               <a
                 href="#"
-                className="group flex items-center gap-2 text-neutral-400 hover:text-neutral-600 hover:scale-105 transition"
+                className="group flex items-center gap-1 text-neutral-400 hover:text-neutral-600 transition"
               >
                 X (Twitter)
                 <img
-                  src="/linkarrow.svg"
+                  src="/linkarrow.png"
                   alt="link-arrow"
-                  className="w-5 h-5 transition-transform duration-200 group-hover:scale-130"
+                  className="w-5 h-5 transition-transform duration-200 group-hover:scale-120"
                 />
               </a>
 
               <a
                 href="#"
-                className="group flex items-center gap-2 text-neutral-400 hover:text-neutral-600 hover:scale-105  transition"
+                className="group flex items-center gap-1 text-neutral-400 hover:text-neutral-600 transition"
               >
                 Instagram
                 <img
-                  src="/linkarrow.svg"
+                  src="/linkarrow.png"
                   alt="link-arrow"
-                  className="w-5 h-5 transition-transform duration-200 group-hover:scale-130"
+                  className="w-5 h-5 transition-transform duration-200 group-hover:scale-120"
                 />
               </a>
 
               <a
                 href="#"
-                className="group flex items-center gap-2 text-neutral-400 hover:text-neutral-600 hover:scale-105  transition"
+                className="group flex items-center gap-1 text-neutral-400 hover:text-neutral-600 transition"
               >
                 Download CV
                 <img
-                  src="/linkarrow.svg"
+                  src="/linkarrow.png"
                   alt="link-arrow"
-                  className="w-5 h-5 transition-transform duration-200 group-hover:scale-130"
+                  className="w-5 h-5 transition-transform duration-200 group-hover:scale-120"
                 />
               </a>
             </div>

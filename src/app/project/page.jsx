@@ -42,13 +42,13 @@ function ProjectShowcase() {
               href="/"
               className="flex items-center gap-1 group cursor-pointer w-fit"
             >
-              <span className="text-gray-900 text-sm sm:text-base group-hover:text-gray-600 group-hover:scale-103 transition-transform duration-300">
+              <span className="text-gray-900 text-sm sm:text-base group-hover:text-gray-600">
                 Go back
               </span>
               <img
-                src="/linkarrow.svg"
+                src="/linkarrow.png"
                 alt="External link"
-                className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-123 transition-transform duration-300"
+                className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-120 transition-transform duration-300"
               />
             </Link>
             <div className="flex flex-col justify-start">
@@ -96,13 +96,13 @@ function ProjectShowcase() {
                 href="#"
                 className="flex items-center gap-1 group cursor-pointer"
               >
-                <span className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight group-hover:text-gray-600 transition-colors duration-300">
+                <span className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight group-hover:text-gray-600">
                   Live website
                 </span>
                 <img
-                  src="/linkarrow.svg"
+                  src="/linkarrow.png"
                   alt="External link"
-                  className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform duration-300"
+                  className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-120 transition-transform duration-300"
                 />
               </a>
             </div>
@@ -112,7 +112,7 @@ function ProjectShowcase() {
           <div className="w-full relative rounded-xl sm:rounded-2xl overflow-hidden">
             <img
               className="w-full h-auto rounded-xl sm:rounded-2xl"
-              src="/tradeprobe-hero.svg"
+              src="/tradeprobe-hero.png"
               alt="TradeProbe main application interface"
             />
           </div>

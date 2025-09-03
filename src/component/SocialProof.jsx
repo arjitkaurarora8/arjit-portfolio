@@ -2,18 +2,18 @@
 import Image from "next/image";
 
 const logos = [
-  { id: 1, src: "/wander.svg", alt: "Wander" },
-  { id: 2, src: "/petspot.svg", alt: "Petspot" },
-  { id: 3, src: "/listener.svg", alt: "Listener.fm" },
+  { id: 1, src: "/wander.png", alt: "Wander" },
+  { id: 2, src: "/petspot.png", alt: "Petspot" },
+  { id: 3, src: "/listener.png", alt: "Listener.fm" },
   {
     id: 4,
     type: "text",
-    src: "/chapterone.svg",
+    src: "/chapterone.png",
     label: "Chapter One",
     alt: "Chapter One",
   },
-  { id: 5, src: "/lifelogs.svg", alt: "Lifelogs" },
-  { id: 6, src: "/hngr.svg", alt: "HNGR" },
+  { id: 5, src: "/lifelogs.png", alt: "Lifelogs" },
+  { id: 6, src: "/hngr.png", alt: "HNGR" },
 ];
 
 export default function SocialProofBar() {

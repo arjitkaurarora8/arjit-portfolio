@@ -49,7 +49,7 @@ function GettingStarted() {
               <div
                 className="w-16 h-16 relative rounded-full mb-6 flex items-center justify-end pr-2 bg-cover bg-center bg-no-repeat overflow-hidden"
                 style={{
-                  backgroundImage: 'url("/numbersbg.svg")',
+                  backgroundImage: 'url("/numbersbg.png")',
                   filter: "blur(0.1px)",
                 }}
               >

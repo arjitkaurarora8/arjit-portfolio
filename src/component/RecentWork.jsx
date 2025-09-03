@@ -21,7 +21,7 @@ export default function RecentWork() {
       <div className="pt-6 sm:pt-4 grid grid-cols-1 md:grid-cols-2 w-full rounded-2xl overflow-hidden gap-2 md:gap-0">
         <Link href="/project" className="w-full">
           <img
-            src="/work1.svg"
+            src="/work1.png"
             alt="Work 1"
             className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] 
                  object-cover 

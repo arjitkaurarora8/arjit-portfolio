@@ -34,11 +34,11 @@ function Footer() {
                 href="#"
                 className="flex items-center gap-1 group cursor-pointer"
               >
-                <span className="text-gray-900 text-base group-hover:text-gray-600 group-hover:scale-108 transition-transform duration-300">
+                <span className="text-gray-900 text-base group-hover:text-gray-600 transition-transform duration-300">
                   {item}
                 </span>
                 <img
-                  src="/linkarrow.svg"
+                  src="/linkarrow.png"
                   alt="External link"
                   className="w-5 h-5 group-hover:scale-120 transition-transform"
                 />
@@ -55,11 +55,11 @@ function Footer() {
                 href="#"
                 className="flex items-center gap-1 group cursor-pointer"
               >
-                <span className="text-gray-900 text-base group-hover:text-gray-600 group-hover:scale-108 transition-transform duration-300">
+                <span className="text-gray-900 text-base group-hover:text-gray-600 transition-transform duration-300">
                   {item}
                 </span>
                 <img
-                  src="/linkarrow.svg"
+                  src="/linkarrow.png"
                   alt="External link"
                   className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
                 />

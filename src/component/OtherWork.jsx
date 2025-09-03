@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function OtherWork() {
   return (
-    <div id="#past" className="w-full px-4 sm:px-6 pt-28 scroll-mt-24">
+    <div id="past" className="w-full px-4 sm:px-6 pt-28 scroll-mt-24">
       {/* Header Section */}
       <div className="flex flex-col justify-start">
         <h2 className="text-stone-900 text-3xl font-semibold leading-9 mb-5">
@@ -22,7 +22,7 @@ export default function OtherWork() {
           {/* Row 1 - Left */}
           <Link href="/project">
             <Image
-              src="/otherwork1.svg"
+              src="/otherwork1.png"
               alt="Work 1"
               width={500}
               height={400}
@@ -33,7 +33,7 @@ export default function OtherWork() {
           {/* Row 1-2 - Right (otherwork4 takes 2 rows on desktop only) */}
           <Link href="/project" className="lg:row-span-2">
             <Image
-              src="/otherwork4.svg"
+              src="/otherwork4.png"
               alt="Work 4"
               width={800}
               height={600}
@@ -55,7 +55,7 @@ export default function OtherWork() {
           {/* Row 3 - Left */}
           <Link href="/project">
             <Image
-              src="/otherwork3.svg"
+              src="/otherwork3.png"
               alt="Work 3"
               width={500}
               height={400}
@@ -66,7 +66,7 @@ export default function OtherWork() {
           {/* Row 3 - Right */}
           <Link href="/project">
             <Image
-              src="/otherwork5.svg"
+              src="/otherwork5.png"
               alt="Work 5"
               width={800}
               height={300}
