@@ -21,7 +21,7 @@ function Navbar({ showLinks = true }) {
         <div>
           <div className="flex flex-col">
             <span className="text-stone-900 text-sm sm:text-base font-semibold leading-tight tracking-tight">
-              Arjit kaur Arora
+              Arjit Kaur Arora
             </span>
             <span className="text-gray-600 text-sm sm:text-base font-medium">
               Product Lead
