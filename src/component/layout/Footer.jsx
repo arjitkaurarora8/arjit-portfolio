@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Button"; // Adjust path if needed
+import Button from "../ui/Button"; // Adjust path if needed
 
 function Footer() {
   return (

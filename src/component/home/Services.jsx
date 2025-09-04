@@ -69,7 +69,7 @@ const Card = ({ title, description, price, features, dark, hasSprintInfo }) => (
     )}
 
     <button
-      className={`px-6 sm:px-8 py-2 sm:py-3 rounded-lg border-2 transition text-sm sm:text-base font-medium min-w-0 sm:min-w-80 cursor-pointer${
+      className={`px-6 sm:px-8 py-2 sm:py-3 rounded-lg border-2 transition text-sm sm:text-base font-medium min-w-0 sm:min-w-80 cursor-pointer ${
         dark
           ? "border-white text-white hover:bg-white/10"
           : "border-gray-900 text-gray-900 hover:bg-gray-50"

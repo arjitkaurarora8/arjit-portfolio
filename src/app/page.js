@@ -1,12 +1,12 @@
-import Navbar from "@/component/Navbar";
-import Hero from "@/component/Hero";
-import RecentWork from "@/component/RecentWork";
-import OtherWork from "@/component/OtherWork";
-import About from "@/component/About";
-import Pitch from "@/component/Pitch";
-import GettingStarted from "@/component/GettingStarted";
-import Services from "@/component/Services";
-import Footer from "@/component/Footer";
+import Navbar from "@/component/layout/Navbar";
+import Hero from "@/component/home/Hero";
+import RecentWork from "@/component/home/RecentWork";
+import OtherWork from "@/component/home/OtherWork";
+import About from "@/component/home/About";
+import Pitch from "@/component/home/Pitch";
+import GettingStarted from "@/component/home/GettingStarted";
+import Services from "@/component/home/Services";
+import Footer from "@/component/layout/Footer";
 
 export default function Home() {
   return (

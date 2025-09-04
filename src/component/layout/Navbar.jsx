@@ -1,21 +1,21 @@
 import React from "react";
-import Button from "./Button";
+import Button from "../ui/Button";
 
 function Navbar({ showLinks = true }) {
   return (
     <nav className="flex items-center justify-between p-4 sm:p-6 border-b-2 border-gray-200 sticky top-0 bg-white z-30">
       {/* Left Section: Logo */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 group">
         <div className="h-8 w-8 sm:h-11 sm:w-11 relative">
           <img
             src="/avatar-logo.png"
             alt="Avatar-Logo"
-            className="absolute w-full h-full object-contain inset-0 hover:opacity-0 transition-opacity duration-300 opacity-100"
+            className="absolute w-full h-full object-contain inset-0 group-hover:opacity-0 transition-opacity duration-300 opacity-100"
           />
           <img
             src="/avatar-logo-2.png"
             alt="Avatar-Logo"
-            className="absolute w-full h-full object-contain inset-0 hover:opacity-100 transition-opacity duration-300 opacity-0"
+            className="absolute w-full h-full object-contain inset-0 group-hover:opacity-100 transition-opacity duration-300 opacity-0"
           />
         </div>
         <div>

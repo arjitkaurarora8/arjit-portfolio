@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "@/component/Navbar";
+import Navbar from "@/component/layout/Navbar";
 import Link from "next/link";
 
 function ProjectShowcase() {
