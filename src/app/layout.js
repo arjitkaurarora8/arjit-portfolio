@@ -19,7 +19,13 @@ const inter = Inter({
 
 export const metadata = {
   title: "Arjit Kaur Arora - Product Lead",
-  description: "Portfolio of Arjit Kaur Arora, Product Lead.",
+  description:
+    "Portfolio of Arjit Kaur Arora, Product Lead specializing in product strategy, user experience, and team leadership.",
+  keywords:
+    "product lead, product manager, UX, user experience, product strategy, portfolio",
+  authors: [{ name: "Arjit Kaur Arora" }],
+  creator: "Arjit Kaur Arora",
+  robots: "index, follow",
 };
 
 export default function RootLayout({ children }) {
