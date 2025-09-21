@@ -3,7 +3,7 @@
 import React from "react";
 import Button from "../ui/Button";
 import SocialProofBar from "./SocialProof";
-import ContactButton from "../ui/ContactButton";
+import TelegramContactButton from "../ui/TelegramContactButton";
 
 function Hero() {
   return (
@@ -29,7 +29,7 @@ function Hero() {
       </div>
       <div className="flex my-8 sm:my-10 items-center gap-3">
         <Button text="Book a call here" size="md" />
-        <ContactButton
+        <TelegramContactButton
           text="Chat"
           size="md"
           onClick={() => window.open("https://t.me/arjitkaurarora", "_blank")}
