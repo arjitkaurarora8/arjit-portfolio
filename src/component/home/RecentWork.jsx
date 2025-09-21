@@ -18,26 +18,48 @@ export default function RecentWork() {
         </p>
       </div>
 
-      <div className="pt-6 sm:pt-4 grid grid-cols-1 md:grid-cols-2 w-full rounded-2xl overflow-hidden gap-2 md:gap-0">
-        <Link href="/project" className="w-full">
+      <div className="flex w-full pt-6 rounded-2xl overflow-hidden">
+        {/* Left Image */}
+        <Link
+          href="/project"
+          className="flex-1 group relative transition-all duration-500 ease-in-out"
+        >
           <img
             src="/work1.png"
             alt="Work 1"
             className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] 
-                 object-cover 
-                 cursor-pointer transition-transform duration-300 
-                 group-hover:scale-105 rounded-2xl md:rounded-l-2xl md:rounded-tr-none md:rounded-br-none"
+             object-cover 
+             rounded-l-2xl"
           />
         </Link>
-        <Link href="/project" className="w-full">
+
+        {/* Right Image */}
+        <Link
+          href="/project"
+          className="flex-1 group relative transition-all duration-500 ease-in-out hover:flex-[2] overflow-hidden"
+        >
           <img
             src="/work2.png"
             alt="Work 2"
             className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] 
-                 object-cover 
-                 cursor-pointer transition-transform duration-300 
-                 group-hover:scale-105 rounded-2xl md:rounded-r-2xl md:rounded-tl-none md:rounded-bl-none"
+             object-cover 
+             rounded-r-2xl"
           />
+
+          {/* Background overlay on hover - darker for better text visibility */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out rounded-r-2xl"></div>
+
+          {/* Text Overlay with higher z-index and background */}
+          <div className="absolute bottom-4 left-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+            <div className="bg-opacity-70 px-3 py-2 rounded-lg">
+              <h3 className="text-white text-xl sm:text-2xl font-bold leading-tight">
+                TradeProbe
+              </h3>
+              <p className="text-sm text-gray-300 font-normal leading-tight pt-1.5">
+                WebApp & Mobile Design
+              </p>
+            </div>
+          </div>
         </Link>
       </div>
     </section>

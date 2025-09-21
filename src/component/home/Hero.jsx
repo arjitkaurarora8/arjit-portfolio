@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../ui/Button";
 import SocialProofBar from "./SocialProof";
+import ContactButton from "../ui/ContactButton";
 
 function Hero() {
   return (
@@ -24,8 +25,10 @@ function Hero() {
           </p>
         </div>
       </div>
-
-      <Button text="Book a call here" size="md" className="my-8 sm:my-10" />
+      <div className="flex my-8 sm:my-10 items-center gap-3">
+        <Button text="Book a call here" size="md" />
+        <ContactButton text="Chat" size="md" />
+      </div>
 
       <SocialProofBar />
     </section>

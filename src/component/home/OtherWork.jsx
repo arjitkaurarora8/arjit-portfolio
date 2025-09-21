@@ -26,7 +26,7 @@ export default function OtherWork() {
               alt="Work 1"
               width={500}
               height={400}
-              className="w-full h-64 md:h-48 lg:h-full object-cover rounded-2xl shadow-md hover:scale-103 transition"
+              className="w-full h-64 md:h-48 lg:h-full object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-500 ease-in-out"
             />
           </Link>
 
@@ -37,7 +37,7 @@ export default function OtherWork() {
               alt="Work 4"
               width={800}
               height={600}
-              className="w-full h-64 md:h-80 lg:h-full object-cover rounded-2xl shadow-md hover:scale-103 transition"
+              className="w-full h-64 md:h-80 lg:h-full object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-500 ease-in-out"
             />
           </Link>
 
@@ -48,7 +48,7 @@ export default function OtherWork() {
               alt="Work 2"
               width={500}
               height={400}
-              className="w-full h-64 md:h-48 lg:h-full object-cover rounded-2xl shadow-md hover:scale-103 transition"
+              className="w-full h-64 md:h-48 lg:h-full object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-500 ease-in-out"
             />
           </Link>
 
@@ -59,7 +59,7 @@ export default function OtherWork() {
               alt="Work 3"
               width={500}
               height={400}
-              className="w-full h-64 md:h-48 lg:h-full object-cover rounded-2xl shadow-md hover:scale-103 transition"
+              className="w-full h-64 md:h-48 lg:h-full object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-500 ease-in-out"
             />
           </Link>
 
@@ -70,7 +70,7 @@ export default function OtherWork() {
               alt="Work 5"
               width={800}
               height={300}
-              className="w-full h-64 md:h-48 lg:h-full object-cover rounded-2xl shadow-md hover:scale-103 transition"
+              className="w-full h-64 md:h-48 lg:h-full object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-500 ease-in-out"
             />
           </Link>
         </div>

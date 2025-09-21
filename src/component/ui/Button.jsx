@@ -23,7 +23,7 @@ export default function Button({
       className={`
         rounded-lg bg-gradient-to-b from-gray-800 to-gray-950 text-stone-200 font-normal tracking-tight
         shadow-md transition-all duration-150 flex items-center justify-center cursor-pointer
-        hover:ring-4 hover:ring-gray-300 active:scale-95 active:shadow-sm active:bg-gradient-to-b active:from-gray-900 active:to-black
+        hover:ring-5 hover:ring-gray-300 active:scale-95 active:shadow-sm active:bg-gradient-to-b active:from-gray-900 active:to-black
         ${sizeClasses[size]} ${className}
       `}
       {...props}
