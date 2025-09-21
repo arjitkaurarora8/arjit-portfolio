@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Button from "../ui/Button";
 import SocialProofBar from "./SocialProof";
@@ -27,7 +29,13 @@ function Hero() {
       </div>
       <div className="flex my-8 sm:my-10 items-center gap-3">
         <Button text="Book a call here" size="md" />
-        <ContactButton text="Chat" size="md" />
+        <ContactButton
+          text="Chat"
+          size="md"
+          onClick={() =>
+            window.open("https://t.me/arjitkaurarora/70576", "_blank")
+          }
+        />
       </div>
 
       <SocialProofBar />
