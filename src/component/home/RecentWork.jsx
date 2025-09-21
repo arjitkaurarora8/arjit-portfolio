@@ -22,7 +22,7 @@ export default function RecentWork() {
         {/* Left Image */}
         <Link
           href="/project"
-          className="flex-1 group relative transition-all duration-500 ease-in-out"
+          className="flex-1 group relative transition-all duration-500 ease-in-out hover:flex-[2]"
         >
           <img
             src="/work1.png"
@@ -31,6 +31,21 @@ export default function RecentWork() {
              object-cover 
              rounded-l-2xl"
           />
+
+          {/* Background overlay on hover - darker for better text visibility */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out rounded-r-2xl"></div>
+
+          {/* Text Overlay with higher z-index and background */}
+          <div className="absolute bottom-4 right-4 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+            <div className="bg-opacity-70 px-3 py-2 rounded-lg">
+              <h3 className="text-white text-xl sm:text-2xl font-bold leading-tight">
+                TradeProbe
+              </h3>
+              <p className="text-sm text-gray-300 font-normal leading-tight pt-1.5">
+                WebApp & Mobile Design
+              </p>
+            </div>
+          </div>
         </Link>
 
         {/* Right Image */}
