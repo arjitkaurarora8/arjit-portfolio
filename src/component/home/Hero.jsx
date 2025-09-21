@@ -32,9 +32,7 @@ function Hero() {
         <ContactButton
           text="Chat"
           size="md"
-          onClick={() =>
-            window.open("https://t.me/arjitkaurarora/70576", "_blank")
-          }
+          onClick={() => window.open("https://t.me/arjitkaurarora", "_blank")}
         />
       </div>
 
