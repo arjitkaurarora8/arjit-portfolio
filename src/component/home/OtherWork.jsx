@@ -1,7 +1,46 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function OtherWork() {
+  const projects = [
+    {
+      id: 1,
+      src: "/otherwork1.png",
+      alt: "Work 1",
+      title: "TradeProbe",
+      subtitle: "WebApp & Mobile Design",
+    },
+    {
+      id: 2,
+      src: "/otherwork2.png",
+      alt: "Work 2",
+      title: "TradeProbe",
+      subtitle: "WebApp & Mobile Design",
+    },
+    {
+      id: 3,
+      src: "/otherwork3.png",
+      alt: "Work 3",
+      title: "TradeProbe",
+      subtitle: "WebApp & Mobile Design",
+    },
+    {
+      id: 4,
+      src: "/otherwork4.png",
+      alt: "Work 4",
+      title: "TradeProbe",
+      subtitle: "WebApp & Mobile Design",
+    },
+    {
+      id: 5,
+      src: "/otherwork5.png",
+      alt: "Work 5",
+      title: "TradeProbe",
+      subtitle: "WebApp & Mobile Design",
+    },
+  ];
+
   return (
     <div id="past" className="w-full px-4 sm:px-6 pt-28 scroll-mt-24">
       {/* Header Section */}
@@ -18,60 +57,150 @@ export default function OtherWork() {
         </div>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 bg-gray-50 gap-4 h-auto md:grid-cols-2 md:gap-6 md:h-auto lg:grid-cols-[1fr_2fr] lg:grid-rows-3 lg:gap-6 lg:h-[800px]">
+        <div className="grid grid-cols-1 gap-4 h-auto md:grid-cols-2 md:gap-6 md:h-auto lg:grid-cols-[1fr_2fr] lg:grid-rows-3 lg:gap-6 lg:h-[800px]">
           {/* Row 1 - Left */}
-          <Link href="/project">
-            <Image
-              src="/otherwork1.png"
-              alt="Work 1"
-              width={500}
-              height={400}
-              className="w-full h-64 md:h-48 lg:h-full object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-500 ease-in-out"
-            />
+          <Link
+            href="/project"
+            className="group relative overflow-hidden rounded-2xl shadow-md"
+          >
+            <div className="relative w-full h-64 md:h-48 lg:h-full overflow-hidden">
+              <Image
+                src={projects[0].src}
+                alt={projects[0].alt}
+                width={500}
+                height={400}
+                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-75"
+              />
+
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text overlay */}
+              <div className="absolute bottom-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                <h3 className="text-white text-xl font-bold leading-tight mb-1">
+                  {projects[0].title}
+                </h3>
+                <p className="text-white/90 text-sm font-normal leading-tight">
+                  {projects[0].subtitle}
+                </p>
+              </div>
+            </div>
           </Link>
 
           {/* Row 1-2 - Right (otherwork4 takes 2 rows on desktop only) */}
-          <Link href="/project" className="lg:row-span-2">
-            <Image
-              src="/otherwork4.png"
-              alt="Work 4"
-              width={800}
-              height={600}
-              className="w-full h-64 md:h-80 lg:h-full object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-500 ease-in-out"
-            />
+          <Link
+            href="/project"
+            className="lg:row-span-2 group relative overflow-hidden rounded-2xl shadow-md"
+          >
+            <div className="relative w-full h-64 md:h-80 lg:h-full overflow-hidden">
+              <Image
+                src={projects[3].src}
+                alt={projects[3].alt}
+                width={800}
+                height={600}
+                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-75"
+              />
+
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text overlay */}
+              <div className="absolute bottom-6 left-6 z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                <h3 className="text-white text-2xl font-bold leading-tight mb-1">
+                  {projects[3].title}
+                </h3>
+                <p className="text-white/90 text-base font-normal leading-tight">
+                  {projects[3].subtitle}
+                </p>
+              </div>
+            </div>
           </Link>
 
           {/* Row 2 - Left */}
-          <Link href="/project">
-            <Image
-              src="/otherwork2.png"
-              alt="Work 2"
-              width={500}
-              height={400}
-              className="w-full h-64 md:h-48 lg:h-full object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-500 ease-in-out"
-            />
+          <Link
+            href="/project"
+            className="group relative overflow-hidden rounded-2xl shadow-md"
+          >
+            <div className="relative w-full h-64 md:h-48 lg:h-full overflow-hidden">
+              <Image
+                src={projects[1].src}
+                alt={projects[1].alt}
+                width={500}
+                height={400}
+                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-75"
+              />
+
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text overlay */}
+              <div className="absolute bottom-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                <h3 className="text-white text-xl font-bold leading-tight mb-1">
+                  {projects[1].title}
+                </h3>
+                <p className="text-white/90 text-sm font-normal leading-tight">
+                  {projects[1].subtitle}
+                </p>
+              </div>
+            </div>
           </Link>
 
           {/* Row 3 - Left */}
-          <Link href="/project">
-            <Image
-              src="/otherwork3.png"
-              alt="Work 3"
-              width={500}
-              height={400}
-              className="w-full h-64 md:h-48 lg:h-full object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-500 ease-in-out"
-            />
+          <Link
+            href="/project"
+            className="group relative overflow-hidden rounded-2xl shadow-md"
+          >
+            <div className="relative w-full h-64 md:h-48 lg:h-full overflow-hidden">
+              <Image
+                src={projects[2].src}
+                alt={projects[2].alt}
+                width={500}
+                height={400}
+                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-75"
+              />
+
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text overlay */}
+              <div className="absolute bottom-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                <h3 className="text-white text-xl font-bold leading-tight mb-1">
+                  {projects[2].title}
+                </h3>
+                <p className="text-white/90 text-sm font-normal leading-tight">
+                  {projects[2].subtitle}
+                </p>
+              </div>
+            </div>
           </Link>
 
           {/* Row 3 - Right */}
-          <Link href="/project">
-            <Image
-              src="/otherwork5.png"
-              alt="Work 5"
-              width={800}
-              height={300}
-              className="w-full h-64 md:h-48 lg:h-full object-cover rounded-2xl shadow-md hover:scale-105 transition-transform duration-500 ease-in-out"
-            />
+          <Link
+            href="/project"
+            className="group relative overflow-hidden rounded-2xl shadow-md"
+          >
+            <div className="relative w-full h-64 md:h-48 lg:h-full overflow-hidden">
+              <Image
+                src={projects[4].src}
+                alt={projects[4].alt}
+                width={800}
+                height={300}
+                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-75"
+              />
+
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+              {/* Text overlay */}
+              <div className="absolute bottom-4 left-4 z-20 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                <h3 className="text-white text-xl font-bold leading-tight mb-1">
+                  {projects[4].title}
+                </h3>
+                <p className="text-white/90 text-sm font-normal leading-tight">
+                  {projects[4].subtitle}
+                </p>
+              </div>
+            </div>
           </Link>
         </div>
       </div>

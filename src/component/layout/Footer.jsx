@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Button from "../ui/Button"; // Adjust path if needed
 
@@ -18,32 +20,33 @@ function Footer() {
           size="lg"
           className="my-10"
           textClassName="px-20" // extra padding on text only
+          onClick={() =>
+            window.open(
+              "https://cal.com/arjit-kaur-arora-nk3ufj/introductioncall",
+              "_blank"
+            )
+          }
         />
       </div>
       {/* Footer Bottom Section */}
       <div className="w-full pt-20">
-        {/* Copyright */}
-        {/* Links */}
         <div className="flex items-start justify-end gap-16">
-          {/* Legal */}
+          {/* Contact */}
           <div className="flex flex-col items-end gap-2">
-            <span className="text-gray-500 text-base font-inter">Legal</span>
-            {["Privacy Policy", "Cookie Settings"].map((item, idx) => (
-              <a
-                key={idx}
-                href="#"
-                className="flex items-center gap-1 group cursor-pointer"
-              >
-                <span className="text-gray-900 text-base group-hover:text-gray-600 transition-transform duration-300">
-                  {item}
-                </span>
-                <img
-                  src="/linkarrow.png"
-                  alt="External link"
-                  className="w-5 h-5 group-hover:scale-120 transition-transform"
-                />
-              </a>
-            ))}
+            <span className="text-gray-500 text-base font-inter">Contact</span>
+            <ul className="space-y-2 text-sm text-right">
+              <li>
+                <a
+                  href="mailto:arjitkaurarora8@gmail.com"
+                  className="text-gray-900 text-base hover:text-gray-600 transition-all duration-300"
+                >
+                  arjitkaurarora8@gmail.com
+                </a>
+              </li>
+              <li className="text-gray-900 text-base hover:text-gray-600 transition-all duration-300">
+                7018537372
+              </li>
+            </ul>
           </div>
 
           {/* Socials */}
@@ -67,7 +70,7 @@ function Footer() {
             ))}
           </div>
         </div>
-        <div className="text-gray-300 text-sm font-inter">
+        <div className="text-gray-500 text-sm font-inter">
           © 2025 <span className="text-base">Arjit Kaur Arora</span>
         </div>
       </div>

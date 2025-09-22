@@ -5,6 +5,11 @@
   --foreground: #ffffff;
 }
 
+@theme {
+  --animate-lift-fade-in: lift-fade-in 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-fade-in: fade-in 0.2s ease-out forwards;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -45,4 +50,24 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+@keyframes lift-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(var(--offset, 2px));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

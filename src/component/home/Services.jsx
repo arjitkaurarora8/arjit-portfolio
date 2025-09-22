@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 const CheckIcon = ({ white }) => (
@@ -10,7 +11,7 @@ const CheckIcon = ({ white }) => (
   >
     <path
       d="M13.5 4.5L6 12L2.5 8.5"
-      stroke={"#ffffff"}
+      stroke={"#22C55E"}
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -24,7 +25,7 @@ const GreenDot = () => (
 
 const Card = ({ title, description, price, features, dark, hasSprintInfo }) => (
   <div
-    className={`flex-1 max-w-md p-8 sm:p-12 rounded-2xl sm:rounded-4xl shadow-xl shadow-gray-300/30
+    className={`flex-1 max-w-md p-8 sm:p-12  rounded-2xl sm:rounded-4xl shadow-xl shadow-gray-300/30
     flex flex-col gap-2 sm:gap-4 items-center text-center ${
       dark ? "bg-black text-gray-100" : "bg-white text-gray-900"
     }`}
@@ -67,12 +68,37 @@ const Card = ({ title, description, price, features, dark, hasSprintInfo }) => (
         </div>
       </div>
     )}
-
+    {/* 
     <button
+      onClick={() =>
+        window.open(
+          dark
+            ? "https://topmate.io/arjitkaurarora"
+            : "https://cal.com/arjit-kaur-arora-nk3ufj/introductioncall",
+          "_blank"
+        )
+      }
       className={`px-6 sm:px-8 py-2 sm:py-3 rounded-lg border-2 transition text-sm sm:text-base font-medium min-w-0 sm:min-w-80 cursor-pointer ${
         dark
           ? "border-white text-white hover:bg-white/10"
           : "border-gray-900 text-gray-900 hover:bg-gray-50"
+      }`}
+    >
+      {dark ? "Request quote via mail" : "Book a call"}
+    </button> */}
+    <button
+      onClick={() =>
+        window.open(
+          dark
+            ? "https://topmate.io/arjitkaurarora"
+            : "https://cal.com/arjit-kaur-arora-nk3ufj/introductioncall",
+          "_blank"
+        )
+      }
+      className={`px-6 sm:px-8 py-2 sm:py-3 rounded-lg border-2 transition-all duration-150 text-sm sm:text-base font-medium min-w-0 sm:min-w-80 cursor-pointer active:scale-95 active:shadow-sm ${
+        dark
+          ? "border-white text-white hover:bg-white/10 active:bg-white/20"
+          : "border-gray-900 text-gray-900 hover:bg-gray-50 active:bg-gray-100"
       }`}
     >
       {dark ? "Request quote via mail" : "Book a call"}
@@ -140,9 +166,7 @@ function Services() {
           features={[
             "Dashboard, Mobile App, Product Strategy",
             "One of 2 clients at a time for max focus",
-            "One of 2 clients at a time for max focus",
             "Milestone-based delivery (10-14 days)",
-            "Unlimited, review-based revisions",
             "2 updates per week.",
             "Communication via Slack (or of your choice)",
             "Figma only design starting at $100",
