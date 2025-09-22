@@ -64,7 +64,7 @@ export default function SocialProofBar() {
           animation: infiniteScroll 40s linear infinite;
         }
       `}</style>
-      <div className="w-full overflow-hidden py-12">
+      <div className="w-full overflow-hidden py-12 animate-lift-fade-in motion-reduce:animate-fade-in [--offset:10px] [animation-delay:400ms] [animation-duration:1s] [animation-fill-mode:both]">
         <div className="flex">
           {/* First Track */}
           <div className="logo-track">

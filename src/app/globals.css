@@ -33,7 +33,7 @@ body {
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
-@keyframes scroll {
+/* @keyframes scroll {
   0% {
     transform: translateX(0);
   }
@@ -50,7 +50,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-}
+} */
 
 @keyframes lift-fade-in {
   0% {
