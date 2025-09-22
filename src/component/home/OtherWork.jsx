@@ -69,7 +69,7 @@ export default function OtherWork() {
                 alt={projects[0].alt}
                 width={500}
                 height={400}
-                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-75"
+                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:brightness-75"
               />
 
               {/* Gradient overlay on hover */}
@@ -98,7 +98,7 @@ export default function OtherWork() {
                 alt={projects[3].alt}
                 width={800}
                 height={600}
-                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-75"
+                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:brightness-75"
               />
 
               {/* Gradient overlay on hover */}
@@ -127,7 +127,7 @@ export default function OtherWork() {
                 alt={projects[1].alt}
                 width={500}
                 height={400}
-                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-75"
+                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:brightness-75"
               />
 
               {/* Gradient overlay on hover */}
@@ -156,7 +156,7 @@ export default function OtherWork() {
                 alt={projects[2].alt}
                 width={500}
                 height={400}
-                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-75"
+                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:brightness-75"
               />
 
               {/* Gradient overlay on hover */}
@@ -185,7 +185,7 @@ export default function OtherWork() {
                 alt={projects[4].alt}
                 width={800}
                 height={300}
-                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 group-hover:brightness-75"
+                className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:brightness-75"
               />
 
               {/* Gradient overlay on hover */}

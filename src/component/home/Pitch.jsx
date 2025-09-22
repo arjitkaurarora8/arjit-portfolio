@@ -15,7 +15,7 @@ function Pitch() {
         <div className="space-y-8">
           {/* Header Section */}
           <div className="space-y-4">
-            <div className="text-neutral-500 text-xs font-normal">
+            <div className="text-neutral-500 text-xl font-normal">
               Dear Founder…
             </div>
             <h1 className="text-black text-4xl font-medium leading-[52px]">

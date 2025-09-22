@@ -30,10 +30,10 @@ const Card = ({ title, description, price, features, dark, hasSprintInfo }) => (
       dark ? "bg-black text-gray-100" : "bg-white text-gray-900"
     }`}
   >
-    <h3 className="text-2xl sm:text-3xl font-normal">{title}</h3>
+    <h3 className="text-2xl sm:text-3xl font-semibold">{title}</h3>
     <p
       className={`${
-        dark ? "text-gray-400" : "text-gray-600"
+        dark ? "text-gray-300" : "text-gray-600"
       } text-sm sm:text-base leading-relaxed px-2 sm:px-0`}
     >
       {description}
@@ -57,7 +57,7 @@ const Card = ({ title, description, price, features, dark, hasSprintInfo }) => (
       <div className="flex flex-col gap-1 pt-1 sm:pt-3">
         <span className="text-base sm:text-base text-gray-500">1:1 call</span>
         <div>
-          <span className="text-3xl sm:text-4xl">${price}</span>
+          <span className="text-3xl sm:text-4xl font-bold">${price}</span>
           <span
             className={`${
               dark ? "text-gray-400" : "text-gray-600"
@@ -68,24 +68,7 @@ const Card = ({ title, description, price, features, dark, hasSprintInfo }) => (
         </div>
       </div>
     )}
-    {/* 
-    <button
-      onClick={() =>
-        window.open(
-          dark
-            ? "https://topmate.io/arjitkaurarora"
-            : "https://cal.com/arjit-kaur-arora-nk3ufj/introductioncall",
-          "_blank"
-        )
-      }
-      className={`px-6 sm:px-8 py-2 sm:py-3 rounded-lg border-2 transition text-sm sm:text-base font-medium min-w-0 sm:min-w-80 cursor-pointer ${
-        dark
-          ? "border-white text-white hover:bg-white/10"
-          : "border-gray-900 text-gray-900 hover:bg-gray-50"
-      }`}
-    >
-      {dark ? "Request quote via mail" : "Book a call"}
-    </button> */}
+
     <button
       onClick={() =>
         window.open(
@@ -97,8 +80,8 @@ const Card = ({ title, description, price, features, dark, hasSprintInfo }) => (
       }
       className={`px-6 sm:px-8 py-2 sm:py-3 rounded-lg border-2 transition-all duration-150 text-sm sm:text-base font-medium min-w-0 sm:min-w-80 cursor-pointer active:scale-95 active:shadow-sm ${
         dark
-          ? "border-white text-white hover:bg-white/10 active:bg-white/20"
-          : "border-gray-900 text-gray-900 hover:bg-gray-50 active:bg-gray-100"
+          ? "border-white text-white hover:bg-white/10 active:bg-white/20 hover:ring-4 hover:ring-gray-400"
+          : "border-gray-900 text-gray-900 hover:bg-gray-50 active:bg-gray-100 hover:ring-4 hover:ring-gray-200"
       }`}
     >
       {dark ? "Request quote via mail" : "Book a call"}
@@ -124,7 +107,7 @@ const Card = ({ title, description, price, features, dark, hasSprintInfo }) => (
             </div>
             <span
               className={`${
-                dark ? "text-stone-300" : "text-gray-600"
+                dark ? "text-stone-200" : "text-gray-600"
               } text-xs sm:text-base leading-relaxed`}
             >
               {f}
@@ -142,7 +125,7 @@ function Services() {
       id="services"
       className="mx-auto px-4 sm:px-6 pt-16 sm:pt-28 pb-8 sm:pb-10 min-h-screen scroll-mt-24"
     >
-      <h2 className="text-2xl sm:text-3xl text-gray-900 mb-6 sm:mb-8 text-center sm:text-left">
+      <h2 className="text-stone-900 text-xl sm:text-3xl font-semibold leading-9 mb-6 sm:mb-8">
         Services
       </h2>
       <div className="bg-gray-100 rounded-2xl py-5 sm:py-14 flex flex-col lg:flex-row gap-4 sm:gap-12 justify-center items-center lg:items-start px-4 sm:px-8 lg:px-32">

@@ -21,7 +21,7 @@ const logos = [
     width: 120,
     height: 40,
   },
-  { id: 8, src: "/modishcard.png", alt: "Modish Card", width: 55, height: 25 },
+  { id: 8, src: "/modishCard.png", alt: "Modish Card", width: 55, height: 25 },
   {
     id: 9,
     src: "/onferenceTV.png",
@@ -61,7 +61,7 @@ export default function SocialProofBar() {
         }
         .logo-track {
           display: flex;
-          animation: infiniteScroll 40s linear infinite;
+          animation: infiniteScroll 90s linear infinite;
         }
       `}</style>
       <div className="w-full overflow-hidden py-12 animate-lift-fade-in motion-reduce:animate-fade-in [--offset:10px] [animation-delay:400ms] [animation-duration:1s] [animation-fill-mode:both]">

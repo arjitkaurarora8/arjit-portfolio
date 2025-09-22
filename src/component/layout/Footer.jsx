@@ -1,7 +1,14 @@
 "use client";
 
 import React from "react";
-import Button from "../ui/Button"; // Adjust path if needed
+import Button from "../ui/Button";
+
+const socials = [
+  { name: "X", href: "https://x.com/arjitkaurarora" },
+  { name: "Instagram", href: "https://www.instagram.com/waspcassini/" },
+  { name: "Linkedin", href: "https://www.linkedin.com/in/arjitkaurarora/" },
+  { name: "Behance", href: "https://www.behance.net/arjitkaurarora" },
+];
 
 function Footer() {
   return (
@@ -44,15 +51,15 @@ function Footer() {
                 </a>
               </li>
               <li className="text-gray-900 text-base hover:text-gray-600 transition-all duration-300">
-                7018537372
+                (+91) 70185-37372
               </li>
             </ul>
           </div>
 
           {/* Socials */}
-          <div className="flex flex-col items-end gap-2">
+          {/* <div className="flex flex-col items-end gap-2">
             <span className="text-gray-500 text-base font-inter">Socials</span>
-            {["X (Twitter)", "Instagram", "Linkedin"].map((item, idx) => (
+            {["X", "Instagram", "Linkedin", "Behance"].map((item, idx) => (
               <a
                 key={idx}
                 href="#"
@@ -60,6 +67,28 @@ function Footer() {
               >
                 <span className="text-gray-900 text-base group-hover:text-gray-600 transition-transform duration-300">
                   {item}
+                </span>
+                <img
+                  src="/linkarrow.png"
+                  alt="External link"
+                  className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
+                />
+              </a>
+            ))}
+          </div> */}
+
+          <div className="flex flex-col items-end gap-2">
+            <span className="text-gray-500 text-base font-inter">Socials</span>
+            {socials.map((social, idx) => (
+              <a
+                key={idx}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 group cursor-pointer"
+              >
+                <span className="text-gray-900 text-base group-hover:text-gray-600 transition-transform duration-300">
+                  {social.name}
                 </span>
                 <img
                   src="/linkarrow.png"

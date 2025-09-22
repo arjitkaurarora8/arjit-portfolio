@@ -32,14 +32,9 @@ function GettingStarted() {
 
       <div className="flex flex-col gap-16">
         {/* Header Section */}
-        <div className="flex flex-col">
-          <div className="text-neutral-500 text-xs font-normal mb-4">
-            Your plan
-          </div>
-          <h2 className="text-black text-4xl font-medium leading-13">
-            Getting started is easy
-          </h2>
-        </div>
+        <h2 className="text-stone-900 text-xl sm:text-3xl font-semibold leading-9">
+          Getting started is easy
+        </h2>
 
         {/* Steps Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
