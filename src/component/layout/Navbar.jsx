@@ -11,10 +11,10 @@ function Navbar({ showLinks = true }) {
   ];
 
   const linkClasses =
-    "text-gray-500 hover:text-gray-900 hover:scale-105 transition-transform duration-300 ease-in-out";
+    "text-gray-500 hover:text-gray-900 transition-transform duration-300 ease-in-out";
 
   return (
-    <nav className="flex items-center justify-between p-4 sm:p-6 border-b-2 border-gray-200 sticky top-0 bg-white z-30">
+    <nav className="flex items-center justify-between p-4 sm:p-6 border-b-2 border-gray-100 sticky top-0 bg-white z-30">
       {/* Left Section: Logo */}
       <div className="flex items-center gap-2 group">
         <Link href="/" className="flex items-center gap-2">

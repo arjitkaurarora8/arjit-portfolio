@@ -2,40 +2,40 @@
 import Image from "next/image";
 
 const logos = [
-  { id: 1, src: "/tradeprobe.png", alt: "Tradeprobe", width: 200, height: 50 },
-  { id: 2, src: "/derec.png", alt: "Derec", width: 130, height: 40 },
-  { id: 3, src: "/creaitorAi.png", alt: "Creaitor Ai", width: 210, height: 70 },
-  { id: 4, src: "/trillisent.png", alt: "Trillisent", width: 180, height: 60 },
+  { id: 1, src: "/tradeprobe.png", alt: "Tradeprobe", width: 150, height: 40 },
+  { id: 2, src: "/derec.png", alt: "Derec", width: 100, height: 25 },
+  { id: 3, src: "/creaitorAi.png", alt: "Creaitor Ai", width: 180, height: 65 },
+  { id: 4, src: "/trillisent.png", alt: "Trillisent", width: 150, height: 50 },
   {
     id: 5,
     src: "/contentHubGPT.png",
     alt: "Content Hub GPT",
-    width: 270,
-    height: 80,
+    width: 290,
+    height: 90,
   },
-  { id: 6, src: "/zorang.png", alt: "Zorang", width: 130, height: 40 },
+  { id: 6, src: "/zorang.png", alt: "Zorang", width: 120, height: 30 },
   {
     id: 7,
     src: "/germanDrishty.png",
     alt: "German Drishty",
-    width: 130,
+    width: 120,
     height: 40,
   },
-  { id: 8, src: "/modishcard.png", alt: "Modish Card", width: 50, height: 20 },
+  { id: 8, src: "/modishcard.png", alt: "Modish Card", width: 55, height: 25 },
   {
     id: 9,
     src: "/onferenceTV.png",
     alt: "OnferenceTV",
-    width: 130,
-    height: 40,
+    width: 160,
+    height: 60,
   },
-  { id: 10, src: "/nftfn.png", alt: "NFTFN", width: 130, height: 40 },
+  { id: 10, src: "/nftfn.png", alt: "NFTFN", width: 100, height: 30 },
   { id: 11, src: "/eSource.png", alt: "eSource", width: 130, height: 40 },
-  { id: 12, src: "/etf.png", alt: "ETF", width: 130, height: 40 },
-  { id: 13, src: "/evm.png", alt: "EVM", width: 50, height: 20 },
-  { id: 14, src: "/nictp.png", alt: "NICTP", width: 130, height: 40 },
-  { id: 15, src: "/terablock.png", alt: "Terablock", width: 130, height: 40 },
-  { id: 16, src: "/cars.png", alt: "Cars", width: 130, height: 40 },
+  { id: 12, src: "/etf.png", alt: "ETF", width: 90, height: 20 },
+  { id: 13, src: "/evm.png", alt: "EVM", width: 40, height: 10 },
+  { id: 14, src: "/nictp.png", alt: "NICTP", width: 90, height: 20 },
+  { id: 15, src: "/terablock.png", alt: "Terablock", width: 120, height: 40 },
+  { id: 16, src: "/cars.png", alt: "Cars", width: 110, height: 25 },
   {
     id: 17,
     src: "/cryptoWeekly.png",
@@ -43,78 +43,65 @@ const logos = [
     width: 130,
     height: 40,
   },
-  { id: 18, src: "/crikverse.png", alt: "Crikverse", width: 130, height: 40 },
-  { id: 19, src: "/updeed.png", alt: "Updeed", width: 130, height: 40 },
+  { id: 18, src: "/crikverse.png", alt: "Crikverse", width: 190, height: 90 },
+  { id: 19, src: "/updeed.png", alt: "Updeed", width: 90, height: 25 },
 ];
 
 export default function SocialProofBar() {
   return (
-    <div className="relative w-full overflow-hidden pt-5 pb-20 animate-lift-fade-in motion-reduce:animate-fade-in [--offset:10px] [animation-delay:400ms] [animation-duration:1s] [animation-fill-mode:both]">
-      {/* Seamless scrolling container - duplicate logos 3 times for smooth infinite scroll */}
-      <div className="flex animate-infinite-scroll gap-12 whitespace-nowrap">
-        {/* First set */}
-        {logos.map((logo, index) => (
-          <div
-            key={`set1-${index}`}
-            className="flex items-center justify-center flex-shrink-0 transition-opacity duration-300 hover:opacity-100"
-          >
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              width={logo.width}
-              height={logo.height}
-              className="object-contain"
-            />
-          </div>
-        ))}
-
-        {/* Second set for seamless loop */}
-        {logos.map((logo, index) => (
-          <div
-            key={`set2-${index}`}
-            className="flex items-center justify-center flex-shrink-0 transition-opacity duration-300 hover:opacity-100"
-          >
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              width={logo.width}
-              height={logo.height}
-              className="max-h-12 w-auto object-contain"
-            />
-          </div>
-        ))}
-
-        {/* Third set for extra seamless effect */}
-        {logos.map((logo, index) => (
-          <div
-            key={`set3-${index}`}
-            className="flex items-center justify-center flex-shrink-0 transition-opacity duration-300 hover:opacity-100"
-          >
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              width={logo.width}
-              height={logo.height}
-              className="max-h-12 w-auto object-contain"
-            />
-          </div>
-        ))}
-      </div>
-
-      <style jsx>{`
-        @keyframes infinite-scroll {
-          0% {
+    <>
+      <style jsx global>{`
+        @keyframes infiniteScroll {
+          from {
             transform: translateX(0);
           }
-          100% {
-            transform: translateX(-33.333%);
+          to {
+            transform: translateX(-100%);
           }
         }
-
-        .animate-infinite-scroll {
-          animation: infinite-scroll 7s linear infinite;
+        .logo-track {
+          display: flex;
+          animation: infiniteScroll 40s linear infinite;
         }
       `}</style>
-    </div>
+      <div className="w-full overflow-hidden py-12">
+        <div className="flex">
+          {/* First Track */}
+          <div className="logo-track">
+            {logos.concat(logos).map((logo, index) => (
+              <div
+                key={`logo-${index}`}
+                className="flex items-center justify-center min-w-[200px] mx-2"
+              >
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={logo.width}
+                  height={logo.height}
+                  className="max-h-28  object-contain"
+                />
+              </div>
+            ))}
+          </div>
+          {/* Second Track*/}
+          <div className="logo-track">
+            {logos.concat(logos).map((logo, index) => (
+              <div
+                key={`logo-dup-${index}`}
+                className="flex items-center justify-center min-w-[200px] mx-2"
+              >
+                <Image
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={logo.width}
+                  height={logo.height}
+                  className="max-h-28 object-contain"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
