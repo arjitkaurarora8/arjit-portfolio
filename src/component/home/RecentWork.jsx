@@ -50,17 +50,17 @@ export default function RecentWork() {
             {/* overlays */}
             <div
               className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100
-transition-opacity duration-500 ease-in-out rounded-l-2xl"
+transition-opacity duration-500 ease-in-out rounded-r-2xl"
             ></div>
           </Link>
 
-          {/* Text positioned outside the scaled container */}
-          <div className="absolute bottom-6 left-7 z-30 opacity-0 group-hover:opacity-100 transition-all duration-700 transform translate-y-4 group-hover:translate-y-0 pointer-events-none">
+          {/* Text sliding from left side */}
+          <div className="absolute bottom-6 -left-9 z-30 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-8 group-hover:translate-x-18 pointer-events-none">
             <h3 className="text-white text-2xl font-bold leading-tight mb-1">
-              {projects[0].title}
+              {projects[1].title}
             </h3>
             <p className="text-white/90 text-base font-normal leading-tight">
-              {projects[0].subtitle}
+              {projects[1].subtitle}
             </p>
           </div>
         </div>
@@ -80,12 +80,12 @@ transition-opacity duration-500 ease-in-out rounded-l-2xl"
             {/* overlays */}
             <div
               className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100
-    transition-opacity duration-500 ease-in-out rounded-r-2xl"
+transition-opacity duration-500 ease-in-out rounded-r-2xl"
             ></div>
           </Link>
 
-          {/* Text positioned outside the scaled container */}
-          <div className="absolute bottom-6 -left-9 z-30 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0 pointer-events-none">
+          {/* Text sliding from left side */}
+          <div className="absolute bottom-6 -left-9 z-30 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-x-14 group-hover:translate-x-4 pointer-events-none">
             <h3 className="text-white text-2xl font-bold leading-tight mb-1">
               {projects[1].title}
             </h3>
