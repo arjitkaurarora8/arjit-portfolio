@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Button from "../ui/Button";
 import Link from "next/link";
@@ -55,7 +57,16 @@ function Navbar({ showLinks = true }) {
           </div>
         )}
 
-        <Button text="Book" size="sm" />
+        <Button
+          text="Book"
+          size="sm"
+          onClick={() =>
+            window.open(
+              "https://cal.com/arjit-kaur-arora-nk3ufj/introductioncall",
+              "_blank"
+            )
+          }
+        />
       </div>
     </nav>
   );
