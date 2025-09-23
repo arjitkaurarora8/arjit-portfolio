@@ -53,9 +53,9 @@ const CustomCursor = ({ isVisible, children, offset = { x: 10, y: 10 } }) => {
 
 export const ReadCaseStudyCursor = ({ isVisible }) => (
   <CustomCursor isVisible={isVisible}>
-    <div className="px-3 py-4 bg-white rounded-lg inline-flex justify-start items-end gap-1 shadow-lg">
+    <div className="px-3 py-4 bg-stone-900 rounded-lg inline-flex justify-start items-end gap-1 shadow-lg">
       <div className="flex flex-row gap-2">
-        <span className="justify-start text-stone-900 text-xs font-medium">
+        <span className="justify-start text-white text-xs font-medium">
           Read Case Study
         </span>
         <span>

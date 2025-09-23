@@ -1,4 +1,6 @@
 import React from "react";
+import { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
 
 export default function Button({
   text,
@@ -7,6 +9,13 @@ export default function Button({
   textClassName = "",
   ...props
 }) {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({ namespace: "introductioncall" });
+      cal("ui", { hideEventTypeDetails: false, layout: "month_view" });
+    })();
+  }, []);
+
   const sizeClasses = {
     // Small: Navbar button - responsive padding and text
     sm: "h-8 px-3 sm:px-5 text-sm sm:text-base",
@@ -19,16 +28,21 @@ export default function Button({
   };
 
   return (
-    <button
-      className={`
+    <>
+      <button
+        data-cal-namespace="introductioncall"
+        data-cal-link="arjit-kaur-arora-nk3ufj/introductioncall"
+        data-cal-config='{"layout":"month_view"}'
+        className={`
         rounded-lg bg-gradient-to-b from-gray-800 to-gray-950 text-stone-200 font-normal tracking-tight
         shadow-md transition-all duration-150 flex items-center justify-center cursor-pointer
         hover:ring-5 hover:ring-gray-300 active:scale-95 active:shadow-sm active:bg-gradient-to-b active:from-gray-900 active:to-black
         ${sizeClasses[size]} ${className}
       `}
-      {...props}
-    >
-      <span className={textClassName}>{text}</span>
-    </button>
+        {...props}
+      >
+        <span className={textClassName}>{text}</span>
+      </button>
+    </>
   );
 }

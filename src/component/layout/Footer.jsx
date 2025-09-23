@@ -74,7 +74,6 @@ const EmailHandler = ({ email = "arjitkaurarora8@gmail.com", children }) => {
     if (detectedProvider) {
       openEmailService(detectedProvider);
     } else {
-      // Show choice modal if can't detect
       setShowEmailChoice(true);
     }
   };
@@ -140,12 +139,22 @@ const EmailHandler = ({ email = "arjitkaurarora8@gmail.com", children }) => {
 
 const socials = [
   { name: "X", href: "https://x.com/arjitkaurarora" },
-  { name: "Instagram", href: "https://www.instagram.com/waspcassini/" },
+  { name: "Instagram", href: "https://www.instagram.com/architect.arjit/" },
   { name: "Linkedin", href: "https://www.linkedin.com/in/arjitkaurarora/" },
   { name: "Behance", href: "https://www.behance.net/arjitkaurarora" },
 ];
 
 function Footer() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("7018537372"); // number copy
+    setCopied(true);
+
+    // Reset back after short delay
+    setTimeout(() => setCopied(false), 200);
+  };
+
   const handleEmailClick = (e) => {
     e.preventDefault();
 
@@ -193,12 +202,6 @@ function Footer() {
           size="lg"
           className="my-6 sm:my-10"
           textClassName="px-8 sm:px-20" // responsive padding
-          onClick={() =>
-            window.open(
-              "https://cal.com/arjit-kaur-arora-nk3ufj/introductioncall",
-              "_blank"
-            )
-          }
         />
       </div>
 
@@ -212,7 +215,12 @@ function Footer() {
             </span>
 
             <ul className="space-y-1 text-sm">
-              <li className="flex flex-row gap-2 items-center">
+              <a
+                href="https://www.instagram.com/waspcassini/"
+                className="flex flex-row gap-2 items-center"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="text-gray-900 hover:text-gray-600 text-base">
                   Travel
                 </span>
@@ -223,8 +231,13 @@ function Footer() {
                     width={23}
                   />
                 </span>
-              </li>
-              <li className="flex flex-row gap-2 items-center">
+              </a>
+              <a
+                href="https://tinyurl.com/YourLocalGuide"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row gap-2 items-center"
+              >
                 <span className="text-gray-900 hover:text-gray-600 text-base">
                   Your Local Guide
                 </span>
@@ -235,7 +248,7 @@ function Footer() {
                     width={20}
                   />
                 </span>
-              </li>
+              </a>
               <li className="text-gray-400 font-inter pt-4 sm:pt-6 text-base">
                 © 2025 <span>Arjit Kaur Arora</span>
               </li>
@@ -251,13 +264,36 @@ function Footer() {
               </span>
 
               <ul className="space-y-1 text-sm text-left sm:text-right">
-                <EmailHandler email="arjitkaurarora8@gmail.com">
-                  arjitkaurarora8@gmail.com
-                </EmailHandler>
+                <li className="flex items-center gap-1 group cursor-pointer">
+                  <EmailHandler email="arjitkaurarora8@gmail.com">
+                    arjitkaurarora8@gmail.com
+                  </EmailHandler>
+                  <img
+                    src="/linkarrow.png"
+                    alt="External link"
+                    className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
+                  />
+                </li>
 
-                <li className="text-base transition-all duration-300">
-                  <span className="text-gray-400">(+91)</span>
-                  <span className="text-gray-900">70185-37372</span>
+                <li className="flex items-center gap-1 group cursor-pointer justify-end">
+                  <div className="text-base transition-all duration-300">
+                    <span className="text-gray-400">(+91)</span>
+                    <span className="text-gray-900">70185-37372</span>
+                  </div>
+
+                  <button
+                    onClick={handleCopy}
+                    className="relative transition-transform duration-150 active:scale-90"
+                  >
+                    <img src="./copy.svg" alt="Copy img" className="w-5 h-5" />
+
+                    {/* Copied Tooltip */}
+                    {copied && (
+                      <span className="absolute top-5 right-0 text-sm text-stone-300 px-2 py-0.5 animate-fadeInOut">
+                        copied
+                      </span>
+                    )}
+                  </button>
                 </li>
 
                 <li className="text-gray-400 font-normal text-base pt-4 sm:pt-6">
@@ -291,6 +327,15 @@ function Footer() {
                 </a>
               ))}
             </div>
+
+            <video
+              src="/tv-background.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-48 h-auto rounded-lg"
+            ></video>
           </div>
         </div>
       </div>

@@ -57,16 +57,7 @@ function Navbar({ showLinks = true }) {
           </div>
         )}
 
-        <Button
-          text="Book"
-          size="sm"
-          onClick={() =>
-            window.open(
-              "https://cal.com/arjit-kaur-arora-nk3ufj/introductioncall",
-              "_blank"
-            )
-          }
-        />
+        <Button text="Book" size="sm" />
       </div>
     </nav>
   );

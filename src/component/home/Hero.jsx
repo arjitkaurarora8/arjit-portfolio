@@ -27,16 +27,7 @@ function Hero() {
         </div>
       </div>
       <div className="flex my-8 sm:my-10 items-center gap-3 animate-lift-fade-in motion-reduce:animate-fade-in [--offset:10px] [animation-delay:300ms] [animation-duration:1s] [animation-fill-mode:both]">
-        <Button
-          text="Book a call"
-          size="md"
-          onClick={() =>
-            window.open(
-              "https://cal.com/arjit-kaur-arora-nk3ufj/introductioncall",
-              "_blank"
-            )
-          }
-        />
+        <Button text="Book a call" size="md" />
         <TelegramContactButton
           text="Chat"
           size="md"
