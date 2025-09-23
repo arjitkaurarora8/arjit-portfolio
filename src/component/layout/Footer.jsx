@@ -94,7 +94,7 @@ const EmailHandler = ({ email = "arjitkaurarora8@gmail.com", children }) => {
     <>
       <button
         onClick={detectAndOpenEmail}
-        className="text-left text-base text-amber-800 hover:text-amber-900 transition-all duration-300 ease-out cursor-pointer bg-transparent border-none p-0 font-inherit"
+        className="text-left text-base text-gray-900 hover:text-gray-600 transition-all duration-300 ease-out cursor-pointer bg-transparent border-none p-0 font-inherit"
       >
         {children || email}
       </button>
@@ -178,21 +178,21 @@ function Footer() {
   };
 
   return (
-    // <div className="p-6 bg-white flex flex-col items-center gap-28">
     <div className="p-4 sm:p-6 bg-white border-t border-gray-200">
-      {/* Hero Text */}{" "}
-      <div className="text-left">
-        <h2 className="text-gray-900 text-6xl font-normal font-inter uppercase leading-[60px] max-w-md">
+      {/* Hero Text */}
+      <div className="text-left sm:text-left">
+        <h2 className="text-gray-900 text-4xl sm:text-6xl font-normal font-inter uppercase leading-tight sm:leading-[60px] max-w-xs sm:max-w-md">
           Ready when <br /> you are.
         </h2>
       </div>
+
       {/* CTA Button */}
       <div className="flex justify-center">
         <Button
           text="Book a call"
           size="lg"
-          className="my-10"
-          textClassName="px-20" // extra padding on text only
+          className="my-6 sm:my-10"
+          textClassName="px-8 sm:px-20" // responsive padding
           onClick={() =>
             window.open(
               "https://cal.com/arjit-kaur-arora-nk3ufj/introductioncall",
@@ -201,47 +201,97 @@ function Footer() {
           }
         />
       </div>
-      {/* Footer Bottom Section */}
-      <div className="w-full pt-20">
-        <div className="flex items-start justify-end gap-16">
-          {/* Contact */}
-          <div className="flex flex-col items-end gap-2">
-            <span className="text-gray-500 text-base font-inter">Contact</span>
-            <ul className="space-y-2 text-sm text-right">
-              <EmailHandler email="arjitkaurarora8@gmail.com">
-                arjitkaurarora8@gmail.com
-              </EmailHandler>
 
-              <li className="text-gray-900 text-base hover:text-gray-600 transition-all duration-300">
-                (+91) 70185-37372
+      {/* Footer Bottom Section */}
+      <div className="w-full pt-8 sm:pt-20">
+        <div className="flex flex-col sm:flex-row justify-between gap-8 sm:gap-0">
+          {/* Left Section - Sharing Experiences */}
+          <div className="flex flex-col gap-2 order-1 sm:order-1">
+            <span className="text-gray-500 text-base font-inter">
+              Sharing Experiences
+            </span>
+
+            <ul className="space-y-1 text-sm">
+              <li className="flex flex-row gap-2 items-center">
+                <span className="text-gray-900 hover:text-gray-600 text-base">
+                  Travel
+                </span>
+                <span>
+                  <img
+                    src="./streamline-plump-color_world.svg"
+                    alt="streamline-plump"
+                    width={23}
+                  />
+                </span>
+              </li>
+              <li className="flex flex-row gap-2 items-center">
+                <span className="text-gray-900 hover:text-gray-600 text-base">
+                  Your Local Guide
+                </span>
+                <span>
+                  <img
+                    src="ri_guide-line.svg"
+                    alt="arrow-guide-line"
+                    width={20}
+                  />
+                </span>
+              </li>
+              <li className="text-gray-400 font-inter pt-4 sm:pt-6 text-base">
+                © 2025 <span>Arjit Kaur Arora</span>
               </li>
             </ul>
           </div>
 
-          <div className="flex flex-col items-end gap-2">
-            <span className="text-gray-500 text-base font-inter">Socials</span>
-            {socials.map((social, idx) => (
-              <a
-                key={idx}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 group cursor-pointer"
-              >
-                <span className="text-gray-900 text-base group-hover:text-gray-600 transition-transform duration-300">
-                  {social.name}
-                </span>
-                <img
-                  src="/linkarrow.png"
-                  alt="External link"
-                  className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
-                />
-              </a>
-            ))}
+          {/* Right Section - Contact & Socials */}
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-end gap-8 sm:gap-16 order-2 sm:order-2">
+            {/* Contact */}
+            <div className="flex flex-col items-start sm:items-end gap-2">
+              <span className="text-gray-500 text-base font-inter">
+                Contact
+              </span>
+
+              <ul className="space-y-1 text-sm text-left sm:text-right">
+                <EmailHandler email="arjitkaurarora8@gmail.com">
+                  arjitkaurarora8@gmail.com
+                </EmailHandler>
+
+                <li className="text-base transition-all duration-300">
+                  <span className="text-gray-400">(+91)</span>
+                  <span className="text-gray-900">70185-37372</span>
+                </li>
+
+                <li className="text-gray-400 font-normal text-base pt-4 sm:pt-6">
+                  Made in IN<span className="font-medium">(DIA)</span>TER{" "}
+                  <span>💌</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Socials */}
+            <div className="flex flex-col items-start sm:items-end gap-1">
+              <span className="text-gray-500 text-base font-inter">
+                Socials
+              </span>
+              {socials.map((social, idx) => (
+                <a
+                  key={idx}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 group cursor-pointer"
+                >
+                  <span className="text-gray-900 text-base group-hover:text-gray-600 transition-transform duration-300">
+                    {social.name}
+                  </span>
+                  <img
+                    src="/linkarrow.png"
+                    alt="External link"
+                    className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
+                  />
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="text-gray-500 text-sm font-inter">
-          © 2025 <span className="text-base">Arjit Kaur Arora</span>
         </div>
       </div>
     </div>
