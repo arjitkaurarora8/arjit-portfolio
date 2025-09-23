@@ -10,14 +10,13 @@ function Hero() {
     <section className="pt-12 sm:pt-25 px-4 sm:px-6 bg-white">
       <div className="flex flex-col">
         <h1 className="animate-lift-fade-in motion-reduce:animate-fade-in [--offset:10px] [animation-delay:100ms] [animation-duration:0.5s] [animation-fill-mode:both] text-2xl md:text-4xl font-semibold md:leading-14">
-          <span className="text-gray-400">
-            Designing seamless products with best{" "}
-            <br className="hidden sm:block" />
-          </span>
-          <span className="text-gray-900">User Experiences </span>
-          <span className="text-gray-400">for </span>
-          <span className="text-gray-900">Web & Mobile</span>
-          <span className="text-gray-400">.</span>
+          <span className="text-gray-400">Transforming </span>
+          <span className="text-gray-900">user needs </span>
+          <span className="text-gray-400">into </span>
+          <span className="text-gray-900">intuitive experiences </span>
+          <br className="hidden sm:block" />
+          <span className="text-gray-400">that </span>
+          <span className="text-gray-900">drive business growth</span>
         </h1>
 
         <div className="w-full sm:w-[539px] flex mt-4 sm:mt-0">

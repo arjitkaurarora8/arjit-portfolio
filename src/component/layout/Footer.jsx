@@ -1,7 +1,142 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+
 import Button from "../ui/Button";
+import {
+  FaGoogle,
+  FaYahoo,
+  FaMicrosoft,
+  FaApple,
+  FaEnvelope,
+} from "react-icons/fa";
+
+// Email handler component with user choice modal
+const EmailHandler = ({ email = "arjitkaurarora8@gmail.com", children }) => {
+  const [showEmailChoice, setShowEmailChoice] = useState(false);
+
+  const emailServices = {
+    gmail: {
+      name: "Gmail",
+      url: `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`,
+      icon: <FaGoogle className="text-red-500 text-xl" />,
+    },
+    yahoo: {
+      name: "Yahoo Mail",
+      url: `https://compose.mail.yahoo.com/?to=${email}`,
+      icon: <FaYahoo className="text-purple-600 text-xl" />,
+    },
+    outlook: {
+      name: "Outlook",
+      url: `https://outlook.live.com/mail/0/deeplink/compose?to=${email}`,
+      icon: <FaMicrosoft className="text-blue-600 text-xl" />,
+    },
+    icloud: {
+      name: "iCloud Mail",
+      url: `https://www.icloud.com/mail/`,
+      icon: <FaApple className="text-gray-700 text-xl" />,
+    },
+    aol: {
+      name: "AOL Mail",
+      url: `https://mail.aol.com/webmail-std/en-us/suite`,
+      icon: <FaEnvelope className="text-red-600 text-xl" />,
+    },
+  };
+
+  const detectAndOpenEmail = () => {
+    const userAgent = navigator.userAgent.toLowerCase();
+    const currentUrl = window.location.href.toLowerCase();
+
+    // Auto-detection logic
+    let detectedProvider = null;
+
+    if (currentUrl.includes("gmail") || userAgent.includes("chrome")) {
+      detectedProvider = "gmail";
+    } else if (currentUrl.includes("yahoo")) {
+      detectedProvider = "yahoo";
+    } else if (
+      currentUrl.includes("outlook") ||
+      currentUrl.includes("hotmail")
+    ) {
+      detectedProvider = "outlook";
+    } else if (userAgent.includes("safari") && userAgent.includes("mac")) {
+      detectedProvider = "icloud";
+    } else if (currentUrl.includes("aol")) {
+      detectedProvider = "aol";
+    }
+
+    // Check saved preference
+    const savedProvider = localStorage.getItem("preferredEmailProvider");
+    if (savedProvider && emailServices[savedProvider]) {
+      detectedProvider = savedProvider;
+    }
+
+    if (detectedProvider) {
+      openEmailService(detectedProvider);
+    } else {
+      // Show choice modal if can't detect
+      setShowEmailChoice(true);
+    }
+  };
+
+  const openEmailService = (provider) => {
+    try {
+      window.open(emailServices[provider].url, "_blank");
+      localStorage.setItem("preferredEmailProvider", provider);
+      setShowEmailChoice(false);
+    } catch (error) {
+      // Fallback to mailto
+      window.location.href = `mailto:${email}`;
+    }
+  };
+
+  return (
+    <>
+      <button
+        onClick={detectAndOpenEmail}
+        className="text-left text-base text-amber-800 hover:text-amber-900 transition-all duration-300 ease-out cursor-pointer bg-transparent border-none p-0 font-inherit"
+      >
+        {children || email}
+      </button>
+
+      {/* Email Choice Modal */}
+      {showEmailChoice && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-2xl p-6 max-w-md w-full mx-4">
+            <h3 className="text-xl font-semibold mb-4 text-center">
+              Choose your email service
+            </h3>
+            <div className="space-y-3">
+              {Object.entries(emailServices).map(([key, service]) => (
+                <button
+                  key={key}
+                  onClick={() => openEmailService(key)}
+                  className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors text-left"
+                >
+                  <span className="text-2xl">{service.icon}</span>
+                  <span className="font-medium">{service.name}</span>
+                </button>
+              ))}
+              <button
+                onClick={() => (window.location.href = `mailto:${email}`)}
+                className="w-full flex items-center gap-3 p-3 rounded-lg hover:bg-gray-100 transition-colors text-left"
+              >
+                <span className="text-2xl">📧</span>
+                <span className="font-medium">Default Mail App</span>
+              </button>
+            </div>
+            <button
+              onClick={() => setShowEmailChoice(false)}
+              className="mt-4 w-full py-2 text-gray-500 hover:text-gray-700 transition-colors"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
 
 const socials = [
   { name: "X", href: "https://x.com/arjitkaurarora" },
@@ -11,6 +146,37 @@ const socials = [
 ];
 
 function Footer() {
+  const handleEmailClick = (e) => {
+    e.preventDefault();
+
+    const email = "arjitkaurarora8@gmail.com";
+    const subject = "";
+    const body = "";
+
+    // Method: Opening Gmail directly if available
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Method 2: Standard mailto as fallback
+    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Checking if user likely uses Gmail
+    const userAgent = navigator.userAgent.toLowerCase();
+    const isGoogleUser =
+      userAgent.includes("chrome") || window.location.href.includes("gmail");
+
+    if (isGoogleUser) {
+      // Try Gmail web interface first
+      window.open(gmailUrl, "_blank");
+    } else {
+      // Use standard mailto
+      window.location.href = mailtoUrl;
+    }
+  };
+
   return (
     // <div className="p-6 bg-white flex flex-col items-center gap-28">
     <div className="p-4 sm:p-6 bg-white border-t border-gray-200">
@@ -42,40 +208,15 @@ function Footer() {
           <div className="flex flex-col items-end gap-2">
             <span className="text-gray-500 text-base font-inter">Contact</span>
             <ul className="space-y-2 text-sm text-right">
-              <li>
-                <a
-                  href="mailto:arjitkaurarora8@gmail.com"
-                  className="text-gray-900 text-base hover:text-gray-600 transition-all duration-300"
-                >
-                  arjitkaurarora8@gmail.com
-                </a>
-              </li>
+              <EmailHandler email="arjitkaurarora8@gmail.com">
+                arjitkaurarora8@gmail.com
+              </EmailHandler>
+
               <li className="text-gray-900 text-base hover:text-gray-600 transition-all duration-300">
                 (+91) 70185-37372
               </li>
             </ul>
           </div>
-
-          {/* Socials */}
-          {/* <div className="flex flex-col items-end gap-2">
-            <span className="text-gray-500 text-base font-inter">Socials</span>
-            {["X", "Instagram", "Linkedin", "Behance"].map((item, idx) => (
-              <a
-                key={idx}
-                href="#"
-                className="flex items-center gap-1 group cursor-pointer"
-              >
-                <span className="text-gray-900 text-base group-hover:text-gray-600 transition-transform duration-300">
-                  {item}
-                </span>
-                <img
-                  src="/linkarrow.png"
-                  alt="External link"
-                  className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
-                />
-              </a>
-            ))}
-          </div> */}
 
           <div className="flex flex-col items-end gap-2">
             <span className="text-gray-500 text-base font-inter">Socials</span>

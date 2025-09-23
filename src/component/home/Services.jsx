@@ -73,8 +73,8 @@ const Card = ({ title, description, price, features, dark, hasSprintInfo }) => (
       onClick={() =>
         window.open(
           dark
-            ? "https://topmate.io/arjitkaurarora"
-            : "https://cal.com/arjit-kaur-arora-nk3ufj/introductioncall",
+            ? "https://cal.com/arjit-kaur-arora-nk3ufj/introductioncall"
+            : "https://topmate.io/arjitkaurarora",
           "_blank"
         )
       }

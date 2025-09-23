@@ -7,9 +7,6 @@ function Pitch() {
         {/* Red Wax Seal */}
         <div className="absolute -top-2 right-10 w-20 h-20">
           <img src="/seal.png" alt="" />
-          {/* <div className="w-full h-full bg-red-600 rounded-full flex items-center justify-center shadow-lg">
-            <span className="text-white text-2xl">🏷️</span>
-          </div> */}
         </div>
 
         <div className="space-y-8">
