@@ -166,8 +166,8 @@ function About() {
       id="about"
       className="px-4 sm:px-6 pt-8 md:pt-16 lg:pt-20 scroll-mt-24 "
     >
-      <div className="bg-gradient-to-b from-amber-800 via-amber-800/50 to-transparent max-w-[1440px] mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center bg-white rounded-2xl px-6 md:px-10 pt-10 lg:pt-12 pb-8 lg:pb-10 overflow-hidden max-w-[1440px] mx-auto">
+      <div className="bg-gradient-to-b from-amber-800 via-amber-800/50 to-transparent max-w-full mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 bg-white items-center rounded-2xl px-6 md:px-10 pt-10 lg:pt-12 pb-8 lg:pb-10 overflow-hidden max-w-full mx-auto">
           {/* Left Content */}
           <div className="flex flex-col justify-start items-start">
             {/* Heading */}
@@ -232,7 +232,7 @@ function About() {
           </div>
 
           {/* Right Image */}
-          <div className="flex justify-start items-center">
+          <div className="flex justify-end items-center">
             <img
               src="/arjit.png"
               alt="Arjit"

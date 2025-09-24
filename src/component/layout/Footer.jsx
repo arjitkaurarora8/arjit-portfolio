@@ -275,7 +275,7 @@ function Footer() {
                   />
                 </li>
 
-                <li className="flex items-center gap-1 group cursor-pointer justify-end">
+                <li className="flex items-center gap-1 group cursor-pointer justify-start md:justify-end">
                   <div className="text-base transition-all duration-300">
                     <span className="text-gray-400">(+91)</span>
                     <span className="text-gray-900">70185-37372</span>
@@ -304,38 +304,40 @@ function Footer() {
             </div>
 
             {/* Socials */}
-            <div className="flex flex-col items-start sm:items-end gap-1">
-              <span className="text-gray-500 text-base font-inter">
-                Socials
-              </span>
-              {socials.map((social, idx) => (
-                <a
-                  key={idx}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 group cursor-pointer"
-                >
-                  <span className="text-gray-900 text-base group-hover:text-gray-600 transition-transform duration-300">
-                    {social.name}
-                  </span>
-                  <img
-                    src="/linkarrow.png"
-                    alt="External link"
-                    className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
-                  />
-                </a>
-              ))}
-            </div>
+            <div className=" flex flex-row justify-between gap-10 md:gap-16">
+              <div className="flex flex-col items-start sm:items-end gap-1">
+                <span className="text-gray-500 text-base font-inter">
+                  Socials
+                </span>
+                {socials.map((social, idx) => (
+                  <a
+                    key={idx}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 group cursor-pointer"
+                  >
+                    <span className="text-gray-900 text-base group-hover:text-gray-600 transition-transform duration-300">
+                      {social.name}
+                    </span>
+                    <img
+                      src="/linkarrow.png"
+                      alt="External link"
+                      className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
+                    />
+                  </a>
+                ))}
+              </div>
 
-            <video
-              src="/tv-background.mp4"
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-48 h-auto rounded-lg"
-            ></video>
+              <video
+                src="/tv-background.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-48 h-auto rounded-lg"
+              ></video>
+            </div>
           </div>
         </div>
       </div>
