@@ -200,14 +200,14 @@ export default function RecentWork() {
         {/* Right Image */}
         <Link
           href="/project"
-          className="flex-1 group relative transition-all duration-600 ease-in-out sm:hover:flex-[1.3] overflow-hidden h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"
+          className="flex-1 group relative transition-all duration-600 ease-in-out sm:hover:flex-[1.4] overflow-hidden h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
           style={{ cursor: "none" }}
         >
           <div
-            className="w-full h-full bg-no-repeat bg-cover bg-center sm:bg-right-top transition-transform duration-600 ease-in-out scale-105 group-hover:scale-100 min-h-[300px]"
-            style={{ backgroundImage: "url('/work_2.png')" }}
+            className="w-full h-full bg-no-repeat sm:bg-top-right bg-cover transition-transform duration-600 ease-in-out scale-105 group-hover:scale-100 min-h-[300px]"
+            style={{ backgroundImage: "url('/image (2).png')" }}
           ></div>
           {/* Background overlay on hover - darker for better text visibility */}
           <div

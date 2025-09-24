@@ -53,17 +53,19 @@ const CustomCursor = ({ isVisible, children, offset = { x: 10, y: 10 } }) => {
 
 export const ReadCaseStudyCursor = ({ isVisible }) => (
   <CustomCursor isVisible={isVisible}>
-    <div className="px-3 py-4 bg-stone-900 rounded-lg inline-flex justify-start items-end gap-1 shadow-lg">
-      <div className="flex flex-row gap-2">
-        <span className="justify-start text-white text-xs font-medium">
-          Read Case Study
-        </span>
-        <span>
-          <img src="./readcaseCursorArrow.svg" alt="Read case cursor arrow" />
-        </span>
-      </div>
+    <div className="sm:block">
+      <div className="px-3 py-4 bg-stone-900 rounded-lg inline-flex justify-start items-end gap-1 shadow-lg">
+        <div className="flex flex-row gap-1 md:gap-2">
+          <span className="justify-start text-white text-xs font-medium">
+            Read Case Study
+          </span>
+          <span>
+            <img src="./readCaseCursorArrow.svg" alt="Read case cursor arrow" />
+          </span>
+        </div>
 
-      <div className="w-0 h-5 origin-top-left -rotate-90 bg-stone-900" />
+        <div className="w-0 h-3 md:h-5 origin-top-left -rotate-90 bg-stone-900" />
+      </div>
     </div>
   </CustomCursor>
 );

@@ -63,7 +63,7 @@ export default function OtherWork() {
             href="/project"
             className="group relative overflow-hidden rounded-2xl shadow-md"
           >
-            <div className="relative w-full h-64 md:h-48 lg:h-full overflow-hidden">
+            <div className="relative w-full h-64 md:h-full overflow-hidden">
               <Image
                 src={projects[0].src}
                 alt={projects[0].alt}
