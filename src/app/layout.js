@@ -26,38 +26,46 @@ export const metadata = {
     "product lead, product manager, UX, user experience, product strategy, portfolio",
   authors: [{ name: "Arjit Kaur Arora" }],
   creator: "Arjit Kaur Arora",
-  robots: "index, follow",
-
-  // Add Open Graph metadata
-  openGraph: {
-    title: "Hi, I'm Arjit.",
-    description: "product lead",
-    url: "https://www.arjitkaurarora.com/",
-    siteName: "Arjit Kaur Arora",
-    images: [
-      {
-        url: "https://www.arjitkaurarora.com/OG.png",
-        width: 1200,
-        height: 630,
-        alt: "Hi, I'm Arjit - Product Lead",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-
-  // Add Twitter Card metadata
-  twitter: {
-    card: "summary_large_image",
-    title: "Hi, I'm Arjit.",
-    description: "product lead",
-    images: ["https://www.arjitkaurarora.com/OG.png"],
-  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Arjit Kaur Arora - Product Lead</title>
+        <meta
+          name="description"
+          content="Portfolio of Arjit Kaur Arora, Product Lead specializing in product strategy, user experience, and team leadership."
+        />
+        <meta
+          name="keywords"
+          content="arjit, kaur, arora, portfolio, ux, ui, design"
+        />
+        <link rel="canonical" href="https://www.arjitkaurarora.com/" />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Arjit Kaur Arora - Product Lead" />
+        <meta
+          property="og:description"
+          content="Portfolio of Arjit Kaur Arora, Product Lead specializing in product strategy, user experience, and team leadership."
+        />
+        <meta property="og:url" content="hhttps://www.arjitkaurarora.com/" />
+        <meta
+          property="og:image"
+          content="https://www.arjitkaurarora.com/og.png"
+        />
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Arjit Kaur Arora - Product Lead" />
+        <meta
+          name="twitter:description"
+          content="Portfolio of Arjit Kaur Arora, Product Lead specializing in product strategy, user experience, and team leadership."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.arjitkaurarora.com/og.png"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased mx-2 md:mx-10 lg:mx-30`}
       >
