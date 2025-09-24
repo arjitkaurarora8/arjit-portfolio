@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="hhttps://www.arjitkaurarora.com/" />
         <meta
           property="og:image"
-          content="https://www.arjitkaurarora.com/og.png"
+          content="https://www.arjitkaurarora.com/arjit-og.png"
         />
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           name="twitter:image"
-          content="https://www.arjitkaurarora.com/og.png"
+          content="https://www.arjitkaurarora.com/arjit-og.png"
         />
       </head>
       <body
