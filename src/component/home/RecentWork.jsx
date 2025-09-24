@@ -200,7 +200,7 @@ export default function RecentWork() {
         {/* Right Image */}
         <Link
           href="/project"
-          className="flex-1 group relative transition-all duration-600 ease-in-out sm:hover:flex-[1.4] overflow-hidden h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"
+          className="flex-1 group relative transition-all duration-600 ease-in-out sm:hover:flex-[1.35] overflow-hidden h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
           style={{ cursor: "none" }}
