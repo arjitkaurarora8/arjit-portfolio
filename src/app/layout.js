@@ -27,6 +27,32 @@ export const metadata = {
   authors: [{ name: "Arjit Kaur Arora" }],
   creator: "Arjit Kaur Arora",
   robots: "index, follow",
+
+  // Add Open Graph metadata
+  openGraph: {
+    title: "Hi, I'm Arjit.",
+    description: "product lead",
+    url: "https://www.arjitkaurarora.com/",
+    siteName: "Arjit Kaur Arora",
+    images: [
+      {
+        url: "https://www.arjitkaurarora.com/OG.png",
+        width: 1200,
+        height: 630,
+        alt: "Hi, I'm Arjit - Product Lead",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  // Add Twitter Card metadata
+  twitter: {
+    card: "summary_large_image",
+    title: "Hi, I'm Arjit.",
+    description: "product lead",
+    images: ["https://www.arjitkaurarora.com/OG.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
