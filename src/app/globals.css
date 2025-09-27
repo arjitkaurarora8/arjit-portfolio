@@ -71,3 +71,14 @@ html {
     opacity: 1;
   }
 }
+
+/* Responsive Background Images for RecentWork Component */
+.bg-work2-mobile {
+  background-image: url("/work-2-md.png");
+}
+
+@media (min-width: 768px) {
+  .bg-work2-desktop {
+    background-image: url("/work2.png");
+  }
+}

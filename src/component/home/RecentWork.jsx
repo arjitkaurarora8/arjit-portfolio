@@ -47,13 +47,13 @@ export default function RecentWork() {
         {/* Left Image */}
         <Link
           href="/project"
-          className="flex-1 group relative transition-all duration-600 ease-in-out sm:hover:flex-[1.3] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] overflow-hidden rounded-2xl sm:rounded-l-2xl sm:rounded-r-none"
+          className="flex-1 group relative transition-all duration-600 ease-in-out sm:hover:flex-[1.3] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:[660px] overflow-hidden rounded-2xl sm:rounded-l-2xl sm:rounded-r-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
           style={{ cursor: "none" }}
         >
           <div
-            className="w-full h-full bg-no-repeat bg-cover bg-center sm:bg-left-top min-h-[300px]"
+            className="w-full h-full bg-no-repeat bg-cover bg-left sm:bg-left-top min-h-[300px]"
             style={{ backgroundImage: "url('/work1.jpg')" }}
           ></div>
 
@@ -74,14 +74,13 @@ export default function RecentWork() {
         {/* Right Image */}
         <Link
           href="/project"
-          className="flex-1 group relative transition-all duration-600 ease-in-out sm:hover:flex-[1.35] overflow-hidden h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"
+          className="flex-1 group relative transition-all duration-600 ease-in-out sm:hover:flex-[1.35] lg:hover:flex-[1.3] overflow-hidden h-[300px] sm:h-[400px] md:h-[500px]  xl:h-[600px] 2xl:[660px] rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
           style={{ cursor: "none" }}
         >
           <div
-            className="w-full h-full bg-no-repeat sm:bg-top-right bg-cover min-h-[300px]"
-            style={{ backgroundImage: "url('/image (2).png')" }}
+            className="w-full h-full bg-no-repeat sm:bg-top-right bg-cover min-h-[300px] bg-work2-mobile md:bg-work2-desktop"
           ></div>
 
           {/* Background overlay on hover - darker for better text visibility */}
