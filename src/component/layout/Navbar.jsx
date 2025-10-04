@@ -57,7 +57,7 @@ function Navbar({ showLinks = true }) {
           </div>
         )}
 
-        <Button text="Book" size="sm" />
+        <Button text="Book 1:1 Strategy Session" size="sm" />
       </div>
     </nav>
   );

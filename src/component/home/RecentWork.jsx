@@ -9,14 +9,14 @@ export default function RecentWork() {
   const projects = [
     {
       id: 1,
-      src: "/work1.png",
+      // src: "/work_1.png",
       alt: "Work 1",
       title: "TradeProbe",
       subtitle: "WebApp & Mobile Design",
     },
     {
       id: 2,
-      src: "/work2.png",
+      src: "/work_2.png",
       alt: "Work 2",
       title: "TradeProbe",
       subtitle: "WebApp & Mobile Design",
@@ -30,7 +30,7 @@ export default function RecentWork() {
     >
       <div className="flex flex-col items-center sm:items-end">
         <h2 className="text-stone-900 text-2xl sm:text-3xl font-semibold leading-9">
-          Recent Work
+          Detailed Case Studies
         </h2>
         <p className="pt-2 sm:pt-4 flex text-center sm:text-right text-neutral-500 text-sm sm:text-base font-normal leading-snug tracking-tight max-w-md sm:max-w-none">
           Every product is designed - visually and how it works.{" "}
@@ -43,18 +43,20 @@ export default function RecentWork() {
       {/* Custom Cursor */}
       <ReadCaseStudyCursor isVisible={isHovering} />
 
-      <div className="flex flex-col sm:flex-row w-full pt-6 gap-4 sm:gap-0">
+      {/* <div className="project-cards-wrapper w-full pt-6"> */}
+      <div className="flex flex-col sm:flex-row w-full gap-4 sm:gap-0">
         {/* Left Image */}
         <Link
           href="/project"
-          className="flex-1 group relative transition-all duration-600 ease-in-out sm:hover:flex-[1.3] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:[660px] overflow-hidden rounded-2xl sm:rounded-l-2xl sm:rounded-r-none"
+          className="flex-1 border border-r-0 border-emerald-700 group relative transition-all duration-600 ease-in-out sm:hover:flex-[1.3] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:[660px] overflow-hidden rounded-2xl sm:rounded-l-2xl sm:rounded-r-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
           style={{ cursor: "none" }}
         >
           <div
             className="w-full h-full bg-no-repeat bg-cover bg-left sm:bg-left-top min-h-[300px]"
-            style={{ backgroundImage: "url('/work1.jpg')" }}
+            // style={{ backgroundImage: "url('/work1.jpg')" }}
+            style={{ backgroundImage: "url('/work_1.png')" }}
           ></div>
 
           {/* Background overlay on hover - darker for better text visibility */}
@@ -74,13 +76,16 @@ export default function RecentWork() {
         {/* Right Image */}
         <Link
           href="/project"
-          className="flex-1 group relative transition-all duration-600 ease-in-out sm:hover:flex-[1.35] lg:hover:flex-[1.3] overflow-hidden h-[300px] sm:h-[400px] md:h-[500px]  xl:h-[600px] 2xl:[660px] rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"
+          className="flex-1 group relative border border-l-0 border-emerald-700 transition-all duration-600 ease-in-out sm:hover:flex-[1.35] lg:hover:flex-[1.3] overflow-hidden h-[300px] sm:h-[400px] md:h-[500px]  xl:h-[600px] 2xl:[660px] rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
           style={{ cursor: "none" }}
         >
+          {/* <div className="w-full h-full bg-no-repeat sm:bg-top-right bg-cover min-h-[300px] bg-work2-mobile md:bg-work2-desktop"></div> */}
           <div
-            className="w-full h-full bg-no-repeat sm:bg-top-right bg-cover min-h-[300px] bg-work2-mobile md:bg-work2-desktop"
+            className="w-full h-full bg-no-repeat bg-cover bg-left sm:bg-left-top min-h-[300px]"
+            // style={{ backgroundImage: "url('/work_1.png')" }}
+            style={{ backgroundImage: "url('/work_2.png')" }}
           ></div>
 
           {/* Background overlay on hover - darker for better text visibility */}
@@ -97,6 +102,7 @@ export default function RecentWork() {
           </div>
         </Link>
       </div>
+      {/* </div> */}
     </section>
   );
 }

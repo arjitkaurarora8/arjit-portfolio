@@ -43,8 +43,9 @@ const logos = [
     width: 130,
     height: 40,
   },
-  { id: 18, src: "/crikverse.png", alt: "Crikverse", width: 190, height: 90 },
-  { id: 19, src: "/updeed.png", alt: "Updeed", width: 90, height: 25 },
+  { id: 18, src: "/crikverse.png", alt: "Crikverse", width: 200, height: 90 },
+  { id: 19, src: "/algorise.png", alt: "Algorise", width: 170, height: 60 },
+  { id: 20, src: "/updeed.png", alt: "Updeed", width: 90, height: 25 },
 ];
 
 export default function SocialProofBar() {

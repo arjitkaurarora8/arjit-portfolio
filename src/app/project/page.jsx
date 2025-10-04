@@ -52,19 +52,24 @@ function ProjectShowcase() {
               />
             </Link>
             <div className="flex flex-col justify-start">
-              <div className="flex flex-col sm:flex-row gap-1 sm:gap-2 items-start sm:items-center justify-start">
-                <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-normal">
-                  TradeProbe
-                </h1>
-                <h3 className="text-gray-400 text-lg sm:text-2xl lg:text-3xl font-normal">
-                  (Product Design & Strategy)
-                </h3>
+              <div className="w-96 h-9 bg-white rounded-lg outline-[2.62px] flex items-center justify-center outline-sky-50">
+                <div className="justify-center text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide">
+                  SaaS Dashboard, Design System, Branding and Academy
+                </div>
               </div>
-              <p className="text-gray-400 text-sm sm:text-base font-normal leading-snug tracking-tight max-w-xl mt-2">
-                TradeProbe Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter">
+                TradeProbe
+              </h1>
+
+              <p className="text-gray-900 text-sm sm:text-base font-light font-inter leading-snug tracking-tight max-w-xl mt-2">
+                <span className="font-semibold">Retail traders </span>
+                were lost between expensive scanners/platforms with Bad UX and
+                scattered YouTube knowledge. TradeProbe is built to change that.
+                When traders told me they were paying thousands for scanners
+                they barely understood, I knew there was a gap to fill. Traders
+                were overwhelmed by data but lacked affordable tools to act
+                fast.
               </p>
             </div>
           </div>

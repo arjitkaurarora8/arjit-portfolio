@@ -1,40 +1,45 @@
 "use client";
 import Link from "next/link";
+import { useState } from "react";
+
 import Image from "next/image";
+import { EyeCursor } from "../ui/EyeCursor";
 
 export default function OtherWork() {
+  const [isHovering, setIsHovering] = useState(false);
+
   const projects = [
     {
       id: 1,
-      src: "/otherwork1.png",
+      src: "/other_work1.png",
       alt: "Work 1",
       title: "TradeProbe",
       subtitle: "WebApp & Mobile Design",
     },
     {
       id: 2,
-      src: "/otherwork2.png",
+      src: "/other_work2.png",
       alt: "Work 2",
       title: "TradeProbe",
       subtitle: "WebApp & Mobile Design",
     },
     {
       id: 3,
-      src: "/otherwork3.png",
+      src: "/other_work3.png",
       alt: "Work 3",
       title: "TradeProbe",
       subtitle: "WebApp & Mobile Design",
     },
     {
       id: 4,
-      src: "/otherwork4.png",
+      src: "/other_work4.png",
       alt: "Work 4",
       title: "TradeProbe",
       subtitle: "WebApp & Mobile Design",
     },
     {
       id: 5,
-      src: "/otherwork5.png",
+      src: "/other_work5.png",
       alt: "Work 5",
       title: "TradeProbe",
       subtitle: "WebApp & Mobile Design",
@@ -46,7 +51,7 @@ export default function OtherWork() {
       {/* Header Section */}
       <div className="flex flex-col justify-start">
         <h2 className="text-stone-900 text-3xl font-semibold leading-9 mb-5">
-          Other Work
+          Breif Case Studies
         </h2>
         <div className="max-w-md mb-5">
           <p className="text-neutral-500 text-base leading-snug tracking-tight">
@@ -56,12 +61,17 @@ export default function OtherWork() {
           </p>
         </div>
 
+        <EyeCursor isVisible={isHovering} />
+
         {/* Grid Layout */}
         <div className="grid grid-cols-1 gap-4 h-auto md:grid-cols-2 md:gap-6 md:h-auto lg:grid-cols-[1fr_2fr] lg:grid-rows-3 lg:gap-6 lg:h-[800px]">
           {/* Row 1 - Left */}
           <Link
             href="/project"
             className="group relative overflow-hidden rounded-2xl shadow-md"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+            style={{ cursor: "none" }}
           >
             <div className="relative w-full h-64 md:h-full overflow-hidden">
               <Image
@@ -91,6 +101,9 @@ export default function OtherWork() {
           <Link
             href="/project"
             className="lg:row-span-2 group relative overflow-hidden rounded-2xl shadow-md"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+            style={{ cursor: "none" }}
           >
             <div className="relative w-full h-64 md:h-80 lg:h-full overflow-hidden">
               <Image
@@ -120,6 +133,9 @@ export default function OtherWork() {
           <Link
             href="/project"
             className="group relative overflow-hidden rounded-2xl shadow-md"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+            style={{ cursor: "none" }}
           >
             <div className="relative w-full h-64 md:h-48 lg:h-full overflow-hidden">
               <Image
@@ -149,6 +165,9 @@ export default function OtherWork() {
           <Link
             href="/project"
             className="group relative overflow-hidden rounded-2xl shadow-md"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+            style={{ cursor: "none" }}
           >
             <div className="relative w-full h-64 md:h-48 lg:h-full overflow-hidden">
               <Image
@@ -178,6 +197,9 @@ export default function OtherWork() {
           <Link
             href="/project"
             className="group relative overflow-hidden rounded-2xl shadow-md"
+            onMouseEnter={() => setIsHovering(true)}
+            onMouseLeave={() => setIsHovering(false)}
+            style={{ cursor: "none" }}
           >
             <div className="relative w-full h-64 md:h-48 lg:h-full overflow-hidden">
               <Image
@@ -204,6 +226,31 @@ export default function OtherWork() {
           </Link>
         </div>
       </div>
+
+      <Link href="/project">
+        <div className="w-full inline-flex justify-end items-center pt-7 pb-14">
+          <div className="w-96 h-9 rounded-lg outline-[2.62px] flex items-center justify-center outline-gray-50">
+            <div className="justify-center">
+              <span className="text-neutral-600 text-sm font-semibold font-inter leading-tight tracking-wide">
+                More of my work here{" "}
+              </span>
+
+              <span className="text-neutral-600 text-base font-normal font-tiny uppercase leading-tight tracking-wide">
+                PIXEL
+              </span>
+              <span className="text-orange-600 text-base font-normal font-tiny uppercase leading-tight tracking-wide">
+                APOLLO
+              </span>
+              <span className="text-neutral-600 text-base font-normal font-tiny uppercase leading-tight tracking-wide">
+                .com
+              </span>
+            </div>
+            <span className=" pl-1">
+              <img src="./arrow-right.svg" alt="arrow-right" />
+            </span>
+          </div>
+        </div>
+      </Link>
     </div>
   );
 }
