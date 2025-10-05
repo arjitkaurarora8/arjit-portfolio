@@ -5,7 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { EyeCursor } from "../ui/EyeCursor";
 
-export default function OtherWork() {
+export default function BriefCaseStudies() {
   const [isHovering, setIsHovering] = useState(false);
 
   const projects = [

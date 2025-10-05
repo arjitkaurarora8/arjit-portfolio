@@ -120,3 +120,33 @@ html {
     background-image: url("/work2.png");
   }
 } */
+
+/* .bg-work2-mobile {
+  background-image: url("/work_2-md.png");
+} */
+
+.bg-work2-mobile {
+  background-image: url("/work_2-md.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .bg-work2-desktop {
+    background-image: url("/work_2.png");
+  }
+}
+
+/* .bg-work1-mobile {
+  background-image: url("/work_2-md.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: cover; 
+} */
+
+/* @media (min-width: 768px) {
+  .bg-work1-desktop {
+    background-image: url("/work_2.png");
+  }
+} */

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ReadCaseStudyCursor } from "../ui/ReadCaseStudyCursor";
 
-export default function RecentWork() {
+export default function DetailedCaseStudies() {
   const [isHovering, setIsHovering] = useState(false);
 
   const projects = [
@@ -54,7 +54,7 @@ export default function RecentWork() {
           style={{ cursor: "none" }}
         >
           <div
-            className="w-full h-full bg-no-repeat bg-cover bg-left sm:bg-left-top min-h-[300px]"
+            className="w-full h-full bg-no-repeat bg-cover bg-left sm:bg-left-top min-h-[300px] bg-work1-mobile md:bg-work1-desktop"
             // style={{ backgroundImage: "url('/work1.jpg')" }}
             style={{ backgroundImage: "url('/work_1.png')" }}
           ></div>
@@ -82,9 +82,8 @@ export default function RecentWork() {
           style={{ cursor: "none" }}
         >
           <div
-            className="w-full h-full bg-no-repeat bg-cover bg-left sm:bg-left-top min-h-[300px]"
-            // style={{ backgroundImage: "url('/work_1.png')" }}
-            style={{ backgroundImage: "url('/work_2.png')" }}
+            className="w-full h-full bg-no-repeat bg-cover bg-left sm:bg-left-top min-h-[300px] bg-work2-mobile md:bg-work2-desktop"
+            // style={{ backgroundImage: "url('/work_2.png')" }}
           ></div>
 
           {/* Background overlay on hover - darker for better text visibility */}

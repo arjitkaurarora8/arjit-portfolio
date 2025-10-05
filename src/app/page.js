@@ -1,6 +1,6 @@
 import Navbar from "@/component/layout/Navbar";
 import Hero from "@/component/home/Hero";
-import RecentWork from "@/component/home/RecentWork";
+import RecentWork from "@/component/home/DetailedCaseStudies";
 import OtherWork from "@/component/home/OtherWork";
 import About from "@/component/home/About";
 import Pitch from "@/component/home/Pitch";
