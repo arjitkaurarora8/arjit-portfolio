@@ -27,7 +27,7 @@ export default function Button({
     // lg: "px-8 sm:px-12 lg:px-10 py-4 sm:py-5 lg:py-6 text-xl sm:text-2xl lg:text-3xl",
     // lg: "px-10 py-6 text-3xl",
     // lg: "h-10 sm:h-20 px-4 sm:px-5 w-48 sm:w-[410] text-xs sm:text-3xl",
-    lg: "h-10 sm:h-16 md:h-20 lg:h-24 px-3 sm:px-6 md:px-8 text-xs sm:text-xl md:text-2xl lg:text-3xl",
+    lg: "h-10 sm:h-16 md:h-20 lg:h-22 px-3 sm:px-6 md:px-9 text-xs sm:text-xl md:text-2xl lg:text-3xl",
   };
 
   return (
