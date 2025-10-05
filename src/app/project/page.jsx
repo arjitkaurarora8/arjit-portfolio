@@ -161,7 +161,7 @@ function ProjectShowcase() {
           </div>
 
           {/* Process Section */}
-          <div className="py-6 sm:py-10 flex flex-col justify-start items-start gap-4 sm:gap-6 overflow-hidden w-full">
+          <div className="py-6 sm:py-22 flex flex-col justify-start items-start gap-4 sm:gap-6 overflow-hidden w-full">
             {/* Process Title */}
             <div className="flex justify-start items-end">
               <h2 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter leading-8 sm:leading-10">
