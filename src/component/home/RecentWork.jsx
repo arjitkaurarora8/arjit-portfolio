@@ -44,7 +44,7 @@ export default function RecentWork() {
       <ReadCaseStudyCursor isVisible={isHovering} />
 
       {/* <div className="project-cards-wrapper w-full pt-6"> */}
-      <div className="flex flex-col sm:flex-row w-full gap-4 sm:gap-0">
+      <div className="flex flex-col sm:flex-row w-full pt-2 sm:pt-4 gap-4 sm:gap-0">
         {/* Left Image */}
         <Link
           href="/project"
@@ -81,7 +81,6 @@ export default function RecentWork() {
           onMouseLeave={() => setIsHovering(false)}
           style={{ cursor: "none" }}
         >
-          {/* <div className="w-full h-full bg-no-repeat sm:bg-top-right bg-cover min-h-[300px] bg-work2-mobile md:bg-work2-desktop"></div> */}
           <div
             className="w-full h-full bg-no-repeat bg-cover bg-left sm:bg-left-top min-h-[300px]"
             // style={{ backgroundImage: "url('/work_1.png')" }}

@@ -6,27 +6,48 @@ function ProjectShowcase() {
   const processSteps = [
     {
       number: "01",
-      title: "Problem",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim exhausting, and not having a clear overview of all my assets made me quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo eee",
+      title: "PROBLEM",
+      description: [
+        "> High cost of tools like TradingView/MarketSmith/TradeZella",
+        "> Waiting time is excessive on a strategy",
+        "> Lack of structured trader education",
+        "> Poor UX for beginner traders",
+      ],
     },
     {
       number: "02",
-      title: "Mood board",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim exhausting, and not having a clear overview of all my assets made me quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo eee",
+      title: "JOURNEY",
+      description: [
+        "> Research: Interviews with 30+ traders, competitor analysis",
+        "> Branding: Logo, color palette, type system → trader-first identity",
+        "> Wireframes: Flows for scanners, watchlists, alerts, and learning modules",
+        "> Design System: Reusable components for scalable development",
+        "> UI Design: Light & dark dashboards, academy section, mobile optimization",
+        "> Marketing Collab: Landing pages, ads, creatives",
+      ],
     },
     {
       number: "03",
-      title: "Design Iterations",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim exhausting, and not having a clear overview of all my assets made me quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo eee",
+      title: "SOLUTION",
+      sectionColor: "sky", // Add this to identify the section
+      description: [
+        ">\\ Dashboard: Real-time scanners, insights, watchlists",
+        ">\\ Academy: Structured trader learning flow",
+        ">\\ Design System: 50+ reusable components for dev speed with own design system and language with the support of SHADCN UI library",
+        ">\\ Branding: Logo(with iterations) + design guidelines + iconography",
+      ],
     },
     {
       number: "04",
-      title: "Website/Webapp/MobileApp",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim exhausting, and not having a clear overview of all my assets made me quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo eee",
+      title: "RESULTS",
+      sectionColor: "green", // Add this to identify the section
+      description: [
+        ">\\ 200+ paying users within 3 months of beta",
+        ">\\ Raised ₹18L funding for 4.5% equity",
+        ">\\ 30% retention lift after academy module release",
+        ">\\ 25% reduction in onboarding drop-offs",
+        ">\\ Saved 40% design/dev time per sprint",
+      ],
     },
   ];
 
@@ -35,7 +56,7 @@ function ProjectShowcase() {
       <Navbar showLinks={false} />
 
       <div className="px-4 sm:px-6 pb-20 pt-10 flex flex-col overflow-hidden">
-        <div className="flex flex-col gap-6 overflow-hidden">
+        <div className="flex flex-col gap-4 overflow-hidden">
           {/* Header Section */}
           <div className="inline-flex flex-col gap-5">
             <Link
@@ -58,12 +79,12 @@ function ProjectShowcase() {
                 </div>
               </div>
 
-              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter">
+              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter mt-2 sm:mt-4">
                 TradeProbe
               </h1>
 
-              <p className="text-gray-900 text-sm sm:text-base font-light font-inter leading-snug tracking-tight max-w-xl mt-2">
-                <span className="font-semibold">Retail traders </span>
+              <p className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight max-w-xl mt-2 sm:mt-4">
+                <span className="font-bold">Retail traders </span>
                 were lost between expensive scanners/platforms with Bad UX and
                 scattered YouTube knowledge. TradeProbe is built to change that.
                 When traders told me they were paying thousands for scanners
@@ -75,14 +96,14 @@ function ProjectShowcase() {
           </div>
 
           {/* Project Info Header */}
-          <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-end overflow-hidden mb-6 gap-4 sm:gap-0">
+          <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-end overflow-hidden pt-8 sm:pt-16 gap-4 sm:gap-0">
             <div className="flex flex-col sm:flex-row justify-start items-start sm:items-end gap-8 sm:gap-20">
               <div className="flex flex-col">
                 <span className="text-gray-500 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
                   Timeline
                 </span>
                 <span className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
-                  Ongoing
+                  Ongoing(BETA live)
                 </span>
               </div>
 
@@ -91,7 +112,16 @@ function ProjectShowcase() {
                   Tools
                 </span>
                 <span className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
-                  Figma, Miro
+                  Figma, FigJam, Notion, Framer
+                </span>
+              </div>
+
+              <div className="flex flex-col">
+                <span className="text-gray-500 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
+                  Role
+                </span>
+                <span className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
+                  Product & Design Lead
                 </span>
               </div>
             </div>
@@ -117,7 +147,7 @@ function ProjectShowcase() {
           <div className="w-full relative rounded-xl sm:rounded-2xl overflow-hidden">
             <img
               className="w-full h-auto rounded-xl sm:rounded-2xl"
-              src="/tradeprobe-hero.png"
+              src="/sniperscan-dashboard.png"
               alt="TradeProbe main application interface"
             />
           </div>
@@ -126,7 +156,7 @@ function ProjectShowcase() {
           <div className="py-6 sm:py-10 flex flex-col justify-start items-start gap-4 sm:gap-6 overflow-hidden w-full">
             {/* Process Title */}
             <div className="flex justify-start items-end">
-              <h2 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-normal font-inter leading-8 sm:leading-10">
+              <h2 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter leading-8 sm:leading-10">
                 Process
               </h2>
             </div>
@@ -139,15 +169,46 @@ function ProjectShowcase() {
                   className="w-full pl-2 sm:pl-4 pb-4 sm:pb-6 relative flex flex-col justify-start items-start gap-2 overflow-hidden border-b-2 border-gray-100 last:border-b-0"
                 >
                   <div className="max-w-full sm:max-w-[777px] flex flex-col justify-start items-start">
-                    <h3 className="text-gray-500 text-xl sm:text-2xl lg:text-3xl font-normal font-inter leading-6 sm:leading-9">
+                    <h3 className="text-gray-500 text-lg sm:text-xl lg:text-2xl font-semibold font-inter leading-6 sm:leading-9 uppercase">
                       <span className="text-gray-500">{step.number} </span>
                       <span className="text-gray-500">{step.title}</span>
                     </h3>
                   </div>
-                  <div className="max-w-full sm:max-w-[539px] flex flex-col justify-start items-start">
-                    <p className="text-gray-500 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
-                      {step.description}
-                    </p>
+                  <div className="max-w-full sm:max-w-[777px] flex flex-col justify-start items-start gap-2">
+                    {step.description.map((line, lineIndex) => {
+                      const match = line.match(/^(>)(\\?)(\s*)([^:]+:)?(.*)$/);
+
+                      return (
+                        <p
+                          key={lineIndex}
+                          className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight"
+                        >
+                          {match ? (
+                            <>
+                              <span>{match[1]}</span>
+                              {match[2] && (
+                                <span
+                                  className={
+                                    step.sectionColor === "sky"
+                                      ? "text-sky-500"
+                                      : step.sectionColor === "green"
+                                      ? "text-green-500"
+                                      : ""
+                                  }
+                                >
+                                  {match[2]}
+                                </span>
+                              )}
+                              <span>{match[3]}</span>
+                              {match[4] && <strong>{match[4]}</strong>}
+                              <span>{match[5]}</span>
+                            </>
+                          ) : (
+                            line
+                          )}
+                        </p>
+                      );
+                    })}
                   </div>
                 </div>
               ))}
