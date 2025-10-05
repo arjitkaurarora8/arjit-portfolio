@@ -73,17 +73,22 @@ function ProjectShowcase() {
               />
             </Link>
             <div className="flex flex-col justify-start">
-              <div className="w-96 h-9 bg-white rounded-lg outline-[2.62px] flex items-center justify-center outline-sky-50">
-                <div className="justify-center text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide">
-                  SaaS Dashboard, Design System, Branding and Academy
+              <div className="flex justify-between pt-2">
+                <div className="w-96 h-9 bg-white rounded-lg outline-[2.62px] flex items-center justify-center outline-sky-50">
+                  <div className="justify-center text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide">
+                    SaaS Dashboard, Design System, Branding and Academy
+                  </div>
+                </div>
+                <div>
+                  <img src="./tradeprobe-project.png" alt="tradeprobe" />
                 </div>
               </div>
 
-              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter mt-2 sm:mt-4">
+              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter mt-4">
                 TradeProbe
               </h1>
 
-              <p className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight max-w-xl mt-2 sm:mt-4">
+              <p className="text-gray-900 text-sm sm:text-base font-light font-inter leading-snug tracking-tight max-w-xl pt-2 sm:mt-4">
                 <span className="font-bold">Retail traders </span>
                 were lost between expensive scanners/platforms with Bad UX and
                 scattered YouTube knowledge. TradeProbe is built to change that.
@@ -97,32 +102,35 @@ function ProjectShowcase() {
 
           {/* Project Info Header */}
           <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-end overflow-hidden pt-8 sm:pt-16 gap-4 sm:gap-0">
-            <div className="flex flex-col sm:flex-row justify-start items-start sm:items-end gap-8 sm:gap-20">
-              <div className="flex flex-col">
-                <span className="text-gray-500 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
-                  Timeline
-                </span>
-                <span className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
-                  Ongoing(BETA live)
-                </span>
+            <div className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-38">
+              <div className="flex flex-col sm:flex-row justify-start items-start sm:items-end gap-8 sm:gap-20">
+                <div className="flex flex-col">
+                  <span className="text-gray-500 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
+                    Timeline
+                  </span>
+                  <span className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
+                    Ongoing(BETA live)
+                  </span>
+                </div>
               </div>
+              <div className="flex flex-col gap-3 sm:flex-row sm:gap-16">
+                <div className="flex flex-col">
+                  <span className="text-gray-500 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
+                    Tools
+                  </span>
+                  <span className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
+                    Figma, FigJam, Notion, Framer
+                  </span>
+                </div>
 
-              <div className="flex flex-col">
-                <span className="text-gray-500 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
-                  Tools
-                </span>
-                <span className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
-                  Figma, FigJam, Notion, Framer
-                </span>
-              </div>
-
-              <div className="flex flex-col">
-                <span className="text-gray-500 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
-                  Role
-                </span>
-                <span className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
-                  Product & Design Lead
-                </span>
+                <div className="flex flex-col">
+                  <span className="text-gray-500 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
+                    Role
+                  </span>
+                  <span className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
+                    Product & Design Lead
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -166,15 +174,15 @@ function ProjectShowcase() {
               {processSteps.map((step, index) => (
                 <div
                   key={index}
-                  className="w-full pl-2 sm:pl-4 pb-4 sm:pb-6 relative flex flex-col justify-start items-start gap-2 overflow-hidden border-b-2 border-gray-100 last:border-b-0"
+                  className="w-full pl-2 sm:pl-4 pb-4 sm:pb-6 relative flex flex-col justify-start items-start gap-2 overflow-hidden"
                 >
                   <div className="max-w-full sm:max-w-[777px] flex flex-col justify-start items-start">
                     <h3 className="text-gray-500 text-lg sm:text-xl lg:text-2xl font-semibold font-inter leading-6 sm:leading-9 uppercase">
-                      <span className="text-gray-500">{step.number} </span>
-                      <span className="text-gray-500">{step.title}</span>
+                      <span className="text-gray-400">{step.number} </span>
+                      <span className="text-gray-400">{step.title}</span>
                     </h3>
                   </div>
-                  <div className="max-w-full sm:max-w-[777px] flex flex-col justify-start items-start gap-2">
+                  <div className="max-w-full sm:max-w-[530px] flex flex-col justify-start items-start gap-0.5">
                     {step.description.map((line, lineIndex) => {
                       const match = line.match(/^(>)(\\?)(\s*)([^:]+:)?(.*)$/);
 
@@ -199,9 +207,25 @@ function ProjectShowcase() {
                                   {match[2]}
                                 </span>
                               )}
-                              <span>{match[3]}</span>
-                              {match[4] && <strong>{match[4]}</strong>}
-                              <span>{match[5]}</span>
+                              {/* <span>{match[3]}</span>
+                              {match[4] && <strong>{match[4]}</strong>} */}
+                              {/* {match[3] && <span>{match[3]}</span>}
+                              {match[4] && (
+                                <strong className="ml-0.5 inline-block">
+                                  {match[4]}
+                                </strong>
+                              )}
+
+                              <span>{match[5]}</span> */}
+                              {match[3] && (
+                                <span className="mr-0.5">{match[3]}</span>
+                              )}
+
+                              {match[4] && (
+                                <strong className="mr-0.5">{match[4]}</strong>
+                              )}
+
+                              {match[5] && <span>{match[5]}</span>}
                             </>
                           ) : (
                             line
