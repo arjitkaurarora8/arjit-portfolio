@@ -88,7 +88,7 @@ function ProjectShowcase() {
                 TradeProbe
               </h1>
 
-              <p className="text-gray-900 text-sm sm:text-base font-light font-inter leading-snug tracking-tight max-w-xl pt-2 sm:mt-4">
+              <p className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight max-w-xl pt-2 sm:mt-4">
                 <span className="font-bold">Retail traders </span>
                 were lost between expensive scanners/platforms with Bad UX and
                 scattered YouTube knowledge. TradeProbe is built to change that.
@@ -152,7 +152,7 @@ function ProjectShowcase() {
           </div>
 
           {/* Main Hero Image */}
-          <div className="w-full relative rounded-xl sm:rounded-2xl overflow-hidden">
+          <div className="w-full relative pt-2.5 rounded-xl sm:rounded-2xl overflow-hidden">
             <img
               className="w-full h-auto rounded-xl sm:rounded-2xl"
               src="/sniperscan-dashboard.png"

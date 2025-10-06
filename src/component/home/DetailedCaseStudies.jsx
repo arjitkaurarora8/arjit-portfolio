@@ -75,7 +75,7 @@ export default function DetailedCaseStudies() {
 
         {/* Right Image */}
         <Link
-          href="/project"
+          href="/content-hub-gpt"
           className="flex-1 group relative border border-l-0 border-emerald-700 transition-all duration-600 ease-in-out sm:hover:flex-[1.35] lg:hover:flex-[1.3] overflow-hidden h-[300px] sm:h-[400px] md:h-[500px]  xl:h-[600px] 2xl:[660px] rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
