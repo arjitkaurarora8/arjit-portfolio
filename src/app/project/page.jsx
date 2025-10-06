@@ -74,11 +74,6 @@ function ProjectShowcase() {
             </Link>
             <div className="flex flex-col justify-start">
               <div className="flex justify-between pt-2">
-                {/* <div className="w-96 h-9 bg-white rounded-lg outline-[2.62px] flex items-center justify-center outline-sky-50">
-                  <div className="justify-center text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide">
-                    SaaS Dashboard, Design System, Branding and Academy
-                  </div>
-                </div> */}
                 <div className="w-full">
                   <div className="rounded-lg outline-[2.62px] outline-sky-50 px-3.5 py-2.5 inline-flex items-center justify-center">
                     <div className="text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide whitespace-nowrap">
