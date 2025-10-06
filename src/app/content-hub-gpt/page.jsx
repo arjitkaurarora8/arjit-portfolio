@@ -310,7 +310,7 @@ function ProjectShowcase() {
     <>
       <Navbar showLinks={false} />
 
-      <div className="px-4 sm:px-6 pb-20 pt-8 md:pt-16 flex flex-col overflow-hidden">
+      <div className="px-4 sm:px-6 pb-20 pt-8.5 md:pt-16.5 flex flex-col overflow-hidden">
         <div className="flex flex-col gap-4 overflow-hidden">
           {/* Header Section */}
           <div className="inline-flex flex-col gap-5">
