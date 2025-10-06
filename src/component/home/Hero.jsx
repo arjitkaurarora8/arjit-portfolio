@@ -7,7 +7,7 @@ import TelegramContactButton from "../ui/TelegramContactButton";
 
 function Hero() {
   return (
-    <section className="pt-8.5 md:pt-16.5 px-4 sm:px-6 bg-white">
+    <section className="pt-10 md:pt-16.5 px-4 sm:px-6 bg-white">
       <div className="flex flex-col gap-4">
         <div className="w-96 h-9 rounded-lg outline-[2.62px] flex items-center justify-center outline-sky-50">
           <div className="w-80 h-4 justify-center text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide">
@@ -33,7 +33,7 @@ function Hero() {
           </p>
         </div>
       </div>
-      <div className="flex my-8 sm:my-10 items-center gap-3 animate-lift-fade-in motion-reduce:animate-fade-in [--offset:10px] [animation-delay:300ms] [animation-duration:1s] [animation-fill-mode:both]">
+      <div className="flex mt-8 mb-2 sm:my-10 items-center gap-3 animate-lift-fade-in motion-reduce:animate-fade-in [--offset:10px] [animation-delay:300ms] [animation-duration:1s] [animation-fill-mode:both]">
         <Button text="Book 1:1 Strategy Session" size="md" />
         <TelegramContactButton
           text="Chat"
