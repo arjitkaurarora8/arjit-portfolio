@@ -26,11 +26,11 @@ const steps = [
 
 function GettingStarted() {
   return (
-    <div className="w-full mx-auto pt-20 px-4 sm:px-6 relative">
+    <div className="w-full mx-auto pt-10 md:pt-20 px-4 sm:px-6 relative">
       {/* Top border */}
       <div className="absolute top-0 left-0 right-0 border-t border-black/10"></div>
 
-      <div className="flex flex-col gap-16">
+      <div className="flex flex-col gap-8 md:gap-16">
         {/* Header Section */}
         <h2 className="text-stone-900 text-xl sm:text-3xl font-semibold leading-9">
           Getting started is easy
