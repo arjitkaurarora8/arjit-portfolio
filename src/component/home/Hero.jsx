@@ -9,9 +9,16 @@ function Hero() {
   return (
     <section className="pt-10 md:pt-16.5 px-4 sm:px-6 bg-white">
       <div className="flex flex-col gap-4">
-        <div className="w-96 h-9 rounded-lg outline-[2.62px] flex items-center justify-center outline-sky-50">
+        {/* <div className="w-96 h-9 rounded-lg outline-[2.62px] flex items-center justify-center outline-sky-50">
           <div className="w-80 h-4 justify-center text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide">
             Brands: Consistently drive 10% + increase in ARPU
+          </div>
+        </div> */}
+        <div className="w-full ">
+          <div className="rounded-lg outline-[2.62px] outline-sky-50 px-3.5 py-2.5 inline-flex items-center justify-center">
+            <div className="text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide whitespace-nowrap">
+              Brands: Consistently drive 10% + increase in ARPU
+            </div>
           </div>
         </div>
 
