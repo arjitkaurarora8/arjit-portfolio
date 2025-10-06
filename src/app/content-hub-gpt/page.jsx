@@ -431,15 +431,15 @@ function ProjectShowcase() {
               {processSteps.map((step, index) => (
                 <div
                   key={index}
-                  className="w-full pl-2 sm:pl-4 relative flex flex-col justify-start items-start gap-2 overflow-hidden"
+                  className="w-full relative flex flex-col justify-start items-start gap-2 overflow-hidden"
                 >
-                  <div className="max-w-full sm:max-w-[777px] flex flex-col justify-start items-start pl-2 sm:pl-4">
+                  <div className="max-w-full sm:max-w-[777px] flex flex-col justify-start items-start pl-2 sm:pl-3">
                     <h3 className="text-gray-500 text-lg sm:text-xl lg:text-2xl font-semibold font-inter leading-6 sm:leading-9 uppercase">
                       <span className="text-gray-400">{step.number} </span>
                       <span className="text-gray-400">{step.title}</span>
                     </h3>
                   </div>
-                  <div className="max-w-full sm:max-w-[530px] flex flex-col justify-start items-start gap-0.5 pl-2 sm:pl-4">
+                  <div className="max-w-full sm:max-w-[530px] flex flex-col justify-start items-start gap-0.5 pl-2 sm:pl-3">
                     {step.description.map((line, lineIndex) => {
                       // First check if line has bold markers **text**
                       if (line.includes("**")) {
