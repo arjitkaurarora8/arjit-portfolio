@@ -242,7 +242,14 @@ function ProjectShowcase() {
           </div>
 
           {/* Project Images Gallery */}
-          {[1, 2, 3, 4, 5, 6, 7].map((imageNum) => (
+          <div className="w-full relative rounded-xl sm:rounded-2xl overflow-hidden">
+            <img
+              className="w-full h-auto rounded-xl sm:rounded-2xl"
+              src="./content-hub-gpt-4.png"
+              alt="gspann X content-hub-gpt"
+            />
+          </div>
+          {[2, 3, 4, 5, 6, 7].map((imageNum) => (
             <div
               key={imageNum}
               className="w-full relative rounded-xl sm:rounded-2xl overflow-hidden"
