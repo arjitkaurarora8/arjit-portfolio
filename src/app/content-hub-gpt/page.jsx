@@ -558,7 +558,7 @@ function ProjectShowcase() {
           {[5].map((imageNum) => (
             <div
               key={imageNum}
-              className="w-full relative rounded-xl sm:rounded-2xl overflow-hidden -mt-9 sm:-mt-13"
+              className="w-full relative rounded-xl sm:rounded-2xl overflow-hidden sm:-mt-6.5"
             >
               <img
                 className="w-full h-auto rounded-xl sm:rounded-2xl"
