@@ -68,7 +68,7 @@ export default function BriefCaseStudies() {
           {/* Row 1 - Left */}
           <Link
             href="/project"
-            className="group relative overflow-hidden rounded-2xl shadow-md"
+            className="group relative overflow-hidden rounded-2xl outline-[2.3px] outline-gray-50"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -100,7 +100,7 @@ export default function BriefCaseStudies() {
           {/* Row 1-2 - Right (otherwork4 takes 2 rows on desktop only) */}
           <Link
             href="/project"
-            className="lg:row-span-2 group relative overflow-hidden rounded-2xl shadow-md"
+            className="lg:row-span-2 group relative overflow-hidden rounded-2xl outline-[2.3px] outline-gray-50"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -132,7 +132,7 @@ export default function BriefCaseStudies() {
           {/* Row 2 - Left */}
           <Link
             href="/project"
-            className="group relative overflow-hidden rounded-2xl shadow-md"
+            className="group relative overflow-hidden rounded-2xl outline-[2.3px] outline-gray-50"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -164,7 +164,7 @@ export default function BriefCaseStudies() {
           {/* Row 3 - Left */}
           <Link
             href="/project"
-            className="group relative overflow-hidden rounded-2xl shadow-md"
+            className="group relative overflow-hidden rounded-2xl outline-[2.3px] outline-gray-50"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -196,7 +196,7 @@ export default function BriefCaseStudies() {
           {/* Row 3 - Right */}
           <Link
             href="/project"
-            className="group relative overflow-hidden rounded-2xl shadow-md"
+            className="group relative overflow-hidden rounded-2xl outline-[2.3px] outline-gray-50"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -229,7 +229,7 @@ export default function BriefCaseStudies() {
 
       <Link href="/project">
         <div className="w-full inline-flex justify-end items-center pt-7 pb-14">
-          <div className="w-96 h-9 rounded-lg outline-[2.62px] flex items-center justify-center outline-gray-50">
+          <div className="w-96 h-9 rounded-lg outline-[2.62px] outline-gray-50 flex items-center justify-center ">
             <div className="justify-center">
               <span className="text-neutral-600 text-sm font-semibold font-inter leading-tight tracking-wide">
                 More of my work here{" "}
