@@ -36,7 +36,7 @@ const logos = [
     height: 60,
   },
   { id: 10, src: "/nftfn.svg", alt: "NFTFN", width: 90, height: 25 },
-  { id: 11, src: "/eSource.svg", alt: "eSource", width: 120, height: 40 },
+  { id: 11, src: "/esource.png", alt: "eSource", width: 120, height: 40 },
   { id: 12, src: "/etf.png", alt: "ETF", width: 80, height: 20 },
   { id: 13, src: "/evm.png", alt: "EVM", width: 40, height: 10 },
   { id: 14, src: "/nictp.png", alt: "NICTP", width: 90, height: 20 },
