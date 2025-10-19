@@ -11,17 +11,17 @@ export default function BriefCaseStudies() {
   const projects = [
     {
       id: 1,
-      src: "/other_work1.png",
+      src: "/creaitor-ai-img.png",
       alt: "Work 1",
-      title: "TradeProbe",
-      subtitle: "WebApp & Mobile Design",
+      title: "Creaitor Ai",
+      subtitle: "WebApp Design",
     },
     {
       id: 2,
-      src: "/other_work2.png",
+      src: "/derec-img.png",
       alt: "Work 2",
-      title: "TradeProbe",
-      subtitle: "WebApp & Mobile Design",
+      title: "Derec",
+      subtitle: "WebApp Design",
     },
     {
       id: 3,
@@ -32,10 +32,10 @@ export default function BriefCaseStudies() {
     },
     {
       id: 4,
-      src: "/other_work4.png",
+      src: "/crikverse-img.png",
       alt: "Work 4",
-      title: "TradeProbe",
-      subtitle: "WebApp & Mobile Design",
+      title: "Crikverse",
+      subtitle: "WebApp Design",
     },
     {
       id: 5,
@@ -51,7 +51,7 @@ export default function BriefCaseStudies() {
       {/* Header Section */}
       <div className="flex flex-col justify-start">
         <h2 className="text-stone-900 text-3xl font-semibold leading-9 mb-5">
-          Breif Case Studies
+          Brief Case Studies
         </h2>
         <div className="max-w-md mb-5">
           <p className="text-neutral-500 text-base leading-snug tracking-tight">
@@ -64,11 +64,11 @@ export default function BriefCaseStudies() {
         <EyeCursor isVisible={isHovering} />
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 gap-4 h-auto md:grid-cols-2 md:gap-6 md:h-auto lg:grid-cols-[1fr_2fr] lg:grid-rows-3 lg:gap-6 lg:h-[800px]">
+        <div className="grid grid-cols-1 gap-4 h-auto md:grid-cols-2 md:gap-6 md:h-auto lg:grid-cols-[1fr_2fr] lg:grid-rows-3 lg:gap-4 lg:h-[880px]">
           {/* Row 1 - Left */}
           <Link
             href="/project"
-            className="group relative overflow-hidden rounded-2xl outline-[2.3px] outline-gray-50"
+            className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -100,7 +100,7 @@ export default function BriefCaseStudies() {
           {/* Row 1-2 - Right (otherwork4 takes 2 rows on desktop only) */}
           <Link
             href="/project"
-            className="lg:row-span-2 group relative overflow-hidden rounded-2xl outline-[2.3px] outline-gray-50"
+            className="lg:row-span-2 group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -132,7 +132,7 @@ export default function BriefCaseStudies() {
           {/* Row 2 - Left */}
           <Link
             href="/project"
-            className="group relative overflow-hidden rounded-2xl outline-[2.3px] outline-gray-50"
+            className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -164,7 +164,7 @@ export default function BriefCaseStudies() {
           {/* Row 3 - Left */}
           <Link
             href="/project"
-            className="group relative overflow-hidden rounded-2xl outline-[2.3px] outline-gray-50"
+            className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -196,7 +196,7 @@ export default function BriefCaseStudies() {
           {/* Row 3 - Right */}
           <Link
             href="/project"
-            className="group relative overflow-hidden rounded-2xl outline-[2.3px] outline-gray-50"
+            className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -229,7 +229,7 @@ export default function BriefCaseStudies() {
 
       <Link href="/project">
         <div className="w-full inline-flex justify-end items-center pt-7 pb-14">
-          <div className="w-96 h-9 rounded-lg outline-[2.62px] outline-gray-50 flex items-center justify-center ">
+          {/* <div className="w-96 h-9 rounded-lg outline-[2.62px] outline-gray-50 flex items-center justify-center ">
             <div className="justify-center">
               <span className="text-neutral-600 text-sm font-semibold font-inter leading-tight tracking-wide">
                 More of my work here{" "}
@@ -248,7 +248,7 @@ export default function BriefCaseStudies() {
             <span className=" pl-1">
               <img src="./arrow-right.svg" alt="arrow-right" />
             </span>
-          </div>
+          </div> */}
         </div>
       </Link>
     </div>

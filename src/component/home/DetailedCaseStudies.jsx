@@ -18,7 +18,7 @@ export default function DetailedCaseStudies() {
       id: 2,
       src: "/work_2.png",
       alt: "Work 2",
-      title: "TradeProbe",
+      title: "ContentHubGPT",
       subtitle: "WebApp & Mobile Design",
     },
   ];
@@ -48,7 +48,7 @@ export default function DetailedCaseStudies() {
         {/* Left Image */}
         <Link
           href="/project"
-          className="flex-1 border border-r-0 border-emerald-700 group relative transition-all duration-600 ease-in-out sm:hover:flex-[1.3] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:[660px] overflow-hidden rounded-2xl sm:rounded-l-2xl sm:rounded-r-none"
+          className="flex-1 border border-r-0 border-emerald-700 group relative transition-all duration-800 ease-in-out sm:hover:flex-3 md:hover:flex-4 xl:hover:flex-[2.8] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:[660px] overflow-hidden rounded-2xl sm:rounded-l-2xl sm:rounded-r-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
           style={{ cursor: "none" }}
@@ -76,7 +76,8 @@ export default function DetailedCaseStudies() {
         {/* Right Image */}
         <Link
           href="/content-hub-gpt"
-          className="flex-1 group relative border border-l-0 border-emerald-700 transition-all duration-600 ease-in-out sm:hover:flex-[1.35] lg:hover:flex-[1.3] overflow-hidden h-[300px] sm:h-[400px] md:h-[500px]  xl:h-[600px] 2xl:[660px] rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"
+          className="flex-1 group relative border border-l-0 border-emerald-700 transition-all duration-700 ease-in-out sm:hover:flex-1 md:hover:flex-1 xl:hover:flex-2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:[660px] overflow-hidden rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"
+          // className="flex-1 group relative border border-l-0 border-emerald-700 transition-all duration-600 ease-in-out sm:hover:flex-[1.35] lg:hover:flex-[1.3] overflow-hidden h-[300px] sm:h-[400px] md:h-[500px]  xl:h-[600px] 2xl:[660px] rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
           style={{ cursor: "none" }}
