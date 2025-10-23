@@ -190,6 +190,12 @@ function Footer() {
     <div className="p-4 sm:p-6 bg-white border-t border-gray-200">
       {/* Hero Text */}
       <div className="text-left sm:text-left">
+        <div className="w-96 justify-center text-gray-500 text-2xl font-semibold font-inter uppercase leading-7">
+          🎯 Turn Your Product Idea Into a Market Hit.
+        </div>
+      </div>
+
+      <div className="text-left sm:text-left pt-3">
         <h2 className="text-gray-900 text-4xl sm:text-6xl font-normal font-inter uppercase leading-tight sm:leading-[60px] max-w-xs sm:max-w-md">
           Ready when <br /> you are.
         </h2>

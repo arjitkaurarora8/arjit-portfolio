@@ -67,7 +67,7 @@ export default function BriefCaseStudies() {
         <div className="grid grid-cols-1 gap-4 h-auto md:grid-cols-2 md:gap-6 md:h-auto lg:grid-cols-[1fr_2fr] lg:grid-rows-3 lg:gap-4 lg:h-[880px]">
           {/* Row 1 - Left */}
           <Link
-            href="/project"
+            href="/creaitor-ai"
             className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
@@ -99,7 +99,7 @@ export default function BriefCaseStudies() {
 
           {/* Row 1-2 - Right (otherwork4 takes 2 rows on desktop only) */}
           <Link
-            href="/project"
+            href="/crikverse"
             className="lg:row-span-2 group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
@@ -131,7 +131,7 @@ export default function BriefCaseStudies() {
 
           {/* Row 2 - Left */}
           <Link
-            href="/project"
+            href="/derec"
             className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
@@ -163,7 +163,7 @@ export default function BriefCaseStudies() {
 
           {/* Row 3 - Left */}
           <Link
-            href="/project"
+            href="/web3-product-designs"
             className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
@@ -195,7 +195,7 @@ export default function BriefCaseStudies() {
 
           {/* Row 3 - Right */}
           <Link
-            href="/project"
+            href="/saas-dashboard-solutions"
             className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
