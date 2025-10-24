@@ -25,10 +25,10 @@ export default function BriefCaseStudies() {
     },
     {
       id: 3,
-      src: "/other_work3.png",
+      src: "/web3.png",
       alt: "Work 3",
-      title: "TradeProbe",
-      subtitle: "WebApp & Mobile Design",
+      title: "WEB3 Products Compilation",
+      subtitle: "WebApp Design",
     },
     {
       id: 4,
@@ -39,10 +39,10 @@ export default function BriefCaseStudies() {
     },
     {
       id: 5,
-      src: "/other_work5.png",
+      src: "/saas.png",
       alt: "Work 5",
-      title: "TradeProbe",
-      subtitle: "WebApp & Mobile Design",
+      title: "Saas Dashboard Solutions",
+      subtitle: "WebApp Design",
     },
   ];
 
