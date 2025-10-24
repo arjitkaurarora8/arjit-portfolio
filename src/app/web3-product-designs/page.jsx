@@ -787,15 +787,32 @@ function ProjectShowcase() {
               </div>
             ))}
           </div>
-
-          {/* Footer CTA */}
-          <div className="w-full pt-8 sm:pt-12 text-center">
-            <p className="text-gray-500 text-xl sm:text-2xl font-semibold font-inter leading-relaxed">
-              👀 Checkout more of my{" "}
-              <span className="text-gray-900">SaaS Product Designs</span>
-            </p>
-          </div>
         </div>
+      </div>
+
+      {/* Footer CTA */}
+      <div className="flex justify-between items-center px-5 py-4 border-t border-gray-200 w-full">
+        <div className="w-96 justify-center text-black">
+          <span className="text-gray-500 text-2xl font-semibold font-inter uppercase leading-7">
+            👀Checkout more of my
+            <br />s
+          </span>
+          <span className="text-gray-500 text-3xl font-normal font-inter leading-7">
+            aa
+          </span>
+          <span className="text-gray-500 text-2xl font-semibold font-inter uppercase leading-7">
+            s Product Designs
+          </span>
+        </div>
+
+        <Link href="/project">
+          <button className="w-20 h-10 cursor-pointer bg-sky-500 flex gap-2 items-center justify-center rounded-lg outline-2 outline-blue-100 transform transition-all duration-150 active:scale-95 active:shadow-inner">
+            <span className="text-white text-sm font-semibold">Here</span>
+            <span>
+              <img src="./readCaseCursorArrow.svg" alt="pointing arrow" />
+            </span>
+          </button>
+        </Link>
       </div>
     </>
   );
