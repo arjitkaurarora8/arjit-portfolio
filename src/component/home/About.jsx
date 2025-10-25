@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-
 import {
   FaGoogle,
   FaYahoo,
@@ -10,7 +9,6 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-// Email handler component with user choice modal
 const EmailHandler = ({ email = "arjitkaurarora8@gmail.com", children }) => {
   const [showEmailChoice, setShowEmailChoice] = useState(false);
 
@@ -46,7 +44,6 @@ const EmailHandler = ({ email = "arjitkaurarora8@gmail.com", children }) => {
     const userAgent = navigator.userAgent.toLowerCase();
     const currentUrl = window.location.href.toLowerCase();
 
-    // Auto-detection logic
     let detectedProvider = null;
 
     if (currentUrl.includes("gmail") || userAgent.includes("chrome")) {
@@ -64,7 +61,6 @@ const EmailHandler = ({ email = "arjitkaurarora8@gmail.com", children }) => {
       detectedProvider = "aol";
     }
 
-    // Check saved preference
     const savedProvider = localStorage.getItem("preferredEmailProvider");
     if (savedProvider && emailServices[savedProvider]) {
       detectedProvider = savedProvider;
@@ -73,7 +69,6 @@ const EmailHandler = ({ email = "arjitkaurarora8@gmail.com", children }) => {
     if (detectedProvider) {
       openEmailService(detectedProvider);
     } else {
-      // Show choice modal if can't detect
       setShowEmailChoice(true);
     }
   };
@@ -84,21 +79,21 @@ const EmailHandler = ({ email = "arjitkaurarora8@gmail.com", children }) => {
       localStorage.setItem("preferredEmailProvider", provider);
       setShowEmailChoice(false);
     } catch (error) {
-      // Fallback to mailto
       window.location.href = `mailto:${email}`;
     }
   };
 
   return (
     <>
-      <button
-        onClick={detectAndOpenEmail}
-        className="text-left text-base text-amber-800 hover:text-amber-900 transition-all duration-300 ease-out cursor-pointer bg-transparent border-none p-0 font-inherit"
-      >
-        {children || email}
-      </button>
+      <span>
+        <button
+          onClick={detectAndOpenEmail}
+          className="text-left text-base bg-transparent text-neutral-500 hover:text-neutral-600 transition-all duration-300 ease-out cursor-pointer border-none p-0 font-inherit"
+        >
+          {children || email}
+        </button>
+      </span>
 
-      {/* Email Choice Modal */}
       {showEmailChoice && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
           <div className="bg-white rounded-2xl p-6 max-w-md w-full mx-4">
@@ -139,7 +134,7 @@ const EmailHandler = ({ email = "arjitkaurarora8@gmail.com", children }) => {
 
 const socials = [
   {
-    name: "X",
+    name: "X (Twitter)",
     href: "https://x.com/arjitkaurarora",
   },
   {
@@ -147,16 +142,8 @@ const socials = [
     href: "https://www.instagram.com/waspcassini/",
   },
   {
-    name: "Behance",
-    href: "https://www.behance.net/arjitkaurarora",
-  },
-  {
-    name: "Linkedin",
-    href: "https://www.linkedin.com/in/arjitkaurarora/",
-  },
-  {
     name: "Download CV",
-    href: "#", // Replace with actual CV link
+    href: "#",
   },
 ];
 
@@ -164,42 +151,64 @@ function About() {
   return (
     <section
       id="about"
-      className="px-4 sm:px-6 pt-8 md:pt-16 lg:pt-22 scroll-mt-24 "
+      className="px-4 sm:px-6 pt-8 md:pt-16 lg:pt-22 scroll-mt-24"
     >
-      <div className="bg-gradient-to-b from-amber-800 via-amber-800/50 to-transparent max-w-full mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 bg-white items-center rounded-2xl px-6 md:px-10 pt-10 lg:pt-12 overflow-hidden max-w-full mx-auto">
+      <div className="bg-gradient-to-b from-amber-800 via-amber-800/50 to-transparent max-w-full mx-auto pt-[0.5px]">
+        <div
+          className="
+            grid grid-cols-1 lg:grid-cols-2 items-center 
+            rounded-2xl px-6 md:px-10 pt-10 pb-6 
+            overflow-hidden max-w-full mx-auto relative
+            bg-white
+          "
+        >
           {/* Left Content */}
-          <div className="flex flex-col justify-start items-start">
-            {/* Heading */}
-            <h2 className="text-stone-900 text-xl sm:text-3xl font-semibold leading-9">
+          <div className="flex flex-col justify-start items-start lg:pl-16 z-10">
+            <h2 className="text-stone-900 text-2xl sm:text-3xl font-semibold pt-6 leading-9">
               Hi, I'm Arjit.
             </h2>
-            <p className="text-neutral-500 text-base leading-7 tracking-tight pr-10 pt-5">
-              I'm a Product & Design Leader with{" "}
-              <span className="font-medium">6+ years of experience</span>{" "}
-              helping startups and teams ship{" "}
-              <span className="font-medium">20+ digital products</span> across{" "}
-              <span className="font-medium">
-                Fintech, E-commerce, EdTech, Healthcare, and Web3.
-              </span>
-              Currently serving as{" "}
-              <span className="font-medium">CPO at TradeProbe</span>, I drive
-              product vision, design execution, and strategy — turning complex
-              challenges into intuitive, scalable solutions. With a track record
-              of building design systems, leading teams, and contributing to
-              successful fundraising, I specialize in creating products that not
-              only delight users but also deliver measurable business impact.
-              <br />
-              <br />
-              If you're a founder or team looking for a partner who can take
-              your product from concept to scale blending product thinking with
-              strong design execution,{" "}
-              <span className="font-medium text-amber-800">let's talk.</span>
-            </p>
+
+            <div className="justify-center text-neutral-500 text-base font-bold font-inter leading-6 tracking-tight">
+              Fuelled by chai & curiosity
+            </div>
+
+            <div className="text-neutral-500 text-base leading-7 tracking-tight">
+              <p className="pt-2 sm:pt-4">
+                I'm a{" "}
+                <span className="font-semibold">Product & Design Leader</span>{" "}
+                with 6+ years of experience helping startups ship 20+ digital
+                products across{" "}
+                <span className="font-semibold">
+                  Fintech, WEB3, E-commerce, EdTech, Healthcare and SaaS.
+                </span>{" "}
+              </p>
+
+              <p className="pt-3 sm:pt-5">
+                With a background that blends creativity and business, I've
+                built and scaled cross-functional teams, design systems, and
+                products that deliver measurable outcomes.
+              </p>
+
+              <p className="pt-3 sm:pt-5 font-semibold">
+                I believe great products aren't just beautifully designed.
+              </p>
+              <p className="font-semibold">They're strategically aligned.</p>
+
+              <p className="pt-3 sm:pt-5">
+                Design isn't decoration; it's direction.
+              </p>
+
+              <p className="pt-3 sm:pt-5">
+                If you're a{" "}
+                <span className="font-semibold">founder or startup</span>{" "}
+                looking for a partner to take your product from concept to
+                scale,
+                <span className="font-medium text-amber-700"> let's talk.</span>
+              </p>
+            </div>
 
             {/* Contact */}
-            <div className="flex flex-col gap-1.5 pt-12">
-              {/* Updated email link with EmailHandler */}
+            <div className="flex flex-col gap-2 pt-5 sm:pt-7">
               <EmailHandler email="arjitkaurarora8@gmail.com">
                 arjitkaurarora8@gmail.com
               </EmailHandler>
@@ -217,11 +226,11 @@ function About() {
                     }
                     className="flex items-center gap-1 group cursor-pointer"
                   >
-                    <span className="text-gray-900 text-base group-hover:text-gray-600 transition-transform duration-300">
+                    <span className="text-neutral-400 text-base group-hover:text-neutral-500 transition-transform duration-300">
                       {social.name}
                     </span>
                     <img
-                      src="/linkarrow.png"
+                      src="/linkarrow.svg"
                       alt="link-arrow"
                       className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
                     />
@@ -232,11 +241,16 @@ function About() {
           </div>
 
           {/* Right Image */}
-          <div className="flex justify-end items-center">
+          <div
+            className="
+              flex justify-center lg:justify-end items-center mt-8 lg:mt-0 
+              relative lg:absolute lg:bottom-0 lg:right-26
+            "
+          >
             <img
               src="/about.png"
               alt="Arjit"
-              className="w-[300px] sm:w-[400px] lg:w-[530px] h-auto object-cover"
+              className="w-[280px] sm:w-[350px] md:w-[400px] lg:w-[435px] h-auto object-cover"
             />
           </div>
         </div>

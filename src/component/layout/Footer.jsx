@@ -275,7 +275,7 @@ function Footer() {
                     arjitkaurarora8@gmail.com
                   </EmailHandler>
                   <img
-                    src="/linkarrow.png"
+                    src="/linkarrow.svg"
                     alt="External link"
                     className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
                   />
@@ -327,7 +327,7 @@ function Footer() {
                       {social.name}
                     </span>
                     <img
-                      src="/linkarrow.png"
+                      src="/linkarrow.svg"
                       alt="External link"
                       className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
                     />

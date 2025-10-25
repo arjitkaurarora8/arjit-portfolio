@@ -125,7 +125,7 @@ function Services() {
       id="services"
       className="mx-auto px-4 sm:px-6 pt-16 sm:pt-28 pb-8 sm:pb-10 min-h-screen scroll-mt-24"
     >
-      <h2 className="text-stone-900 text-xl sm:text-3xl font-semibold leading-9 mb-6 sm:mb-8">
+      <h2 className="text-stone-900 text-xl sm:text-3xl font-semibold leading-9 mb-2.5 sm:mb-4.5">
         Services
       </h2>
       <div className="bg-gray-100 rounded-2xl py-5 sm:py-14 flex flex-col lg:flex-row gap-4 sm:gap-12 justify-center items-center lg:items-start px-4 sm:px-8 lg:px-32">

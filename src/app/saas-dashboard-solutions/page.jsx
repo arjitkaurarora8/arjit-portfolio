@@ -81,7 +81,7 @@ function ProjectShowcase() {
                 Go back
               </span>
               <img
-                src="/linkarrow.png"
+                src="/linkarrow.svg"
                 alt="External link"
                 className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform duration-300"
               />
@@ -154,7 +154,7 @@ function ProjectShowcase() {
                   Figma File Compilation
                 </span>
                 <img
-                  src="/linkarrow.png"
+                  src="/linkarrow.svg"
                   alt="External link"
                   className="w-4 h-4 md:w-5 md:h-5 group-hover:scale-110 transition-transform duration-300"
                 />
@@ -243,7 +243,7 @@ function ProjectShowcase() {
                         Live Link
                       </span>
                       <img
-                        src="/linkarrow.png"
+                        src="/linkarrow.svg"
                         alt="External link"
                         className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform duration-300"
                       />
@@ -261,7 +261,7 @@ function ProjectShowcase() {
                         Get more details here
                       </span>
                       <img
-                        src="/linkarrow.png"
+                        src="/linkarrow.svg"
                         alt="External link"
                         className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform duration-300"
                       />

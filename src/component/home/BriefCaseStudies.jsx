@@ -366,14 +366,6 @@ export default function BriefCaseStudies() {
           </Link>
 
           {/* Row 1-2 - Right - Crikverse (spans 2 rows) */}
-          {/* <div className="relative w-full h-[300px] md:h-[314px] lg:h-[380px] overflow-hidden">
-              <Image
-                src={projects[2].src}
-                alt={projects[2].alt}
-                width={500}
-                height={600}
-                className="w-full h-full object-cover object-top md:object-cover md:object-top-left transition-all duration-700 ease-out group-hover:brightness-75"
-              /> */}
           <Link
             href="/crikverse"
             className="lg:row-span-2 group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"

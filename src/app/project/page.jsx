@@ -80,7 +80,7 @@
 //                 Go back
 //               </span>
 //               <img
-//                 src="/linkarrow.png"
+//                 src="/linkarrow.svg"
 //                 alt="External link"
 //                 className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-120 transition-transform duration-300"
 //               />
@@ -158,7 +158,7 @@
 //                   Live website
 //                 </span>
 //                 <img
-//                   src="/linkarrow.png"
+//                   src="/linkarrow.svg"
 //                   alt="External link"
 //                   className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-120 transition-transform duration-300"
 //                 />
@@ -410,7 +410,7 @@ function ProjectShowcase() {
                 Go back
               </span>
               <img
-                src="/linkarrow.png"
+                src="/linkarrow.svg"
                 alt="External link"
                 className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-120 transition-transform duration-300"
               />
@@ -488,7 +488,7 @@ function ProjectShowcase() {
                   Live website
                 </span>
                 <img
-                  src="/linkarrow.png"
+                  src="/linkarrow.svg"
                   alt="External link"
                   className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-120 transition-transform duration-300"
                 />
