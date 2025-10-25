@@ -7,9 +7,10 @@ function ProjectShowcase() {
     {
       title: "heliosOne",
       icon: "/helios.svg",
+      size: "w-[100px] md:w-[120px]",
       subtitle:
         "**Making business operational insights simpler for utility professionals.**",
-      liveLink: "https://nftfn.xyz", // replace with actual link
+      liveLink: "https://helios.com", // replace with actual link
       description: [
         "> Designed an **AI-powered SaaS dashboard** enabling organizations to track performance, compliance, and energy savings.",
         "> Created a multi-panel layout with smart visualizations and real-time updates.",
@@ -22,9 +23,10 @@ function ProjectShowcase() {
     {
       title: "Etf.com",
       icon: "/etf.png",
+      size: "w-[70px] md:w-[80px]",
       subtitle:
         "**Bringing structure and design consistency to financial intelligence.**",
-      liveLink: "https://cryptoweekly.io",
+      liveLink: "https://etf.com",
       description: [
         "> Designed a dashboard experience for ETF performance tracking and content publishing.",
         "> Simplified access to real-time fund data, trend charts, and weekly insights.",
@@ -37,6 +39,7 @@ function ProjectShowcase() {
     {
       title: "Esource",
       icon: "/esource.png",
+      size: "w-[100px] md:w-[120px]",
       subtitle: "**Turning dense analytics into actionable clarity..**",
       liveLink: "https://terablock.io",
       description: [
@@ -51,6 +54,7 @@ function ProjectShowcase() {
     {
       title: "NIGP",
       icon: "/nictp.png",
+      size: "w-[80px] md:w-[100px]",
       subtitle:
         "**Enabling leaders in procurement to access knowledge seamlessly..**",
       liveLink: "https://evm.ink",
@@ -72,7 +76,7 @@ function ProjectShowcase() {
       <div className="px-4 sm:px-6 pb-20 pt-8.5 md:pt-16.5 flex flex-col overflow-hidden">
         <div className="flex flex-col gap-4 overflow-hidden">
           {/* Header Section */}
-          <div className="inline-flex flex-col gap-5">
+          <div className="inline-flex flex-col gap-3 md:gap-5">
             <Link
               href="/"
               className="flex items-center gap-1 group cursor-pointer w-fit"
@@ -87,20 +91,22 @@ function ProjectShowcase() {
               />
             </Link>
             <div className="flex flex-col justify-start">
-              <div className="flex gap-3 sm:gap-0 justify-between pt-2">
-                <div className="w-full mb-2.5">
-                  <div className="rounded-lg outline-[2.62px] outline-sky-50 px-3.5 py-2.5 inline-flex items-center justify-center">
-                    <div className="text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide whitespace-nowrap">
-                      Web Dashboards + Admin Panels + Corporate Websites
-                    </div>
+              <div className="flex md:flex-row flex-col gap-3 sm:gap-0 justify-between items-start md:items-center pt-2">
+                <div className="rounded-lg outline-[2.62px] mb-1 md:mb-2.5 outline-sky-50 px-3.5 py-2.5 inline-flex items-center justify-center">
+                  <div className="text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide whitespace-nowrap">
+                    Web Dashboards + Admin Panels + Corporate Websites
                   </div>
                 </div>
                 <div>
-                  <img src="./saas.svg" alt="content-hub-gpt image" />
+                  <img
+                    src="./saas.svg"
+                    alt="csaasimage"
+                    className="w-[400px] md:w-[700px]"
+                  />
                 </div>
               </div>
 
-              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter mt-1">
+              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter mt-4 md:mt-1">
                 SaaS Dashboard Solutions
               </h1>
 
@@ -111,7 +117,7 @@ function ProjectShowcase() {
           </div>
 
           {/* Project Info Header */}
-          <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-end overflow-hidden pt-8 sm:pt-16 gap-4 sm:gap-0">
+          <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-end overflow-hidden pt-0 sm:pt-16 gap-4 sm:gap-0">
             <div className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-9 md:gap-10 lg:gap-20 xl:gap-38">
               <div className="flex flex-col sm:flex-row justify-start items-start sm:items-end gap-8 sm:gap-20">
                 <div className="flex flex-col">
@@ -180,7 +186,7 @@ function ProjectShowcase() {
               >
                 {/* Title with Icon */}
                 <div className="w-full flex items-center justify-between">
-                  <div className="flex justify-between w-full">
+                  <div className="flex justify-between items-center w-full">
                     <h3 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter leading-tight">
                       {step.title}
                     </h3>
@@ -188,7 +194,11 @@ function ProjectShowcase() {
                       <img
                         src={step.icon}
                         alt={`${step.title} icon`}
-                        className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-contain"
+                        // className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 object-contain"
+                        className={`${
+                          step.size ||
+                          "w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14"
+                        } object-contain`}
                       />
                     )}
                   </div>
@@ -220,13 +230,33 @@ function ProjectShowcase() {
 
                 {/* Description bullets */}
                 <div className="w-full flex flex-col sm:flex-row justify-between items-en sm:pt-0.5">
-                  <div className="max-w-full sm:max-w-[520px] flex flex-col justify-start items-start gap-0.5">
-                    {step.description.map((line, lineIndex) => (
+                  <div className="max-w-full sm:max-w-[550px] flex flex-col justify-start items-start gap-0.5">
+                    {/* {step.description.map((line, lineIndex) => (
                       <p
                         key={lineIndex}
                         className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight"
                       >
                         {line}
+                      </p>
+                    ))} */}
+
+                    {step.description.map((line, lineIndex) => (
+                      <p
+                        key={lineIndex}
+                        className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight"
+                      >
+                        {line.split("**").map((part, i) =>
+                          i % 2 === 1 ? (
+                            <strong
+                              key={i}
+                              className="font-semibold text-gray-900"
+                            >
+                              {part}
+                            </strong>
+                          ) : (
+                            part
+                          )
+                        )}
                       </p>
                     ))}
                   </div>

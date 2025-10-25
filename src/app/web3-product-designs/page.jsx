@@ -692,7 +692,7 @@ function ProjectShowcase() {
               >
                 {/* Title with Icon */}
                 <div className="w-full flex items-center justify-between">
-                  <div className="flex justify-between w-full">
+                  <div className="flex justify-between items-center w-full">
                     <h3 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter leading-tight">
                       {step.title}
                     </h3>
