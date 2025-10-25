@@ -152,25 +152,25 @@ function ProjectShowcase() {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2 sm:flex-row md:gap-4 lg:gap-8 xl:gap-14">
-                <div className="flex flex-col">
-                  <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
-                    Tools
-                  </span>
-                  <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
-                    Figma, Notion
-                  </span>
-                </div>
-
-                <div className="flex flex-col">
-                  <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
-                    Role
-                  </span>
-                  <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
-                    Sr. UX Designer & Consultant
-                  </span>
-                </div>
+              {/* <div className="flex flex-col gap-2 sm:flex-row md:gap-4 lg:gap-8 xl:gap-14"> */}
+              <div className="flex flex-col">
+                <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
+                  Tools
+                </span>
+                <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
+                  Figma, Notion
+                </span>
               </div>
+
+              <div className="flex flex-col">
+                <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
+                  Role
+                </span>
+                <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
+                  Sr. UX Designer & Consultant
+                </span>
+              </div>
+              {/* </div> */}
 
               <div className="flex flex-col sm:flex-row justify-start items-start sm:items-end gap-8 sm:gap-20">
                 <div className="flex flex-col">

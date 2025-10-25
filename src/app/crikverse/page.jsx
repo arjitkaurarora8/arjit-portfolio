@@ -15,7 +15,7 @@ function ProjectShowcase() {
       description: [
         ">\\ Fragmented tools for player registration, event scheduling, and performance tracking",
         ">\\ Coaches relied on subjective judgment instead of data-driven insights.",
-        ">\\ No unified dashboard connecting Super Admins, Admins, Coaches, and Players.",
+        ">\\ **No unified dashboard** connecting Super Admins, Admins, Coaches, and Players.",
         ">\\ Players lacked access to personal analytics or visual feedback from their practice sessions and also there was no popular app with which they can anaylze perfomance.",
       ],
 
@@ -343,7 +343,7 @@ function ProjectShowcase() {
                   )}
 
                   {/* Description bullets */}
-                  <div className="max-w-full sm:max-w-[610px] bg-blue-200 flex flex-col justify-start items-start gap-0.5 pl-2 sm:pl-3">
+                  <div className="max-w-full sm:max-w-[610px] flex flex-col justify-start items-start gap-0.5 pl-2 sm:pl-3">
                     {step.description.map((line, lineIndex) => {
                       // Detect persona section start and end
                       const isPersonaStart = line.includes(
@@ -483,7 +483,7 @@ function ProjectShowcase() {
                         <span className="font-semibold text-sky-700">
                           🤝 Collaboration:
                         </span>{" "}
-                        Worked closely with the BCA Academy, which hosted
+                        Worked closely with the **BCA Academy**, which hosted
                         real-time events to pilot the product, enabling AI
                         visualization of player performance and smart analytics
                         for coaches.

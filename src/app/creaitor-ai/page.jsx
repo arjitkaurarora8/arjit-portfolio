@@ -131,7 +131,7 @@ function ProjectShowcase() {
 
           {/* Project Info Header */}
           <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-end overflow-hidden pt-8 sm:pt-16 gap-4 sm:gap-0">
-            <div className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-9 md:gap-10 lg:gap-20 xl:gap-38">
+            <div className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-9 md:gap-10 lg:gap-20 xl:gap-28">
               <div className="flex flex-col sm:flex-row justify-start items-start sm:items-end gap-8 sm:gap-20">
                 <div className="flex flex-col">
                   <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
@@ -143,25 +143,25 @@ function ProjectShowcase() {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2 sm:flex-row md:gap-4 lg:gap-8 xl:gap-14">
-                <div className="flex flex-col">
-                  <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
-                    Tools
-                  </span>
-                  <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
-                    Figma, Miro, OpenAI API
-                  </span>
-                </div>
-
-                <div className="flex flex-col">
-                  <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
-                    Role
-                  </span>
-                  <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
-                    Product Designer (Freelance)
-                  </span>
-                </div>
+              {/* <div className="flex flex-col gap-2 sm:flex-row md:gap-4 lg:gap-8 xl:gap-14"> */}
+              <div className="flex flex-col">
+                <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
+                  Tools
+                </span>
+                <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
+                  Figma, Miro, OpenAI API
+                </span>
               </div>
+
+              <div className="flex flex-col">
+                <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
+                  Role
+                </span>
+                <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
+                  Product Designer (Freelance)
+                </span>
+              </div>
+              {/* </div> */}
 
               <div className="flex flex-col sm:flex-row justify-start items-start sm:items-end gap-8 sm:gap-20">
                 <div className="flex flex-col">
@@ -186,7 +186,7 @@ function ProjectShowcase() {
                 <img
                   src="/linkarrow.svg"
                   alt="External link"
-                  className="w-4 h-4 md:w-5 md:h-5 group-hover:scale-110 transition-transform duration-300"
+                  className=" h-4 md:w-5 md:h-5 group-hover:scale-110 transition-transform duration-300"
                 />
               </a>
             </div>
@@ -317,7 +317,7 @@ function ProjectShowcase() {
                                   <span key={i}>
                                     <span>&gt;</span>
                                     {/* ✅ CHANGED: Always show one red slash */}
-                                    <span className="text-red-500 font-bold">
+                                    <span className="text-red-500 font-normal">
                                       \
                                     </span>
                                     {/* ✅ CHANGED: slice depending on single or double slash */}
@@ -349,7 +349,7 @@ function ProjectShowcase() {
                             <>
                               <span>{match[1]}</span>
                               {match[2] && (
-                                <span className="text-red-500 font-bold">
+                                <span className="text-red-500 font-normal">
                                   {match[2]} {/* ← red slash */}
                                 </span>
                               )}

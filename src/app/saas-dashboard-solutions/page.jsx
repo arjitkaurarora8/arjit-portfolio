@@ -231,15 +231,6 @@ function ProjectShowcase() {
                 {/* Description bullets */}
                 <div className="w-full flex flex-col sm:flex-row justify-between items-en sm:pt-0.5">
                   <div className="max-w-full sm:max-w-[550px] flex flex-col justify-start items-start gap-0.5">
-                    {/* {step.description.map((line, lineIndex) => (
-                      <p
-                        key={lineIndex}
-                        className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight"
-                      >
-                        {line}
-                      </p>
-                    ))} */}
-
                     {step.description.map((line, lineIndex) => (
                       <p
                         key={lineIndex}
