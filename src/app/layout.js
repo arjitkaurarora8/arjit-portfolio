@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased mx-2 md:mx-10 lg:mx-30`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased mx-2 md:mx-10 lg:mx-14 xl:mx-30`}
       >
         {children}
         <Footer />
