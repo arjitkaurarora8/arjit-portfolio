@@ -117,7 +117,7 @@ function ProjectShowcase() {
           </div>
 
           {/* Project Info Header */}
-          <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-end overflow-hidden pt-0 sm:pt-16 gap-4 sm:gap-0">
+          <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-end overflow-hidden pt-8 sm:pt-16 gap-4 sm:gap-0">
             <div className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-9 md:gap-10 lg:gap-20 xl:gap-38">
               <div className="flex flex-col sm:flex-row justify-start items-start sm:items-end gap-8 sm:gap-20">
                 <div className="flex flex-col">
