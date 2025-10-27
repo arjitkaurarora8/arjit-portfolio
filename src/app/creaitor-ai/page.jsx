@@ -33,7 +33,7 @@ function ProjectShowcase() {
       ],
       images: [
         { src: "/creaitor-ai-2.png", alt: "journey step 1" },
-        { src: "/creaitor-ai-3.png", alt: "journey step 2" },
+        { src: "/creaitor-ai-3.svg", alt: "journey step 2" },
       ],
       imageLayout: "stacked",
     },
@@ -73,7 +73,7 @@ function ProjectShowcase() {
         ">\\  Recognized as a Leader in AI Productivity Tools (2024–2025) by multiple platforms.",
       ],
 
-      image: "/creaitor-ai-6.png",
+      image: "/creaitor-ai-6.svg",
       alt: "results",
       imageLayout: "single",
     },
@@ -101,20 +101,24 @@ function ProjectShowcase() {
               />
             </Link>
             <div className="flex flex-col justify-start">
-              <div className="flex gap-3 sm:gap-0 justify-between items-start md:items-center pt-2">
+              <div className="flex justify-between flex-col md:flex-row items-start md:items-center pt-2">
                 <div className="w-full mb-2.5">
-                  <div className="rounded-lg outline-[2.62px] outline-sky-50 px-3.5 py-2.5 inline-flex items-center justify-center">
+                  <div className="rounded-lg outline-[2.62px] outline-sky-50 px-2 sm:px-3.5 py-1.5 sm:py-2.5 inline-flex items-center justify-center">
                     <div className="text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide whitespace-nowrap">
                       Web App Dashboard + AI Content Editor
                     </div>
                   </div>
                 </div>
                 <div>
-                  <img src="./creator-ai.svg" alt="creaitor-ai logo" />
+                  <img
+                    src="./creator-ai.svg"
+                    alt="creaitor-ai logo"
+                    className="w-[150px] md:w-[200px]"
+                  />
                 </div>
               </div>
 
-              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter mt-1">
+              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter mt-2 sm:mt-1">
                 Creaitor.ai
               </h1>
 
@@ -283,8 +287,19 @@ function ProjectShowcase() {
                   )}
 
                   {/* Description bullets */}
-                  <div className="max-w-full sm:max-w-[640px] flex flex-col justify-start items-start gap-0.5 pl-2 sm:pl-3">
+                  {/* Description bullets */}
+                  <div className="max-w-full sm:max-w-[618px] flex flex-col justify-start items-start gap-0.5 pl-2 sm:pl-3">
                     {step.description.map((line, lineIndex) => {
+                      // Determine slash color based on step number
+                      const slashColor =
+                        step.number === "01"
+                          ? "text-red-500"
+                          : step.number === "02"
+                          ? "text-sky-700"
+                          : step.number === "03"
+                          ? "text-sky-500"
+                          : "text-emerald-500";
+
                       if (line.includes("**")) {
                         // Split by ** to find bold parts
                         const parts = line.split("**");
@@ -311,8 +326,10 @@ function ProjectShowcase() {
                                 return (
                                   <span key={i}>
                                     <span>&gt;</span>
-                                    {/* ✅ CHANGED: Always show one red slash */}
-                                    <span className="text-red-500 font-normal">
+                                    {/* ✅ CHANGED: Use dynamic slash color */}
+                                    <span
+                                      className={`${slashColor} font-normal`}
+                                    >
                                       \
                                     </span>
                                     {/* ✅ CHANGED: slice depending on single or double slash */}
@@ -344,8 +361,8 @@ function ProjectShowcase() {
                             <>
                               <span>{match[1]}</span>
                               {match[2] && (
-                                <span className="text-red-500 font-normal">
-                                  {match[2]} {/* ← red slash */}
+                                <span className={`${slashColor} font-normal`}>
+                                  {match[2]} {/* ← dynamic color slash */}
                                 </span>
                               )}
                               {match[3] && (
@@ -443,7 +460,7 @@ function ProjectShowcase() {
           </span>
         </div>
 
-        <Link href="/project">
+        <Link href="/saas-dashboard-solutions">
           <button className="w-20 h-10 cursor-pointer bg-sky-500 flex gap-2 items-center justify-center rounded-lg outline-2 outline-blue-100 transform transition-all duration-150 active:scale-95 active:shadow-inner">
             <span className="text-white text-sm font-semibold">Here</span>
             <span>
