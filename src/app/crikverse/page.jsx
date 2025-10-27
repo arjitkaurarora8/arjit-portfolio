@@ -316,7 +316,7 @@ function ProjectShowcase() {
                         {step.overviewDescription.map((line, i) => (
                           <p
                             key={i}
-                            className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight"
+                            className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight pl-5 -indent-5"
                           >
                             {line.split("**").map((part, j) =>
                               j % 2 === 1 ? (
@@ -390,7 +390,7 @@ function ProjectShowcase() {
                             {personaLines.map((persona, personaIndex) => (
                               <p
                                 key={personaIndex}
-                                className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight"
+                                className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight pl-5 -indent-5"
                               >
                                 {persona.split("**").map((part, i) =>
                                   i % 2 === 1 ? (
@@ -423,7 +423,7 @@ function ProjectShowcase() {
                         return (
                           <p
                             key={lineIndex}
-                            className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight"
+                            className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight pl-5 -indent-5"
                           >
                             {parts.map((part, i) => {
                               // Odd indices are the text inside ** ** → make them bold
@@ -471,7 +471,7 @@ function ProjectShowcase() {
                       return (
                         <p
                           key={lineIndex}
-                          className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight"
+                          className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight pl-5 -indent-5"
                         >
                           {match ? (
                             <>
@@ -494,14 +494,14 @@ function ProjectShowcase() {
                     })}
 
                     {step.number === "01" && (
-                      <div className="max-w-[643px] justify-center text-sky-700 text-base font-semibold font-inter leading-snug tracking-tight mt-3">
+                      <div className="max-w-[643px] justify-center text-sky-700 text-base font-semibold font-inter leading-snug tracking-tight mt-3 pl-5 -indent-5">
                         Resulted in inefficiency, lost performance data, and
                         missed opportunities for player development.
                       </div>
                     )}
 
                     {step.number === "02" && (
-                      <div className="max-w-[643px] justify-center text-gray-900 text-base font-normal font-inter leading-snug tracking-tight mt-3">
+                      <div className="max-w-[643px] justify-center text-gray-900 text-base font-normal font-inter leading-snug tracking-tight mt-3 pl-5 -indent-5">
                         <span className="font-semibold text-sky-700">
                           🤝 Collaboration:
                         </span>{" "}

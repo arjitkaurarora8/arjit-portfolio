@@ -351,7 +351,7 @@ function ProjectShowcase() {
                         return (
                           <p
                             key={lineIndex}
-                            className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight"
+                            className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight pl-5 -indent-5"
                           >
                             {parts.map((part, i) => {
                               // Odd indices are the text inside ** ** → make them bold
@@ -398,7 +398,7 @@ function ProjectShowcase() {
                       return (
                         <p
                           key={lineIndex}
-                          className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight"
+                          className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight pl-5 -indent-5"
                         >
                           {match ? (
                             <>

@@ -229,7 +229,7 @@ function ProjectShowcase() {
                 {/* Subtitle with Live Link or Details Link */}
                 <div className="max-w-full sm:max-w-[620px]">
                   {step.subtitle.includes("**") ? (
-                    <p className="text-gray-900 text-sm sm:text-base font-normal font-inter pt-3 leading-snug tracking-tight">
+                    <p className="text-gray-900 text-sm sm:text-base font-normal font-inter pt-3 leading-snug tracking-tight pl-5 -indent-5">
                       {step.subtitle.split("**").map((part, i) =>
                         i % 2 === 1 ? (
                           <strong
@@ -244,7 +244,7 @@ function ProjectShowcase() {
                       )}
                     </p>
                   ) : (
-                    <p className="text-gray-900 text-base sm:text-lg font-normal font-inter leading-snug tracking-tight">
+                    <p className="text-gray-900 text-base sm:text-lg font-normal font-inter leading-snug tracking-tight pl-5 -indent-5">
                       {step.subtitle}
                     </p>
                   )}
@@ -256,7 +256,7 @@ function ProjectShowcase() {
                     {step.description.map((line, lineIndex) => (
                       <p
                         key={lineIndex}
-                        className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight"
+                        className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight pl-5 -indent-5"
                       >
                         {line}
                       </p>
