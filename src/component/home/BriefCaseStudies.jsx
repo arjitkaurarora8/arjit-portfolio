@@ -317,24 +317,24 @@ export default function BriefCaseStudies() {
   ];
 
   return (
-    <div id="past" className="w-full px-4 sm:px-6 pt-28 scroll-mt-24">
+    <div id="past" className="w-full px-4 sm:px-6 pt-8 sm:pt-13 scroll-mt-24">
       {/* Header Section */}
       <div className="flex flex-col justify-start">
-        <h2 className="text-stone-900 text-3xl font-semibold leading-9 mb-5">
+        <h2 className="text-stone-900 text-xl sm:text-3xl font-semibold leading-9">
           Brief Case Studies
         </h2>
-        <div className="max-w-md mb-5">
+        {/* <div className="max-w-md mb-5">
           <p className="text-neutral-500 text-base leading-snug tracking-tight">
             Designed and developed products including dashboards, mobile apps,
             and design systems — delivering solutions that balance usability,
             versatility, and aesthetics.
           </p>
-        </div>
+        </div> */}
 
         <EyeCursor isVisible={isHovering} />
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-[1fr_2fr] lg:gap-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 pt-2 sm:pt-5 md:gap-6 lg:grid-cols-[1fr_2fr] lg:gap-4">
           {/* Row 1 - Left - Creaitor AI */}
           <Link
             href="/creaitor-ai"

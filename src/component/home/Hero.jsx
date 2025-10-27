@@ -10,8 +10,8 @@ function Hero() {
     <section className="pt-10 md:pt-16.5 px-4 sm:px-6 bg-white">
       <div className="flex flex-col gap-4">
         <div className="w-full ">
-          <div className="rounded-lg outline-[2.62px] outline-sky-50 px-3.5 py-2.5 inline-flex items-center justify-center">
-            <div className="text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide whitespace-nowrap">
+          <div className="rounded-md sm:rounded-lg outline-[2.62px] outline-sky-50 px-2 py-1.5 sm:px-3.5 sm:py-2.5 inline-flex items-center justify-center">
+            <div className="text-sky-500 text-xs font-normal sm:font-semibold font-inter leading-tight tracking-wide whitespace-nowrap">
               Brands: Consistently drive 10% + increase in ARPU
             </div>
           </div>
@@ -29,9 +29,10 @@ function Hero() {
 
         <div className="w-full sm:w-[539px] flex">
           <p className="animate-lift-fade-in motion-reduce:animate-fade-in [--offset:10px] [animation-delay:150ms] [animation-duration:0.8s] [animation-fill-mode:both] text-gray-400 text-sm sm:text-base font-inter font-normal leading-snug tracking-tight">
-            You're a founder or startup looking for a partner to shape products
-            that users love and investors trust?{" "}
-            <span className="font-semibold">Let's talk.</span>
+            Want a partner who blends strategy with design to turn early-stage
+            chaos into clarity? I help startups build products that look good,
+            work better, and scale fast.
+            {/* <span className="font-semibold">Let's talk.</span> */}
           </p>
         </div>
       </div>

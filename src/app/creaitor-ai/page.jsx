@@ -18,11 +18,6 @@ function ProjectShowcase() {
         ">\\ Long turnaround time for client-ready content.",
         ">\\ Lack of AI systems tailored for marketing tone and SEO performance.",
       ],
-      //   images: [
-      //     { src: "/walmart-1.png", alt: "Walmart branding" },
-      //     { src: "/walmart-2.png", alt: "Seller dashboard" },
-      //   ],
-      //   imageLayout: "grid",
     },
     {
       number: "02",
@@ -390,7 +385,7 @@ function ProjectShowcase() {
                       }`}
                     >
                       <img
-                        className="w-full h-auto rounded-xl sm:rounded-2xl"
+                        className="w-full h-auto rounded-xl sm:rounded-2xl "
                         src={step.image}
                         alt={`${step.title} step visualization`}
                       />

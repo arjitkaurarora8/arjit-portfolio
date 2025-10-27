@@ -4,7 +4,7 @@ import DetailedCaseStudies from "@/component/home/BriefCaseStudies";
 import BriefCaseStudies from "@/component/home/DetailedCaseStudies";
 import About from "@/component/home/About";
 import Pitch from "@/component/home/Pitch";
-import GettingStarted from "@/component/home/GettingStarted";
+// import GettingStarted from "@/component/home/GettingStarted";
 import Services from "@/component/home/Services";
 // import Footer from "@/component/layout/Footer";
 
@@ -17,7 +17,7 @@ export default function Home() {
       <DetailedCaseStudies />
       <About />
       <Pitch />
-      <GettingStarted />
+      {/* <GettingStarted /> */}
       <Services />
       {/* <Footer /> */}
     </>

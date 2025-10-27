@@ -153,7 +153,7 @@ function About() {
       id="about"
       className="px-4 sm:px-3 pt-8 md:pt-8 lg:pt-12 scroll-mt-24"
     >
-      <div className="bg-gradient-to-b from-amber-800 via-amber-800/50 to-transparent max-w-full mx-auto pt-[0.5px]">
+      <div className="bg-gradient-to-b from-amber-800 via-amber-800/50 to-transparent max-w-full mx-auto">
         <div
           className="
             grid grid-cols-1 lg:grid-cols-2 items-center 
