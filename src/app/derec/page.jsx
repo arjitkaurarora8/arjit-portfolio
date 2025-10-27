@@ -113,7 +113,7 @@ function ProjectShowcase() {
               />
             </Link>
             <div className="flex flex-col justify-start">
-              <div className="flex gap-3 sm:gap-0 justify-between items-start md:items-center pt-2">
+              <div className="flex gap-3 sm:gap-0 justify-between flex-col md:flex-row items-start md:items-center">
                 <div className="w-full mb-2.5">
                   <div className="rounded-lg outline-[2.62px] outline-sky-50 px-3.5 py-2.5 inline-flex items-center justify-center">
                     <div className="text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide whitespace-nowrap">
@@ -122,11 +122,15 @@ function ProjectShowcase() {
                   </div>
                 </div>
                 <div>
-                  <img src="./derec.svg" alt="content-hub-gpt image" />
+                  <img
+                    src="./derec.svg"
+                    alt="content-hub-gpt image"
+                    className="w-[150px] md:w-[400px]"
+                  />
                 </div>
               </div>
 
-              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter mt-1">
+              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter mt-2 md:mt-1">
                 Derec/1DotMedia
               </h1>
 
@@ -140,7 +144,7 @@ function ProjectShowcase() {
 
           {/* Project Info Header */}
           <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-end overflow-hidden pt-8 sm:pt-16 gap-4 sm:gap-0">
-            <div className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-9 md:gap-10 lg:gap-20 xl:gap-38">
+            <div className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-9 md:gap-10 lg:gap-20 xl:gap-28">
               <div className="flex flex-col sm:flex-row justify-start items-start sm:items-end gap-8 sm:gap-20">
                 <div className="flex flex-col">
                   <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">

@@ -72,8 +72,8 @@ function ProjectShowcase() {
         ">\\ **Coach–Player Feedback Loop:** In-app communication to personalize training.",
       ],
       images: [
-        { src: "/creaitor-ai-4.png", alt: "journey step 1" },
-        { src: "/creaitor-ai-5.png", alt: "journey step 2" },
+        { src: "/crikverse-4.png", alt: "journey step 1" },
+        { src: "/crikverse-5.png", alt: "journey step 2" },
       ],
       //   note: "After getting acquired was revamped to GSPANN's Design Language",
       imageLayout: "stacked",
@@ -92,9 +92,12 @@ function ProjectShowcase() {
         ">\\  Recognized as a Leader in AI Productivity Tools (2024–2025) by multiple platforms.",
       ],
 
-      image: "/creaitor-ai-6.png",
-      alt: "results",
-      imageLayout: "single",
+      images: [
+        { src: "/crikverse-6.png", alt: "journey step 1" },
+        { src: "/crikverse-7.png", alt: "journey step 2" },
+      ],
+      //   note: "After getting acquired was revamped to GSPANN's Design Language",
+      imageLayout: "stacked",
     },
   ];
 
@@ -120,20 +123,24 @@ function ProjectShowcase() {
               />
             </Link>
             <div className="flex flex-col justify-start">
-              <div className="flex gap-3 sm:gap-0 justify-between items-start md:items-center pt-2">
+              <div className="flex gap-3 sm:gap-0 justify-between flex-col md:flex-row items-start md:items-center pt-2">
                 <div className="w-full mb-2.5">
-                  <div className="rounded-lg outline-[2.62px] outline-sky-50 px-3.5 py-2.5 inline-flex items-center justify-center">
+                  <div className="rounded-lg outline-[2.62px] outline-sky-50 px-2 sm:px-3.5 py-1.5 sm:py-2.5 inline-flex items-center justify-center">
                     <div className="text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide whitespace-nowrap">
                       Web Dashboard + Mobile App
                     </div>
                   </div>
                 </div>
                 <div>
-                  <img src="./crikverse.svg" alt="crikverse logo" />
+                  <img
+                    src="./crikverse.svg"
+                    alt="crikverse logo"
+                    className="w-[150px] md:w-[400px]"
+                  />
                 </div>
               </div>
 
-              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter mt-1">
+              <h1 className="text-gray-900 text-2xl sm:text-3xl lg:text-4xl font-semibold font-inter mt-2 md:mt-1">
                 Crikverse
               </h1>
 
@@ -146,7 +153,7 @@ function ProjectShowcase() {
 
           {/* Project Info Header */}
           <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-end overflow-hidden pt-8 sm:pt-16 gap-4 sm:gap-0">
-            <div className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-9 md:gap-10 lg:gap-20 xl:gap-38">
+            <div className="flex flex-col sm:flex-row justify-between gap-2 sm:gap-9 md:gap-10 lg:gap-20 xl:gap-28">
               <div className="flex flex-col sm:flex-row justify-start items-start sm:items-end gap-8 sm:gap-20">
                 <div className="flex flex-col">
                   <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
@@ -158,25 +165,25 @@ function ProjectShowcase() {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2 sm:flex-row md:gap-4 lg:gap-8 xl:gap-14">
-                <div className="flex flex-col">
-                  <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
-                    Tools
-                  </span>
-                  <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
-                    Figma, FigJam
-                  </span>
-                </div>
-
-                <div className="flex flex-col">
-                  <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
-                    Role
-                  </span>
-                  <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
-                    UX Researcher & Product Designer
-                  </span>
-                </div>
+              {/* <div className="flex flex-col gap-2 sm:flex-row md:gap-4 lg:gap-8 xl:gap-14"> */}
+              <div className="flex flex-col">
+                <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
+                  Tools
+                </span>
+                <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
+                  Figma, FigJam
+                </span>
               </div>
+
+              <div className="flex flex-col">
+                <span className="text-gray-500 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
+                  Role
+                </span>
+                <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight">
+                  UX Researcher & Product Designer
+                </span>
+              </div>
+              {/* </div> */}
 
               <div className="flex flex-col sm:flex-row justify-start items-start sm:items-end gap-8 sm:gap-20">
                 <div className="flex flex-col">
@@ -259,7 +266,10 @@ function ProjectShowcase() {
                         <p className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
                           {step.subtitle.split("**").map((part, i) =>
                             i % 2 === 1 ? (
-                              <strong key={i} className="font-semibold">
+                              <strong
+                                key={i}
+                                className="font-semibold text-sky-00"
+                              >
                                 {part}
                               </strong>
                             ) : (
@@ -343,8 +353,19 @@ function ProjectShowcase() {
                   )}
 
                   {/* Description bullets */}
+                  {/* Description bullets */}
                   <div className="max-w-full sm:max-w-[610px] flex flex-col justify-start items-start gap-0.5 pl-2 sm:pl-3">
                     {step.description.map((line, lineIndex) => {
+                      // Determine slash color based on step number
+                      const slashColor =
+                        step.number === "01"
+                          ? "text-red-500"
+                          : step.number === "02"
+                          ? "text-sky-700"
+                          : step.number === "03"
+                          ? "text-sky-500"
+                          : "text-emerald-500";
+
                       // Detect persona section start and end
                       const isPersonaStart = line.includes(
                         "**Defined 4 core personas:**"
@@ -386,7 +407,7 @@ function ProjectShowcase() {
                         );
                       }
 
-                      // Skip rendering persona lines again after we’ve already rendered them
+                      // Skip rendering persona lines again after we've already rendered them
                       if (
                         line.includes("**1. Super Admin:**") ||
                         line.includes("**2. Admin:**") ||
@@ -414,7 +435,7 @@ function ProjectShowcase() {
                                 );
                               }
 
-                              // ✅ CHANGED: handle both single '\' and double '\\' cases
+                              // Handle both single '\' and double '\\' cases with dynamic color
                               if (
                                 part.startsWith(">\\") ||
                                 part.startsWith(">\\\\")
@@ -422,11 +443,12 @@ function ProjectShowcase() {
                                 return (
                                   <span key={i}>
                                     <span>&gt;</span>
-                                    {/* ✅ CHANGED: Always show one red slash */}
-                                    <span className="text-sky-500 font-normal">
+                                    {/* Use dynamic slash color */}
+                                    <span
+                                      className={`${slashColor} font-normal`}
+                                    >
                                       \
                                     </span>
-                                    {/* ✅ CHANGED: slice depending on single or double slash */}
                                     <span>
                                       {part.slice(
                                         part.startsWith(">\\\\") ? 3 : 2
@@ -455,8 +477,8 @@ function ProjectShowcase() {
                             <>
                               <span>{match[1]}</span>
                               {match[2] && (
-                                <span className="text-red-500 font-normal">
-                                  {match[2]} {/* ← red slash */}
+                                <span className={`${slashColor} font-normal`}>
+                                  {match[2]} {/* ← dynamic color slash */}
                                 </span>
                               )}
                               {match[3] && (
@@ -587,7 +609,7 @@ function ProjectShowcase() {
           </span>
         </div>
 
-        <Link href="/project">
+        <Link href="/saas-dashboard-solutions">
           <button className="w-20 h-10 cursor-pointer bg-sky-500 flex gap-2 items-center justify-center rounded-lg outline-2 outline-blue-100 transform transition-all duration-150 active:scale-95 active:shadow-inner">
             <span className="text-white text-sm font-semibold">Here</span>
             <span>
