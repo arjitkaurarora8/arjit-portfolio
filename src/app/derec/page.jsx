@@ -28,7 +28,7 @@ function ProjectShowcase() {
       number: "02",
       title: "JOURNEY",
       subtitle:
-        "Derec started as an idea incubated under 1DotMedia to solve “the LinkedIn problem of Web3.”**The goal was to validate professional credibility onchain while enabling decentralized hiring and collaboration.**",
+        "Derec started as an idea incubated under 1DotMedia to solve “the LinkedIn problem of Web3.”</br>**The goal was to validate professional credibility onchain while enabling decentralized hiring and collaboration.**",
       keySection: "What I Did",
       description: [
         "> Conducted **market validation** via Web3 communities, analyzing user behaviors in DAOs and freelance ecosystems.",
@@ -114,8 +114,8 @@ function ProjectShowcase() {
             </Link>
             <div className="flex flex-col justify-start">
               <div className="flex gap-3 sm:gap-0 justify-between flex-col md:flex-row items-start md:items-center">
-                <div className="w-full mb-2.5">
-                  <div className="rounded-lg outline-[2.62px] outline-sky-50 px-3.5 py-2.5 inline-flex items-center justify-center">
+                <div className="w-full mb-0 md:mb-2.5">
+                  <div className="rounded-md md:rounded-lg outline-[2.62px] outline-sky-50 px-2 md:px-3.5 py-1.5 md:py-2.5 inline-flex items-center justify-center">
                     <div className="text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide whitespace-nowrap">
                       Web3 Dashboard + Scoring Engine
                     </div>
@@ -125,7 +125,7 @@ function ProjectShowcase() {
                   <img
                     src="./derec.svg"
                     alt="content-hub-gpt image"
-                    className="w-[150px] md:w-[400px]"
+                    className="w-[80px] md:w-[130px]"
                   />
                 </div>
               </div>
@@ -251,7 +251,7 @@ function ProjectShowcase() {
                     </div>
                   )} */}
                   {/* Subtitle section */}
-                  {step.subtitle && (
+                  {/* {step.subtitle && (
                     <div className="max-w-full sm:max-w-[620px] flex flex-col justify-start items-start pl-2 sm:pl-3 mt-1">
                       {step.subtitle.includes("**") ? (
                         <p className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
@@ -265,6 +265,51 @@ function ProjectShowcase() {
                             )
                           )}
                         </p>
+                      ) : (
+                        <p className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
+                          {step.subtitle}
+                        </p>
+                      )}
+
+                      {step.subtitleBold && (
+                        <p className="text-sky-700 text-sm sm:text-base font-semibold font-inter leading-snug tracking-tight">
+                          {step.subtitleBold}
+                        </p>
+                      )}
+                    </div>
+                  )} */}
+                  {/* Subtitle section */}
+                  {step.subtitle && (
+                    <div className="max-w-full sm:max-w-[620px] flex flex-col justify-start items-start pl-2 sm:pl-3 mt-1">
+                      {step.subtitle.includes("**") ? (
+                        <div className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
+                          {step.subtitle
+                            .split("</br>")
+                            .map((segment, segIdx) => (
+                              <p
+                                key={segIdx}
+                                className={segIdx > 0 ? "mt-2" : ""}
+                              >
+                                {segment.split("**").map((part, i) =>
+                                  i % 2 === 1 ? (
+                                    <strong
+                                      key={i}
+                                      className={`font-semibold ${
+                                        step.number === "02" &&
+                                        part.includes("The goal")
+                                          ? "text-sky-800"
+                                          : ""
+                                      }`}
+                                    >
+                                      {part}
+                                    </strong>
+                                  ) : (
+                                    part
+                                  )
+                                )}
+                              </p>
+                            ))}
+                        </div>
                       ) : (
                         <p className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight">
                           {step.subtitle}
@@ -460,7 +505,7 @@ function ProjectShowcase() {
           </span>
         </div>
 
-        <Link href="/project">
+        <Link href="/web3-product-designs">
           <button className="w-20 h-10 cursor-pointer bg-sky-500 flex gap-2 items-center justify-center rounded-lg outline-2 outline-blue-100 transform transition-all duration-150 active:scale-95 active:shadow-inner">
             <span className="text-white text-sm font-semibold">Here</span>
             <span>

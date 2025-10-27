@@ -92,7 +92,7 @@ function ProjectShowcase() {
             </Link>
             <div className="flex flex-col justify-start">
               <div className="flex md:flex-row flex-col gap-3 sm:gap-0 justify-between items-start md:items-center pt-2">
-                <div className="rounded-lg outline-[2.62px] mb-1 md:mb-2.5 outline-sky-50 px-3.5 py-2.5 inline-flex items-center justify-center">
+                <div className="rounded-lg outline-[2.62px] mb-1 md:mb-2.5 outline-sky-50 md:px-3.5 py-1.5 md:py-2.5  inline-flex items-center justify-center">
                   <div className="text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide whitespace-nowrap">
                     Web Dashboards + Admin Panels + Corporate Websites
                   </div>
@@ -229,8 +229,8 @@ function ProjectShowcase() {
                 </div>
 
                 {/* Description bullets */}
-                <div className="w-full flex flex-col sm:flex-row justify-between items-en sm:pt-0.5">
-                  <div className="max-w-full sm:max-w-[550px] flex flex-col justify-start items-start gap-0.5">
+                <div className="w-full flex flex-col sm:flex-row justify-between items-ed sm:pt-0.5">
+                  <div className="max-w-full sm:max-w-[540px] flex flex-col justify-start items-start gap-0.5">
                     {step.description.map((line, lineIndex) => (
                       <p
                         key={lineIndex}
@@ -261,7 +261,7 @@ function ProjectShowcase() {
                       className="flex items-center gap-1 group cursor-pointer flex-shrink-0"
                     >
                       <span className="text-gray-900 text-sm sm:text-base font-normal underline font-inter leading-snug tracking-tight group-hover:text-gray-600 whitespace-nowrap">
-                        Live Link
+                        Live Website
                       </span>
                       <img
                         src="/linkarrow.svg"
@@ -320,7 +320,7 @@ function ProjectShowcase() {
           </span>
         </div>
 
-        <Link href="/project">
+        <Link href="/web3-product-designs">
           <button className="w-20 h-10 cursor-pointer bg-sky-500 flex gap-2 items-center justify-center rounded-lg outline-2 outline-blue-100 transform transition-all duration-150 active:scale-95 active:shadow-inner">
             <span className="text-white text-sm font-semibold">Here</span>
             <span>

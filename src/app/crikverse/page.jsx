@@ -124,8 +124,8 @@ function ProjectShowcase() {
             </Link>
             <div className="flex flex-col justify-start">
               <div className="flex gap-3 sm:gap-0 justify-between flex-col md:flex-row items-start md:items-center pt-2">
-                <div className="w-full mb-2.5">
-                  <div className="rounded-lg outline-[2.62px] outline-sky-50 px-2 sm:px-3.5 py-1.5 sm:py-2.5 inline-flex items-center justify-center">
+                <div className="w-full mb-0 md:mb-2.5">
+                  <div className="rounded-md md:rounded-lg outline-[2.62px] outline-sky-50 px-2 sm:px-3.5 py-1.5 sm:py-2.5 inline-flex items-center justify-center">
                     <div className="text-sky-500 text-xs font-semibold font-inter leading-tight tracking-wide whitespace-nowrap">
                       Web Dashboard + Mobile App
                     </div>
