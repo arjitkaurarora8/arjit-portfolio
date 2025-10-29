@@ -69,6 +69,13 @@
 
 // export default Navbar;
 
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+
 "use client";
 
 import React, { useState } from "react";
@@ -91,7 +98,7 @@ function Navbar({ showLinks = true }) {
 
   return (
     <div className="px-4 sm:px-6 overflow-x-hidden">
-      <nav className="flex items-center justify-between py-4 sm:py-6 border-b-2 border-gray-100 sticky top-0 bg-white z-30">
+      <nav className="flex items-center justify-between py-4 sm:py-6 border-b-2 border-gray-100 top-0 bg-white z-30">
         {/* Left Section: Hamburger + Logo */}
         <div className="flex items-center sm:gap-2 group">
           {/* Hamburger (visible only on small screens) */}
@@ -169,3 +176,124 @@ function Navbar({ showLinks = true }) {
 }
 
 export default Navbar;
+
+// "use client";
+
+// import React, { useState, useEffect } from "react";
+// import Button from "../ui/Button";
+// import Link from "next/link";
+// import { Menu, X } from "lucide-react";
+
+// function Navbar({ showLinks = true }) {
+//   const [menuOpen, setMenuOpen] = useState(false);
+//   const [isScrolled, setIsScrolled] = useState(false);
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       setIsScrolled(window.scrollY > 0);
+//     };
+//     window.addEventListener("scroll", handleScroll);
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, []);
+
+//   const navLinks = [
+//     { name: "Work", href: "#work" },
+//     { name: "Past", href: "#past" },
+//     { name: "About", href: "#about" },
+//     { name: "Services", href: "#services" },
+//   ];
+
+//   const linkClasses =
+//     "text-gray-600 hover:text-gray-900 transition-colors duration-200";
+
+//   return (
+//     <>
+//       {/* Fixed Navbar - using fixed instead of sticky */}
+//       <nav
+//         className={`fixed top-0 left-0 right-0 bg-white z-50 border-b-2 border-gray-100 transition-shadow duration-200 ${
+//           isScrolled ? "shadow-sm" : ""
+//         }`}
+//       >
+//         <div className="px-4 sm:px-6 flex items-center justify-between py-4 sm:py-6 max-w-[1920px] mx-auto">
+//           {/* Left Section: Hamburger + Logo */}
+//           <div className="flex items-center sm:gap-2 group">
+//             {/* Hamburger (visible only on small screens) */}
+//             <button
+//               className="lg:hidden pr-2.5"
+//               onClick={() => setMenuOpen(!menuOpen)}
+//               aria-label="Toggle menu"
+//             >
+//               {menuOpen ? (
+//                 <X className="w-6 h-6 text-gray-800" />
+//               ) : (
+//                 <Menu className="w-6 h-6 text-gray-800" />
+//               )}
+//             </button>
+
+//             <Link href="/" className="flex items-center gap-1 sm:gap-3">
+//               <div className="h-8 w-8 sm:h-11 sm:w-11 relative">
+//                 <img
+//                   src="/arjit-logo.svg"
+//                   alt="Avatar-Logo"
+//                   className="absolute w-full h-full rounded-full object-contain inset-0 group-hover:opacity-0 transition-opacity duration-300 opacity-100"
+//                 />
+//                 <img
+//                   src="/arjit-logo-2.svg"
+//                   alt="Avatar-Logo"
+//                   className="absolute w-full h-full rounded-full object-contain inset-0 group-hover:opacity-100 transition-opacity duration-300 opacity-0"
+//                 />
+//               </div>
+//               <div className="flex flex-col">
+//                 <span className="text-stone-900 text-xs sm:text-base font-semibold leading-tight tracking-tight">
+//                   Arjit Kaur Arora
+//                 </span>
+//                 <span className="text-gray-600 text-xs sm:text-base font-medium">
+//                   Product Lead
+//                 </span>
+//               </div>
+//             </Link>
+//           </div>
+
+//           {/* Right Section */}
+//           <div className="flex items-center gap-4">
+//             {/* Desktop Links */}
+//             {showLinks && (
+//               <div className="hidden lg:flex gap-6 text-base font-normal">
+//                 {navLinks.map((link) => (
+//                   <a key={link.href} href={link.href} className={linkClasses}>
+//                     {link.name}
+//                   </a>
+//                 ))}
+//               </div>
+//             )}
+
+//             <Button text="Book a call" size="sm" />
+//           </div>
+//         </div>
+//       </nav>
+
+//       {/* Spacer to prevent content from going under fixed navbar */}
+//       <div className="h-[73px] sm:h-[89px]"></div>
+
+//       {/* Mobile Menu */}
+//       {menuOpen && (
+//         <div className="lg:hidden fixed top-[73px] sm:top-[89px] left-0 right-0 bg-white shadow-lg z-40 border-b border-gray-200">
+//           <div className="flex flex-col items-start gap-4 px-6 py-6">
+//             {navLinks.map((link) => (
+//               <a
+//                 key={link.href}
+//                 href={link.href}
+//                 onClick={() => setMenuOpen(false)}
+//                 className="w-full text-gray-700 text-base font-medium hover:text-gray-900 transition-colors duration-200 py-2"
+//               >
+//                 {link.name}
+//               </a>
+//             ))}
+//           </div>
+//         </div>
+//       )}
+//     </>
+//   );
+// }
+
+// export default Navbar;

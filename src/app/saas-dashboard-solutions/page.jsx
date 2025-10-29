@@ -229,12 +229,12 @@ function ProjectShowcase() {
                 </div>
 
                 {/* Description bullets */}
-                <div className="w-full flex flex-col sm:flex-row justify-between items-ed sm:pt-0.5">
+                <div className="w-full flex flex-col sm:flex-row justify-between items-end sm:pt-0.5">
                   <div className="max-w-full sm:max-w-[540px] flex flex-col justify-start items-start gap-0.5">
                     {step.description.map((line, lineIndex) => (
                       <p
                         key={lineIndex}
-                        className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight pl-5 -indent-5"
+                        className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight pl-5 -indent-[15px]"
                       >
                         {line.split("**").map((part, i) =>
                           i % 2 === 1 ? (

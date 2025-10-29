@@ -147,12 +147,19 @@ const socials = [
 function Footer() {
   const [copied, setCopied] = useState(false);
 
+  // const handleCopy = () => {
+  //   navigator.clipboard.writeText("7018537372"); // number copy
+  //   setCopied(true);
+
+  //   // Reset back after short delay
+  //   setTimeout(() => setCopied(false), 200);
+  // };
   const handleCopy = () => {
     navigator.clipboard.writeText("7018537372"); // number copy
     setCopied(true);
 
-    // Reset back after short delay
-    setTimeout(() => setCopied(false), 200);
+    // Reset after 1.5s instead of 0.2s
+    setTimeout(() => setCopied(false), 400);
   };
 
   const handleEmailClick = (e) => {
@@ -281,7 +288,10 @@ function Footer() {
                   />
                 </li>
 
-                <li className="flex items-center gap-1 group cursor-pointer justify-start md:justify-end">
+                <li
+                  className="w-full flex justify-end gap-1"
+                  // className="flex items-center gap-1 group cursor-pointer justify-start bg-red-300 md:justify-end"
+                >
                   <div className="text-base transition-all duration-300">
                     <span className="text-gray-400">(+91)</span>
                     <span className="text-gray-900">70185-37372</span>
@@ -289,16 +299,25 @@ function Footer() {
 
                   <button
                     onClick={handleCopy}
-                    className="relative transition-transform duration-150 active:scale-90"
+                    className="relative transition-transform duration-150 active:scale-90 flex items-center cursor-pointer"
                   >
-                    <img src="./copy.svg" alt="Copy img" className="w-5 h-5" />
+                    <img
+                      src="./copy.svg"
+                      alt="Copy img"
+                      className="w-5 h-5 cursor-pointer"
+                    />
 
                     {/* Copied Tooltip */}
                     {copied && (
-                      <span className="absolute top-5 right-0 text-sm text-stone-300 px-2 py-0.5 animate-fadeInOut">
-                        copied
+                      <span className="absolute top-5 right-0 text-sm text-gray-400 px-2 py-0.5 animate-fadeInOut">
+                        copied!
                       </span>
                     )}
+                    {/* {copied && (
+                      <span className="absolute -top-5 right-0 text-sm text-black bg-gray-100 rounded px-2 py-0.5 shadow-sm animate-fadeInOut">
+                        Copied!
+                      </span>
+                    )} */}
                   </button>
                 </li>
 

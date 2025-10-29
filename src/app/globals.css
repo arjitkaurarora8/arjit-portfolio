@@ -137,8 +137,8 @@ html {
 } */
 
 .bg-work2-mobile {
-  background-image: url("/work_2-md (1).jpg");
-  /* background-image: url("/work_2-md (1).png"); */
+  /* background-image: url("/work_2-md (1).jpg"); */
+  background-image: url("/work_2-md (1).png");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,8 +151,8 @@ html {
 }
 
 .bg-work1-mobile {
-  background-image: url("/work_1-md.png");
-  /* background-image: url("/work_1-md (1).jpg"); */
+  /* background-image: url("/work_1-md.png"); */
+  background-image: url("/work_1-md (1).jpg");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
