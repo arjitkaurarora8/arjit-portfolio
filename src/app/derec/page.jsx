@@ -93,7 +93,7 @@ function ProjectShowcase() {
 
   return (
     <>
-      <Navbar showLinks={false} />
+      <Navbar showLinks={true} />
 
       <div className="px-4 sm:px-6 pt-8.5 md:pt-16.5 flex flex-col overflow-hidden">
         <div className="flex flex-col gap-4 overflow-hidden">

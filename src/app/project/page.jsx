@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Navbar from "@/component/layout/Navbar";
 
 function ProjectShowcase() {
   const processSteps = [
@@ -103,8 +104,8 @@ function ProjectShowcase() {
 
   return (
     <>
-      {/* Navbar component - uncomment if you have it */}
-      {/* <Navbar showLinks={false} /> */}
+      {/* Navbar component */}
+      <Navbar showLinks={true} />
 
       <div className="px-4 sm:px-6 pb-20 pt-8.5 md:pt-16.5 flex flex-col overflow-hidden">
         <div className="flex flex-col gap-4 overflow-hidden">
