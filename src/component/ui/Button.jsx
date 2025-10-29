@@ -18,7 +18,7 @@ export default function Button({
 
   const sizeClasses = {
     // Small: Navbar button - responsive padding and text
-    sm: "h-7.5 sm:h-11 px-2 sm:px-4 text-xs sm:text-base",
+    sm: "h-8 sm:h-9.5 lg:h-11 px-2.5 sm:px-3 md:px-4 text-sm md:text-base",
 
     // Medium: Footer button - responsive width and padding
     md: "h-10 sm:h-13 px-3 sm:px-5 w-48 sm:w-62 text-xs sm:text-base",
