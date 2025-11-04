@@ -152,7 +152,7 @@ export default function DetailedCaseStudies() {
         {/* Left Image */}
         <Link
           href="/#"
-          className="flex-1 border md:border-r-0 border-emerald-700 group relative transition-all duration-800 ease-in-out 
+          className="flex-1 border-[0.6px] md:border-r-0 border-gray-200 group relative transition-all duration-800 ease-in-out 
           sm:hover:flex-[1.5] md:hover:flex-[2] lg:hover:flex-[2.5] xl:hover:flex-[2.8] 2xl:hover:flex-[3] 
           h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:h-[660px] 
           overflow-hidden rounded-2xl sm:rounded-l-2xl sm:rounded-r-none"
@@ -179,7 +179,7 @@ export default function DetailedCaseStudies() {
         {/* Right Image */}
         <Link
           href="/content-hub-gpt"
-          className="flex-1 group relative border md:border-l-0 border-emerald-700 transition-all duration-700 ease-in-out 
+          className="flex-1 group relative border-[0.6px] md:border-l-0 border-gray-200 transition-all duration-700 ease-in-out 
           sm:hover:flex-[1.5] md:hover:flex-[2] lg:hover:flex-[2.5] xl:hover:flex-[2.8] 2xl:hover:flex-[3] 
           h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:h-[660px] 
           overflow-hidden rounded-2xl sm:rounded-r-2xl sm:rounded-l-none"

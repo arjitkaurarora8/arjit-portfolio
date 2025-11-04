@@ -73,7 +73,7 @@
 //           {/* Row 1 - Left */}
 //           <Link
 //             href="/creaitor-ai"
-//             className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
+//             className="group relative overflow-hidden rounded-2xl outline-[0.6px] outline-gray-100"
 //             onMouseEnter={() => setIsHovering(true)}
 //             onMouseLeave={() => setIsHovering(false)}
 //             style={{ cursor: "none" }}
@@ -105,7 +105,7 @@
 //           {/* Row 1-2 - Right (otherwork4 takes 2 rows on desktop only) */}
 //           <Link
 //             href="/crikverse"
-//             className="lg:row-span-2 group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
+//             className="lg:row-span-2 group relative overflow-hidden rounded-2xl outline-[0.6px] outline-gray-100"
 //             onMouseEnter={() => setIsHovering(true)}
 //             onMouseLeave={() => setIsHovering(false)}
 //             style={{ cursor: "none" }}
@@ -137,7 +137,7 @@
 //           {/* Row 2 - Left */}
 //           <Link
 //             href="/derec"
-//             className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
+//             className="group relative overflow-hidden rounded-2xl outline-[0.6px] outline-gray-100"
 //             onMouseEnter={() => setIsHovering(true)}
 //             onMouseLeave={() => setIsHovering(false)}
 //             style={{ cursor: "none" }}
@@ -169,7 +169,7 @@
 //           {/* Row 3 - Left */}
 //           <Link
 //             href="/web3-product-designs"
-//             className="lg:row-span-7 group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
+//             className="lg:row-span-7 group relative overflow-hidden rounded-2xl outline-[0.6px] outline-gray-100"
 //             onMouseEnter={() => setIsHovering(true)}
 //             onMouseLeave={() => setIsHovering(false)}
 //             style={{ cursor: "none" }}
@@ -202,7 +202,7 @@
 //           {/* Row 3 - Right */}
 //           <Link
 //             href="/saas-dashboard-solutions"
-//             className="lg:row-span-7 group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
+//             className="lg:row-span-7 group relative overflow-hidden rounded-2xl outline-[0.6px] outline-gray-100"
 //             onMouseEnter={() => setIsHovering(true)}
 //             onMouseLeave={() => setIsHovering(false)}
 //             style={{ cursor: "none" }}
@@ -338,7 +338,7 @@ export default function BriefCaseStudies() {
           {/* Row 1 - Left - Creaitor AI */}
           <Link
             href="/creaitor-ai"
-            className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
+            className="group relative overflow-hidden rounded-2xl outline-[0.6px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -368,7 +368,7 @@ export default function BriefCaseStudies() {
           {/* Row 1-2 - Right - Crikverse (spans 2 rows) */}
           <Link
             href="/crikverse"
-            className="lg:row-span-2 group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
+            className="lg:row-span-2 group relative overflow-hidden rounded-2xl outline-[0.2px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -398,7 +398,7 @@ export default function BriefCaseStudies() {
           {/* Row 2 - Left - Derec */}
           <Link
             href="/derec"
-            className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
+            className="group relative overflow-hidden rounded-2xl outline-[0.6px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -428,7 +428,7 @@ export default function BriefCaseStudies() {
           {/* Row 3 - Left - WEB3 Products */}
           <Link
             href="/web3-product-designs"
-            className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
+            className="group relative overflow-hidden rounded-2xl outline-[0.6px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
@@ -458,7 +458,7 @@ export default function BriefCaseStudies() {
           {/* Row 3 - Right - SaaS Dashboard */}
           <Link
             href="/saas-dashboard-solutions"
-            className="group relative overflow-hidden rounded-2xl outline-[1px] outline-gray-100"
+            className="group relative overflow-hidden rounded-2xl outline-[0.6px] outline-gray-100"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
             style={{ cursor: "none" }}
