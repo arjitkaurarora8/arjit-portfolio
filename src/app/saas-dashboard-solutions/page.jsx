@@ -5,12 +5,12 @@ import Link from "next/link";
 function ProjectShowcase() {
   const processSteps = [
     {
-      title: "heliosOne",
+      title: "HeliosOne",
       icon: "/helios.svg",
       size: "w-[100px] md:w-[120px]",
       subtitle:
         "**Making business operational insights simpler for utility professionals.**",
-      liveLink: "https://helios.com", // replace with actual link
+      liveLink: "https://heliosone.ai/", // replace with actual link
       description: [
         "> Designed an **AI-powered SaaS dashboard** enabling organizations to track performance, compliance, and energy savings.",
         "> Created a multi-panel layout with smart visualizations and real-time updates.",
@@ -26,7 +26,7 @@ function ProjectShowcase() {
       size: "w-[70px] md:w-[80px]",
       subtitle:
         "**Bringing structure and design consistency to financial intelligence.**",
-      liveLink: "https://etf.com",
+      liveLink: "https://www.etf.com/",
       description: [
         "> Designed a dashboard experience for ETF performance tracking and content publishing.",
         "> Simplified access to real-time fund data, trend charts, and weekly insights.",
@@ -41,7 +41,7 @@ function ProjectShowcase() {
       icon: "/esource.png",
       size: "w-[100px] md:w-[120px]",
       subtitle: "**Turning dense analytics into actionable clarity..**",
-      liveLink: "https://terablock.io",
+      liveLink: "https://www.esource.com/",
       description: [
         "> Redesigned the corporate analytics and resources portal.",
         "> Implemented a content-first layout improving readability and engagement.",
@@ -57,7 +57,7 @@ function ProjectShowcase() {
       size: "w-[80px] md:w-[100px]",
       subtitle:
         "**Enabling leaders in procurement to access knowledge seamlessly..**",
-      liveLink: "https://evm.ink",
+      liveLink: "https://www.nigp.org/",
       description: [
         "> Designed the NIGP corporate website to enhance resource discovery and learning.",
         "> Focused on UX consistency across the public and member-only sections.",
@@ -101,7 +101,7 @@ function ProjectShowcase() {
                   <img
                     src="./saas.svg"
                     alt="csaasimage"
-                    className="w-[400px] md:w-[700px]"
+                    className="w-[400px] md:w-[640px]"
                   />
                 </div>
               </div>
@@ -153,7 +153,9 @@ function ProjectShowcase() {
 
             <div>
               <a
-                href="#"
+                href="https://www.figma.com/design/C91CQICHT7TBYNSN9IVF4W/WEB3-Designs-Compilation?node-id=14-44245&t=tBlmGcZWldwVnClO-0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center md:gap-1 group cursor-pointer"
               >
                 <span className="text-gray-900 text-sm md:text-base font-normal underline font-inter leading-snug tracking-tight group-hover:text-gray-600">

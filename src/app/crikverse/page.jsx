@@ -38,7 +38,7 @@ function ProjectShowcase() {
         "**3. Coach:** Tracks player performance, uploads video analysis, and provides feedback.",
         "**4. Player:** Views stats, session videos, and AI-driven improvement insights.",
         "> Mapped data flows to unify all roles under one dashboard and mobile experience.",
-        ">  Designed wireframes and built a scalable component system using Figma.",
+        "> Designed wireframes and built a scalable component system using Figma.",
       ],
       images: [
         { src: "/crikverse-2.png", alt: "journey step 1" },
@@ -85,19 +85,14 @@ function ProjectShowcase() {
         "Creator.ai quickly gained traction among early adopters and content marketers.",
       keySection: "Impact",
       sectionColor: "green",
-      description: [
-        ">\\  **40% faster content output/creator**",
-        ">\\  Improved **brand consistency** and writing accuracy across campaigns",
-        ">\\  **Adopted by 10k+ creators within months of beta**",
-        ">\\  Recognized as a Leader in AI Productivity Tools (2024–2025) by multiple platforms.",
-      ],
 
-      images: [
-        { src: "/crikverse-6.png", alt: "journey step 1" },
-        { src: "/crikverse-7.png", alt: "journey step 2" },
+      description: [
+        ">\\  **35% faster event execution** through automated scheduling.",
+        ">\\  **60% improvement** in coach efficiency via centralized dashboards.",
+        ">\\  **25% increase** in player engagement through gamified performance insights.",
+        ">\\  **Reduced** manual data entry **by 70%**; eliminating spreadsheet dependency.",
+        ">\\ Introduced AI-based visual analysis for player performance in live sessions.",
       ],
-      //   note: "After getting acquired was revamped to GSPANN's Design Language",
-      imageLayout: "stacked",
     },
   ];
 
@@ -199,7 +194,9 @@ function ProjectShowcase() {
 
             <div>
               <a
-                href="#"
+                href="https://www.crikverse.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center md:gap-1 group cursor-pointer"
               >
                 <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight group-hover:text-gray-600">

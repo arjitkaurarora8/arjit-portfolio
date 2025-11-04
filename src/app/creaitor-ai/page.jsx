@@ -176,7 +176,9 @@ function ProjectShowcase() {
 
             <div>
               <a
-                href="#"
+                href="https://www.creaitor.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center md:gap-1 group cursor-pointer"
               >
                 <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight group-hover:text-gray-600">

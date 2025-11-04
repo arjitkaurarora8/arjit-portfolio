@@ -9,7 +9,7 @@ function ProjectShowcase() {
       icon: "/nftfn-xyx.svg",
       size: "w-350px md:w-[500px]",
       subtitle: "**Simplifying complex DeFi data for traders.**",
-      liveLink: "https://nftfn.xyz", // replace with actual link
+      liveLink: "https://xtrading.exchange/", // replace with actual link
       description: [
         "> Designed a multi-asset trading dashboard for NFT futures and options.",
         "> Integrated live market analytics, order books, and wallet connectivity.",
@@ -24,7 +24,7 @@ function ProjectShowcase() {
       icon: "/crypto-weekly.svg",
       size: "w-90px md:w-[100px]",
       subtitle: "**Making crypto news more human and shareable.**",
-      liveLink: "https://cryptoweekly.io",
+      liveLink: "https://cryptoweekly.co/",
       description: [
         "> Designed Web3-native media portal featuring trends, funding updates, and community discussions.",
         "> Created a visual-first layout that enhances content discovery and credibility.",
@@ -38,7 +38,7 @@ function ProjectShowcase() {
       icon: "/terablock.svg",
       size: "w-100px md:w-[120px]",
       subtitle: "**Automating smart crypto trades with simplicity.**",
-      liveLink: "https://terablock.io",
+      liveLink: "https://cryptoweekly.co/",
       description: [
         "> Reimagined trade automation dashboard with multi-chain wallet integrations.",
         "> Created step-by-step flow for token transfers and swap management.",
@@ -51,7 +51,8 @@ function ProjectShowcase() {
       title: "EVM.ink",
       icon: "/evm.png",
       subtitle: "**Turning blockchain data into creator-friendly insights.**",
-      liveLink: "https://evm.ink",
+      liveLink:
+        "https://evm.ink/?token=0xf5817927593c47ddabf78344ba43dacf43cd73e6&networkId=56",
       description: [
         "> Designed creator dashboards with NFT performance metrics, ownership history, and wallet tracking.",
         "> Unified dark theme aesthetic with emphasis on performance graphs and collection analytics.",
@@ -65,7 +66,7 @@ function ProjectShowcase() {
       icon: "/crypto-quest-app.svg",
       size: "w-150px md:w-[170px]",
       subtitle: "**Learning crypto should feel like playing a game.**",
-      liveLink: "https://cryptoquest.app",
+      // liveLink: "https://cryptoquest.app",
       description: [
         "> Created a mobile-first experience merging crypto education with gamified rewards.",
         "> Users complete quests to earn tokens, learn trading basics, and level up their profile.",
@@ -79,7 +80,7 @@ function ProjectShowcase() {
       icon: "/derec.svg",
       size: "w-120px md:w-[140px]",
       subtitle: "**Redefining how professionals connect in Web3.**",
-      detailsLink: "https://derec.io/details",
+      detailsLink: "https://www.1dotmedia.com/",
       description: [
         "> Built recruiter and job seeker dashboards with wallet verification and scoring.",
         "> Simplified onchain activity visualization for skill validation and hiring.",
@@ -175,7 +176,9 @@ function ProjectShowcase() {
 
             <div>
               <a
-                href="#"
+                href="https://www.figma.com/design/C91CQICHT7TBYNSN9IVF4W/WEB3-Designs-Compilation?node-id=14-44245&t=oLYHdED1HITsMhnG-0"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center md:gap-1 group cursor-pointer"
               >
                 <span className="text-gray-900 text-sm md:text-base font-normal underline font-inter leading-snug tracking-tight group-hover:text-gray-600">
