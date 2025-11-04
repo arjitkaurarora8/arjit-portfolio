@@ -143,11 +143,22 @@ const socials = [
   },
   {
     name: "Download CV",
-    href: "#",
+    // href: "Arjit_Kaur_Arora_Resume.pdf",
+    // download: true,
+    isDownload: true,
   },
 ];
 
 function About() {
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/Arjit_Kaur_Arora_Resume.pdf";
+    link.download = "Arjit_Kaur_Arora_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="about"
@@ -213,7 +224,7 @@ function About() {
                 arjitkaurarora8@gmail.com
               </EmailHandler>
 
-              <div className="flex gap-4 flex-wrap">
+              {/* <div className="flex gap-4 flex-wrap">
                 {socials.map((social, idx) => (
                   <a
                     key={idx}
@@ -236,6 +247,44 @@ function About() {
                     />
                   </a>
                 ))}
+              </div> */}
+
+              <div className="flex gap-4 flex-wrap">
+                {socials.map((social, idx) =>
+                  social.isDownload ? (
+                    <button
+                      key={idx}
+                      onClick={handleDownloadCV}
+                      className="flex items-center gap-1 group cursor-pointer bg-transparent border-none p-0"
+                    >
+                      <span className="text-neutral-400 text-base group-hover:text-neutral-500 transition-transform duration-300">
+                        {social.name}
+                      </span>
+                      <img
+                        src="/linkarrow.svg"
+                        alt="link-arrow"
+                        className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
+                      />
+                    </button>
+                  ) : (
+                    <a
+                      key={idx}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 group cursor-pointer"
+                    >
+                      <span className="text-neutral-400 text-base group-hover:text-neutral-500 transition-transform duration-300">
+                        {social.name}
+                      </span>
+                      <img
+                        src="/linkarrow.svg"
+                        alt="link-arrow"
+                        className="w-5 h-5 group-hover:scale-120 transition-transform duration-300"
+                      />
+                    </a>
+                  )
+                )}
               </div>
             </div>
           </div>
