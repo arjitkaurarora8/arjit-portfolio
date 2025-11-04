@@ -151,7 +151,7 @@ export default function DetailedCaseStudies() {
       <div className="flex flex-col sm:flex-row w-full pt-4 gap-4 sm:gap-0">
         {/* Left Image */}
         <Link
-          href="/project"
+          href="/#"
           className="flex-1 border md:border-r-0 border-emerald-700 group relative transition-all duration-800 ease-in-out 
           sm:hover:flex-[1.5] md:hover:flex-[2] lg:hover:flex-[2.5] xl:hover:flex-[2.8] 2xl:hover:flex-[3] 
           h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[600px] 2xl:h-[660px] 
