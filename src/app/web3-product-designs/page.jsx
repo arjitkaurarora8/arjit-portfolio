@@ -38,7 +38,7 @@ function ProjectShowcase() {
       icon: "/terablock.svg",
       size: "w-100px md:w-[120px]",
       subtitle: "**Automating smart crypto trades with simplicity.**",
-      liveLink: "https://cryptoweekly.co/",
+      liveLink: "#",
       description: [
         "> Reimagined trade automation dashboard with multi-chain wallet integrations.",
         "> Created step-by-step flow for token transfers and swap management.",
