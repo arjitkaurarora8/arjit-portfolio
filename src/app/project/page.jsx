@@ -193,7 +193,7 @@ function ProjectShowcase() {
                 href="#"
                 className="flex items-center gap-1 group cursor-pointer"
               >
-                <span className="text-gray-900 text-sm sm:text-base font-normal font-inter leading-snug tracking-tight group-hover:text-gray-600">
+                <span className="text-gray-900 text-sm sm:text-base underline font-normal font-inter leading-snug tracking-tight group-hover:text-gray-600">
                   Live website
                 </span>
                 <img

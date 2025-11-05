@@ -109,7 +109,7 @@ function ProjectShowcase() {
                   </div>
                 </div>
                 <div>
-                  <img src="./contentHubGPT.svg" alt="content-hub-gpt image" />
+                  <img src="./contenthubGPT.svg" alt="content-hub-gpt image" />
                 </div>
               </div>
 
@@ -174,10 +174,12 @@ function ProjectShowcase() {
 
             <div>
               <a
-                href="#"
+                href="https://contenthubgpt.gspann.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center md:gap-1 group cursor-pointer"
               >
-                <span className="text-gray-900 text-sm md:text-base font-normal font-inter leading-snug tracking-tight group-hover:text-gray-600">
+                <span className="text-gray-900 text-sm md:text-base font-normal underline font-inter leading-snug tracking-tight group-hover:text-gray-600">
                   Live website
                 </span>
                 <img
