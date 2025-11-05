@@ -205,7 +205,7 @@ function Navbar({ showLinks = true }) {
       <nav className="z-30 fixed top-0 left-6 right-6 sm:left-8 sm:right-8 md:left-16 md:right-16 lg:left-20 lg:right-20 xl:left-36 xl:right-36 bg-white border-b-2 border-gray-100">
         {/* <nav className="flex items-center justify-between py-4 sm:py-6 border-b-2 border-gray-100 top-0 bg-white z-30"> */}
         {/* Container with same padding as your page content */}
-        <div className="px-4 sm:px-6 flex items-center justify-between gap-20 py-4 sm:py-6 w-full">
+        <div className="flex items-center justify-between gap-20 py-4 sm:py-6 w-full">
           {/* Left Section: Logo + Name + Hamburger */}
           <div className="flex items-center sm:gap-2 group">
             {/* Hamburger */}

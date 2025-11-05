@@ -162,7 +162,7 @@ function About() {
   return (
     <section
       id="about"
-      className="px-4 sm:px-3 pt-8 md:pt-8 lg:pt-12 scroll-mt-24"
+      className="px-4 sm:px-6 pt-8 md:pt-8 lg:pt-12 scroll-mt-24"
     >
       <div className="bg-gradient-to-b from-amber-800 via-amber-800/50 to-transparent max-w-full mx-auto">
         <div
