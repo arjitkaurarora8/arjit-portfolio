@@ -97,7 +97,7 @@ function ProjectShowcase() {
               <img
                 src="/linkarrow.svg"
                 alt="External link"
-                className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform duration-300"
+                className="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-120 transition-transform duration-300"
               />
             </Link>
             <div className="flex flex-col justify-start">
@@ -187,7 +187,7 @@ function ProjectShowcase() {
                 <img
                   src="/linkarrow.svg"
                   alt="External link"
-                  className=" h-4 md:w-5 md:h-5 group-hover:scale-110 transition-transform duration-300"
+                  className=" h-4 md:w-5 md:h-5 group-hover:scale-120 transition-transform duration-300"
                 />
               </a>
             </div>
