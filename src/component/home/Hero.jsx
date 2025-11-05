@@ -7,7 +7,7 @@ import TelegramContactButton from "../ui/TelegramContactButton";
 
 function Hero() {
   return (
-    <section className="pt-10 md:pt-16.5 px-4 sm:px-6 bg-white">
+    <section className="pt-10 md:pt-16.5 px-4 sm:px-6.5 bg-white">
       <div className="flex flex-col gap-4">
         <div className="w-full ">
           <div className="rounded-md sm:rounded-lg outline-[2.62px] outline-sky-50 px-2 py-1.5 sm:px-3.5 sm:py-2.5 inline-flex items-center justify-center">
