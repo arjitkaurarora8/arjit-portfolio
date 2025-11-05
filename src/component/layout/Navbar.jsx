@@ -233,11 +233,23 @@ function Navbar({ showLinks = true }) {
                   className="absolute w-full h-full rounded-full object-contain inset-0 group-hover:opacity-100 transition-opacity duration-300 opacity-0"
                 />
               </div>
-              <div className="flex flex-col">
-                <span className="text-stone-900 text-sm md:text-sm lg:text-base font-semibold leading-tight tracking-tight">
+              {/* <div className="flex flex-col">
+                <span className="text-stone-900 text-xs sm:text-sm lg:text-base font-semibold leading-tight tracking-tight">
                   Arjit Kaur Arora
                 </span>
                 <span className="text-gray-600 text-sm md:text-sm lg:text-base font-medium">
+                  Product Lead
+                </span>
+              </div> */}
+              <div className="flex flex-col">
+                {/* Full name for sm and above, short for xs */}
+                <span className="text-stone-900 text-xs sm:text-sm lg:text-base font-semibold leading-tight tracking-tight">
+                  <span className="sm:hidden">Arjit K Arora</span>
+                  <span className="hidden sm:inline">Arjit Kaur Arora</span>
+                </span>
+
+                {/* Hide Product Lead on xs */}
+                <span className="hidden sm:inline text-gray-600 text-sm md:text-sm lg:text-base font-medium">
                   Product Lead
                 </span>
               </div>
@@ -255,7 +267,14 @@ function Navbar({ showLinks = true }) {
                 ))}
               </div>
             )}
-            <Button text="Book a call" size="sm" />
+            {/* <Button text="Book a call" size="sm" /> */}
+            {/* Different button text based on screen size */}
+            <div className="sm:hidden">
+              <Button text="Book" size="sm" />
+            </div>
+            <div className="hidden sm:block">
+              <Button text="Book a call" size="sm" />
+            </div>
           </div>
         </div>
       </nav>
