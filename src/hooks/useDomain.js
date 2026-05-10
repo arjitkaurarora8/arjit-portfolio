@@ -4,7 +4,7 @@ export function useDomain() {
   const [isArjitXyz, setIsArjitXyz] = useState(false);
 
   useEffect(() => {
-    setIsArjitXyz(window.location.hostname !== "arjitkaurarora.com");
+    setIsArjitXyz(!window.location.hostname.endsWith("arjitkaurarora.com"));
   }, []);
 
   return isArjitXyz;
