@@ -182,9 +182,11 @@ import React, { useState } from "react";
 import Button from "../ui/Button";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { useDomain } from "@/hooks/useDomain";
 
 function Navbar({ showLinks = true }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const isArjitXyz = useDomain();
 
   const navLinks = [
     { name: "Work", href: "#work" },
@@ -269,12 +271,16 @@ function Navbar({ showLinks = true }) {
             )}
             {/* <Button text="Book a call" size="sm" /> */}
             {/* Different button text based on screen size */}
-            <div className="sm:hidden">
-              <Button text="Book" size="sm" />
-            </div>
-            <div className="hidden sm:block">
-              <Button text="Book a call" size="sm" />
-            </div>
+            {isArjitXyz && (
+              <>
+                <div className="sm:hidden">
+                  <Button text="Book" size="sm" />
+                </div>
+                <div className="hidden sm:block">
+                  <Button text="Book a call" size="sm" />
+                </div>
+              </>
+            )}
           </div>
         </div>
       </nav>
