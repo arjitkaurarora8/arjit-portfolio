@@ -19,7 +19,7 @@ function Hero() {
 
         <h1 className="animate-lift-fade-in motion-reduce:animate-fade-in [--offset:10px] [animation-delay:100ms] [animation-duration:0.5s] [animation-fill-mode:both] text-2xl md:text-4xl font-semibold md:leading-12">
           <span className="text-gray-400">Helping </span>
-          <span className="text-gray-900">Founders </span>
+          <span className="text-gray-900">Companies </span>
           <span className="text-gray-400">turn ideas into </span>
           {/* <span className="text-gray-900">turn iteas into </span> */}
           <br className="hidden sm:block" />

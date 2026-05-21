@@ -5,7 +5,6 @@ import BriefCaseStudies from "@/component/home/DetailedCaseStudies";
 import About from "@/component/home/About";
 import Pitch from "@/component/home/Pitch";
 // import GettingStarted from "@/component/home/GettingStarted";
-import Services from "@/component/home/Services";
 import DomainGate from "@/component/layout/DomainGate";
 // import Footer from "@/component/layout/Footer";
 
@@ -19,9 +18,9 @@ export default function Home() {
       <About />
       <Pitch />
       {/* <GettingStarted /> */}
-      <DomainGate>
+      {/* <DomainGate>
         <Services />
-      </DomainGate>
+      </DomainGate> */}
       {/* <Footer /> */}
     </>
   );

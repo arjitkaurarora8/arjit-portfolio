@@ -211,7 +211,7 @@ function Footer() {
       {/* CTA Button */}
       <div className="flex justify-center">
         <Button
-          text="Book 1:1 strategy session"
+          text="Chai Chat?"
           size="lg"
           className="my-6 sm:my-10"
           // textClassName="px-8 sm:px-20" // responsive padding

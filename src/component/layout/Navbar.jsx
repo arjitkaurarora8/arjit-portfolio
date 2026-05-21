@@ -277,7 +277,7 @@ function Navbar({ showLinks = true }) {
                   <Button text="Book" size="sm" />
                 </div>
                 <div className="hidden sm:block">
-                  <Button text="Book a call" size="sm" />
+                  <Button text="Chai Chat?" size="sm" />
                 </div>
               </>
             )}
